@@ -3,11 +3,9 @@
 
 
 
-
+//
 const { readdirSync, statSync } = require('fs');
 const { join } = require('path');
-
-const projectDirectories = ['whateverly', 'memoize'];
 
 const dirs = (paths) => {
   return readdirSync(path).filter(file => {
@@ -16,11 +14,15 @@ const dirs = (paths) => {
 };
 
 
+
+const projectDirectories = ['whateverly', 'memoize'];
+
+
+
 console.log(dirs(`${__dirname}/${projectDirectories}`));
 
 
 // get exports from the each file in every subdirectory
-
 
 
 
