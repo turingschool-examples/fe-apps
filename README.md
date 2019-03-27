@@ -50,6 +50,7 @@ Begin by **forking** this repo, then cloning down your forked copy to your machi
 * Install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) if you don't have it yet, and login with your personal Heroku credentials from your terminal with `heroku login`
 * Add a Heroku remote to your local copy of `fe-apps` with `heroku git:remote -a fe-apps`
 * Deploy to Heroku with `git push heroku master`
+* Endpoints will exist at: [https://fe-apps.herokuapp.com/api/v1/whateverly/1811/lizAsbell/smoothies](https://fe-apps.herokuapp.com/api/v1/whateverly/1811/lizAsbell/smoothies)
 
 
 
