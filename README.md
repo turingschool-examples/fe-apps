@@ -39,7 +39,24 @@ Begin by **forking** this repo, then cloning down your forked copy to your machi
 * Pull down all changes
 * Double-check that no syntax errors have been added by running the local server with `node index.js` *(Assuming you get a message that says the server is running on localhost:3000, everything is fine. If the server doesn't start up, you'll get some sort of error message.)*
 * New endpoints will automatically be generated with the following pattern: `localhost:3000/api/v1/projectName/cohortNumber/studentGitHubUserName/dataVariable` e.g. `localhost:3000/api/v1/whateverly/1811/lizAsbell/smoothies`
+
+
+
+## Heroku Setup & Deployment
+
+* Go to heroku.com and login to the turing instructors account (credentials in staff channel posted by Katelyn)
+* Click on the `fe-apps` project > Access
+* Add yourself as a collaborator with your personal Heroku account
+* Install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) if you don't have it yet, and login with your personal Heroku credentials from your terminal with `heroku login`
+* Add a Heroku remote to your local copy of `fe-apps` with `heroku git:remote -a fe-apps`
 * Deploy to Heroku with `git push heroku master`
+
+
+
+
+
+
+
 
 
 
