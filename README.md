@@ -7,8 +7,8 @@ Begin by **forking** this repo, then cloning down your forked copy to your machi
 
 1) Create a new file at: `/mod-2/whateverly/<yourCohortNumber>/<yourGitHubUsername>.js`
 
-  * The project and cohort directories have already been created for you, double check that you are adding your new file to this pre-existing directory
-  * Your GitHub username is the part of the URL when you go to your profile at `https://github.com/<yourUserName>` e.g. my username would be [brittanystoroz](https://github.com/brittanystoroz)
+    * The project and cohort directories have already been created for you, double check that you are adding your new file to this pre-existing directory
+    * Your GitHub username is the last part of the URL when you go to your profile at `https://github.com/<yourUserName>` e.g. my username would be [brittanystoroz](https://github.com/brittanystoroz)
 
 2) Your file should include 2 datasets, both assigned to variables that you export at the bottom of the file. Follow the structure of this [sample file](https://github.com/turingschool-examples/fe-apps/blob/master/mod-2/whateverly/1811/sample.js) to create yours. **Do not overwrite this file.**
 
@@ -19,15 +19,27 @@ Begin by **forking** this repo, then cloning down your forked copy to your machi
 
 ## Memoize
 
+1) Create a new file at: `/mod-2/memoize/<yourCohortNumber>/<yourGitHubUsername>.js`
+
+    * The project and cohort directories have already been created for you, double check that you are adding your new file to this pre-existing directory
+    * Your GitHub username is the last part of the URL when you go to your profile at `https://github.com/<yourUserName>` e.g. my username would be [brittanystoroz](https://github.com/brittanystoroz)
+
+2) Your file should include one or two datasets, assigned to variables that you export at the bottom of the file. Follow the structure of this [sample file](https://github.com/turingschool-examples/fe-apps/blob/master/mod-2/whateverly/1811/sample.js) to create yours. **Do not overwrite this file.**
+
+3) Commit and push your changes. Open a pull request.
+
 
 
 
 
 # Instructor Instructions
 
+* Add a cohort directory for the current project
+* Merge student PRs for adding their datasets
+* Pull down all changes
+* Double-check that no syntax errors have been added by running the local server with `node index.js` *(Assuming you get a message that says the server is running on localhost:3000, everything is fine. If the server doesn't start up, you'll get some sort of error message.)*
+* New endpoints will automatically be generated with the following pattern: `localhost:3000/api/v1/projectName/cohortNumber/studentGitHubUserName/dataVariable` e.g. `localhost:3000/api/v1/whateverly/1811/lizAsbell/smoothies`
+* Deploy to Heroku with `git push heroku master`
 
-// webhooks for when a PR is submitted: https://developer.github.com/webhooks/ - can we validate they have module.exports at the bottom with two variables? can we run their JSON through a validator?
 
-
-// git-hooks pre-commit hook to check that theyve only added a single file
 
