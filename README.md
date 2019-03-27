@@ -39,7 +39,7 @@ Begin by **forking** this repo, then cloning down your forked copy to your machi
 
 # For Instructors
 
-* Add a cohort directory for the current project
+* Add a cohort directory for the current project and include a copy of the `sample.js` file in it
 * Merge student PRs for adding their datasets
 * Pull down all changes
 * Double-check that no syntax errors have been added by running the local server with `node index.js` *(Assuming you get a message that says the server is running on localhost:3000, everything is fine. If the server doesn't start up, you'll get some sort of error message.)*
