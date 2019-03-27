@@ -1,27 +1,25 @@
 const express = require('express');
-const fs = require('fs');
-const app = express();
-const http = require('http').Server(app);
 const cors = require('cors');
-
-const datasets = require('./mod-2/project-datasets.js');
-
-
-
-
-
-
-
-
+const app = express();
 
 // EXPRESS CONFIGURATION
 app.use(cors());
 app.use(express.static('public'));
 app.set('port', process.env.PORT || 3000);
 
+
+// Import Mod 2 Datasets
+const datasets = require('./mod-2/project-datasets.js');
+
+// Create Endpoints
 datasets.forEach(dataset => {
-  app.get(`/api/v1/${dataset.cohort}/${dataset.name}`, (request, response) => {
-    response.send({ [dataset.name]: dataset.data });
+  let { project, cohort, studentName, dataVariables } = dataset;
+  let pathPrefix = `/api/v1/${project}/${cohort}/${studentName}`;
+
+  Object.keys(dataVariables).forEach(data => {
+    app.get(`${pathPrefix}/${data}`, (request, response) => {
+      response.send({ [data]: dataVariables[data] });
+    });
   });
 });
 

@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/turingschool-examples/fe-apps/issues"
   },
-  "homepage": "https://github.com/turingschool-examples/fe-apps#readme"
+  "homepage": "https://github.com/turingschool-examples/fe-apps#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4"
+  }
 }

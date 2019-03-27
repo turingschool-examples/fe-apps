@@ -1,13 +1,36 @@
 # Student Instructions
 
+Begin by **forking** this repo, then cloning down your forked copy to your machine. `cd` into the project directory from your terminal.
+
+
 ## Whateverly
 
-There is a `sample.js` file within your cohort directory that you can use as a guide for how to structure your data and export it. **Do not overwrite this file**.
+1) Create a new file at: `/mod-2/whateverly/<yourCohortNumber>/<yourGitHubUsername>.js`
 
-Your pull request:
+  * The project and cohort directory has already been created for you, double check that you are adding your new file to this pre-existing directory
+  * Your GitHub username is the part of the URL when you go to your profile at `https://github.com/<yourUserName>` e.g. my username would be [brittanystoroz](https://github.com/brittanystoroz)
 
-* **should** only add a single file with both of your datasets 
-* **should not** edit any pre-existing files
+2) Your file should include 2 datasets, both assigned to variables. e.g.
+
+```js
+const triviaQuestions = [];
+const categories = [];
+```
+
+3) Export your variables at the bottom of your file like so:
+
+```js
+module.exports = {
+  triviaQuestions,
+  categories
+}
+```
+
+(View the following [sample.js file]() for further clarification. **Do not overwrite this file.**)
+
+4) Commit and push your changes. Open a pull request.
+
+
 
 
 ## Memoize
