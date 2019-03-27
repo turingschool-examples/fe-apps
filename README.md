@@ -37,7 +37,7 @@ Begin by **forking** this repo, then cloning down your forked copy to your machi
 
 
 
-# Instructor Instructions
+# For Instructors
 
 * Add a cohort directory for the current project
 * Merge student PRs for adding their datasets
