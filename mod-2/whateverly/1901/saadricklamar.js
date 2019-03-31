@@ -6,84 +6,64 @@ const newYorkHateCrimes = {
   "State" : "New York",
   "County" : [
     {
-      "name" : "Albany",
-      "occurences" : 20
+      "name" : "Albany"
     },
     {
-      "name" : "Bronx",
-      "occurences" : 19
+      "name" : "Bronx"
     },
     {
-      "name" : "Broome",
-      "occurences" : 18
+      "name" : "Broome"
     },
     {
-      "name" : "Clinton",
-      "occurences" : 17
+      "name" : "Clinton"
     },
     {
-      "name" : "Cortland",
-      "occurences" : 16
+      "name" : "Cortland"
     },
     {
-      "name" : "Dutchess",
-      "occurences" : 15
+      "name" : "Dutchess"
     },
     {
-      "name" : "Erie",
-      "occurences" : 14
+      "name" : "Erie"
     },
     {
-      "name" : "Kings",
-      "occurences" : 13
+      "name" : "Kings"
     },
     {
-      "name" : "Madison",
-      "occurences" : 12
+      "name" : "Madison"
     },
     {
-      "name" : "Monroe",
-      "occurences" : 11
+      "name" : "Monroe"
     },
     {
-      "name" : "Nassau",
-      "occurences" : 11
+      "name" : "Nassau"
     },
     {
-      "name" : "New York",
-      "occurences" : 9
+      "name" : "New York"
     },
     {
-      "name" : "Niagara",
-      "occurences" : 8
+      "name" : "Niagara"
     },
     {
-      "name" : "Onondaga",
-      "occurences" : 7
+      "name" : "Onondaga"
     },
     {
-      "name" : "Orange",
-      "occurences" : 6
+      "name" : "Orange"
     },
     {
-      "name" : "Oswego",
-      "occurences" : 5
+      "name" : "Oswego"
     },
     {
-      "name" : "Otsego",
-      "occurences" : 4
+      "name" : "Otsego"
     },
     {
-      "name" : "Queens",
-      "occurences" : 3
+      "name" : "Queens"
     },
     {
-      "name" : "Rensselaer",
-      "occurences" : 2
+      "name" : "Rensselaer"
     },
     {
-      "name" : "Richmond",
-      "occurences" : 1
+      "name" : "Richmond"
     }
   ],
   "Count of Hate Crimes with reported Anti-Male bias" : 3,
