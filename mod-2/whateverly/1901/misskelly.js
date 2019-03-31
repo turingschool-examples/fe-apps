@@ -1,9 +1,9 @@
 const dietaryRestrictions = [
-  { 
+  {
     "id": 201,
     "type": "Vegan",
     "reason": ["religion/belief", "health", "ethical"],
-    "restrictedFoods": ["meat", "dairy", "fish", "eggs", "honey"],
+    "restrictedFoods": ["meat", "poultry", "dairy", "fish", "shellfish", "eggs", "honey"],
     "percentOfPopulation": 3,
     "healthRisk": false,
     "website": "https://health.usnews.com/best-diet/vegan-diet"
@@ -16,7 +16,7 @@ const dietaryRestrictions = [
     "percentOfPopulation": 5,
     "healthRisk": false,
     "website": "https://health.usnews.com/best-diet/vegetarian-diet"
-  }, 
+  },
   {
     "id": 203,
     "type": "Pescetarian/Flexitarian",
@@ -25,25 +25,25 @@ const dietaryRestrictions = [
     "percentOfPopulation": 5,
     "healthRisk": false,
     "website": "https://health.usnews.com/best-diet/vegetarian-diet"
-  }, 
+  },
   {
     "id": 204,
     "type": "Hinduism / Jain",
     "reason": ["religion/belief", "ethical"],
     "restrictions": ["beef", "chicken", "poultry", "meat", "fish", "alcohol", "egg"],
-    "percentOfPopulation": .7,
+    "percentOfPopulation": 0.7,
     "healthRisk": false,
     "website": "https://thrivemeetings.com/2018/01/religious-dietary-restrictions-guide/"
-  }, 
+  },
   {
     "id": 205,
     "type": "Kosher",
     "reason": ["religion/belief", "ethical"],
     "restrictions": ["shellfish", "pork", "other"],
-    "percentOfPopulation": .4,
+    "percentOfPopulation": 0.4,
     "healthRisk": false,
     "website": "https://oukosher.org/"
-  }, 
+  },
   {
     "id": 206,
     "type": "Halal",
@@ -52,7 +52,7 @@ const dietaryRestrictions = [
     "percentOfPopulation": 1.3,
     "healthRisk": false,
     "website": "https://www.halalfoodauthority.com/definition-of-halal"
-  }, 
+  },
   {
     "id": 101,
     "type": "Milk Allergy",
@@ -61,7 +61,7 @@ const dietaryRestrictions = [
     "percentOfPopulation": 1.9,
     "healthRisk": true,
     "website": "https://www.foodallergy.org/common-allergens/milk-allergy"
-  }, 
+  },
   {
     "id": 102,
     "type": "Egg Allergy",
@@ -70,16 +70,16 @@ const dietaryRestrictions = [
     "percentOfPopulation": 2,
     "healthRisk": true,
     "website": "https://www.foodallergy.org/common-allergens/egg-allergy"
-  }, 
+  },
   {
     "id": 103,
     "type": "Fish Allergy",
     "reason": ["health", "allergy", "potentially life-threatening reaction"],
     "restrictions": ["fish", "salmon", "tuna", "cod", "tilapia"],
-    "percentOfPopulation": .9,
+    "percentOfPopulation": 0.9,
     "healthRisk": true,
     "website": "https://www.foodallergy.org/common-allergens/fish-allergy"
-  }, 
+  },
   {
     "id": 104,
     "type": "Shellfish Allergy",
@@ -88,25 +88,25 @@ const dietaryRestrictions = [
     "percentOfPopulation": 2.9,
     "healthRisk": true,
     "website": "https://www.foodallergy.org/common-allergens/shellfish-allergy"
-  }, 
+  },
   {
     "id": 105,
     "type": "Wheat Allergy",
     "reason": ["health", "allergy", "potentially life-threatening reaction"],
     "restrictions": ["wheat", "bread", "crackers", "flour", "cake"],
-    "percentOfPopulation": .8,
+    "percentOfPopulation": 0.8,
     "healthRisk": true,
     "website": "https://www.foodallergy.org/common-allergens/wheat-allergy"
-  }, 
+  },
   {
     "id": 106,
     "type": "Tree Nut Allergy",
     "reason": ["health", "allergy", "potentially life-threatening reaction"],
-    "restrictions": ["tree-nuts", "coconut", "walnut", "pecan", "pistachio"],
+    "restrictions": ["tree nut", "coconut", "walnut", "pecan", "pistachio"],
     "percentOfPopulation": 1.2,
     "healthRisk": true,
     "website": "https://www.foodallergy.org/common-allergens/tree-nut-allergy"
-  }, 
+  },
   {
     "id": 107,
     "type": "Peanut Allergy",
@@ -115,34 +115,34 @@ const dietaryRestrictions = [
     "percentOfPopulation": 1.8,
     "healthRisk": true,
     "website": "https://www.foodallergy.org/common-allergens/peanut-allergy"
-  }, 
+  },
   {
     "id": 108,
     "type": "Soy Allergy",
     "reason": ["health", "allergy", "potentially life-threatening reaction"],
     "restrictions": ["soy", "soy sauce", "edamame", "tofu", "miso"],
-    "percentOfPopulation": .6,
+    "percentOfPopulation": 0.6,
     "healthRisk": true,
     "website": "https://www.foodallergy.org/common-allergens/soy-allergy"
-  }, 
+  },
   {
     "id": 109,
     "type": "Corn Allergy",
     "reason": ["health", "allergy"],
     "restrictions": ["corn", "cornstarch", "popcorn", "corn syrup"],
-    "percentOfPopulation": .2,
+    "percentOfPopulation": 0.2,
     "healthRisk": true,
     "website": "https://www.foodallergy.org/common-allergens/other-food-allergens#corn"
-  }, 
+  },
   {
     "id": 109,
     "type": "Sesame Allergy",
     "reason": ["health", "allergy"],
     "restrictions": ["sesame seeds", "sesame oil"],
-    "percentOfPopulation": .2,
+    "percentOfPopulation": 0.2,
     "healthRisk": true,
     "website": "https://www.foodallergy.org/common-allergens/sesame-allergy"
-  }, 
+  },
   {
     "id": 110,
     "type": "Lactose Intolerance",
@@ -151,16 +151,16 @@ const dietaryRestrictions = [
     "percentOfPopulation": 15,
     "healthRisk": true,
     "website": "https://www.mayoclinic.org/diseases-conditions/lactose-intolerance/symptoms-causes/syc-20374232"
-  }, 
+  },
   {
     "id": 111,
     "type": "FPIES (Food Protein Induced Enterocolitis Syndrome)",
     "reason": ["health", "intolerance", "potentially life-threatening reaction"],
     "restrictions": ["dairy", "oats", "rice", "soy"],
-    "percentOfPopulation": 15,
+    "percentOfPopulation": 0.5,
     "healthRisk": true,
     "website": "http://fpiesfoundation.org/"
-  }, 
+  },
   {
     "id": 112,
     "type": "Celiac",
@@ -169,7 +169,7 @@ const dietaryRestrictions = [
     "percentOfPopulation": 1,
     "healthRisk": true,
     "website": "https://health.usnews.com/best-diet/gluten-free-diet"
-  }, 
+  },
   {
     "id": 113,
     "type": "Gluten-Free",
@@ -178,16 +178,16 @@ const dietaryRestrictions = [
     "percentOfPopulation": 5.6,
     "healthRisk": true,
     "website": "https://health.usnews.com/best-diet/gluten-free-diet"
-  }, 
+  },
   {
     "id": 114,
     "type": "Nightshades Sensitivity",
-    "reason": ["health", "intolerance", "sensitivity", "preference"],
+    "reason": ["health", "intolerance", "sensitivity"],
     "restrictions": ["tomatoes", "white potatoes", "bell peppers", "hot chili peppers", "eggplant"],
     "percentOfPopulation": "unknown",
     "healthRisk": true,
     "website": "https://healingautoimmune.com/list-of-nightshades-foods"
-  }, 
+  },
   {
     "id": 115,
     "type": "Diabetes",
@@ -196,71 +196,400 @@ const dietaryRestrictions = [
     "percentOfPopulation": 9.4,
     "healthRisk": true,
     "website": "http://www.diabetes.org/food-and-fitness/food/what-can-i-eat/"
-  }, 
-
-
-
-  allergies:
-
-  // 1. milk  https://www.foodallergy.org/common-allergens/milk-allergy 1.9%
-  // 2. eggs https://www.foodallergy.org/common-allergens/egg-allergy 2%
-  // 3. fish https://www.foodallergy.org/common-allergens/fish-allergy .9
-  // 4. shellfish https://www.foodallergy.org/common-allergens/shellfish-allergy 2.9%
-  // 5. wheat https://www.foodallergy.org/common-allergens/wheat-allergy .8
-  // 6. tree nuts https://www.foodallergy.org/common-allergens/peanut-allergy 1.2%
-  // 7. peanuts https://www.foodallergy.org/common-allergens/peanut-allergy 1.8
-  // 8. soy https://www.foodallergy.org/common-allergens/soy-allergy .6
-  // 9. diabetes 9.4%
-  // 10. Celiac/gluten sensitivity https://health.usnews.com/best-diet/gluten-free-diet 5.6%
-  // 11. Dairy Free / lactose - intolerance 15 % ["milk", "cheese", "yogurt"] https://www.mayoclinic.org/diseases-conditions/lactose-intolerance/symptoms-causes/syc-20374232
-  
-  // 12. vegan
-  // 13. vegetarian https://health.usnews.com/best-diet/vegetarian-diet
-  // 14. kosher ["shellfish", "pork", ].4%
-  // 15. halal ["pork", "alcohol"] 1.3
-  // 16. jain
-  // 17. pescetarian/flexitarian ["beef", "pork", "chicken", "meat"] 5%
-  18. Paleo https://health.usnews.com/best-diet/paleo-diet 1%
-  19. Anti Inflammatory https://health.usnews.com/best-diet/anti-inflammatory-diet unknown
-  20. Mediterranean https://health.usnews.com/best-diet/mediterranean-diet unknown
-  21. keto https://health.usnews.com/best-diet/keto-diet unknown
-  22. DASH https://health.usnews.com/best-diet/dash-diet unknown
-  23. Whole 30 https://health.usnews.com/best-diet/whole30-diet unknown
-  24. low - carb high protein [Breads
-Chips
-Crackers
-Added sugar
-Juice
-Cereal
-Milk
-Beer
-Cake
-corn,
-potatoes] 30%
-  // 25. hinduism / jain ["beef", "meat", "fish", "alcohol", "egg"].7
-//   26. nightshades [White potatoes
-// Tomatoes
-// Sweet and bell peppers
-// Hot chili peppers(all varieties)
-// Eggplant
-// Tomatillo] "unknown"
-  27. Oral Allergy Syndrome 5%
-  // 28. FPIES http://fpiesfoundation.org/ .3
-  // 29. sesame https://www.foodallergy.org/common-allergens/sesame-allergy .2%
-  // 30. corn https://www.foodallergy.org/common-allergens/other-food-allergens#corn .2%
-
-
-
-  // { "categoryId": 1, "question": "Lorem Ipsum Dolor?", "answer": "Consequetar" },
-  // { "categoryId": 2, "question": "Nullum Vestibulum?", "answer": "Adipscing" }
-  { "categoryId": 1, "question": "Lorem Ipsum Dolor?", "answer": "Consequetar" },
-  { "categoryId": 2, "question": "Nullum Vestibulum?", "answer": "Adipscing" }
-];
+  },
+  {
+    "id": 116,
+    "type": "Oral Allergy Syndrome",
+    "reason": ["health", "allergy"],
+    "restrictions": ["banana", "avocado", "kiwi", "melon", "watermelon", "cantaloupe"],
+    "percentOfPopulation": 5,
+    "healthRisk": true,
+    "website": "https://www.nationaljewish.org/health-insights/health-infographics/oral-allergy-syndrome-oas-fruits-veg-mouth-itchy"
+  },
+  {
+    "id": 117,
+    "type": "GERD (Gastroesophageal Reflux Disease",
+    "reason": ["health", "disease", "sensitivity"],
+    "restrictions": ["lemon", "orange", "tomato", "pineapple", "alcohol", "soda", "onion", "hot pepper", "chocolate"],
+    "percentOfPopulation": 5,
+    "healthRisk": true,
+    "website": "https://www.medicalnewstoday.com/articles/314690.php"
+  },
+  {
+    "id": 301,
+    "type": "Paleo",
+    "reason": ["health", "weight-loss"],
+    "restrictions": ["pasta", "bread", "juice", "rice", "quinoa", "oats", "grains", "soda", "corn", "dairy", "sugar", "soy", "peanuts", "potatoes", "beer", "wine", "fried food"],
+    "percentOfPopulation": 5,
+    "healthRisk": false,
+    "website": "https://health.usnews.com/best-diet/paleo-diet"
+  },
+  {
+    "id": 302,
+    "type": "Anti-Inflammatory",
+    "reason": ["health", "weight-loss"],
+    "restrictions": ["wheat", "butter", "bread", "pasta", "crackers", "flour", "cake", "barley", "beer", "pasta", "soda", "dessert", "fried food", "beer", "wine"],
+    "percentOfPopulation": "unknown",
+    "healthRisk": false,
+    "website": "https://health.usnews.com/best-diet/anti-inflammatory-diet"
+  },
+  {
+    "id": 303,
+    "type": "Mediterranean",
+    "reason": ["health", "weight-loss"],
+    "restrictions": ["wheat", "bread", "pasta", "butter", "crackers", "flour", "cake", "barley", "beer", "pasta", "soda", "dessert", "fried food", "beer", "milk chocolate", "whole milk"],
+    "percentOfPopulation": "unknown",
+    "healthRisk": false,
+    "website": "https://health.usnews.com/best-diet/mediterranean-diet"
+  },
+  {
+    "id": 304,
+    "type": "Ketogenic",
+    "reason": ["health", "weight-loss"],
+    "restrictions": ["bread", "butter", "beer", "grains", "soda", "dessert", "fried food", "beer", "milk chocolate", "whole milk", "rice", "fruit", "potatoes", "candy"],
+    "percentOfPopulation": "unknown",
+    "healthRisk": false,
+    "website": "https://health.usnews.com/best-diet/mediterranean-diet"
+  }
+]
 
 const commonFoods = [
-  { "id": 1, "name": "History" },
-  { "id": 2, "name": "Geography" }
-];
+  {
+    "name": "grapes",
+    "emoji": "🍇",
+    "category": ["fruit"]
+  },
+  {
+    "name": "melon",
+    "emoji": "🍈",
+    "category": ["fruit"]
+  },
+  {
+    "name": "watermelon",
+    "emoji": "🍉",
+    "category": ["fruit"]
+  },
+  {
+    "name": "orange",
+    "emoji": "🍊",
+    "category": ["fruit"]
+  },
+  {
+    "name": "lemon",
+    "emoji": "🍋",
+    "category": ["fruit"]
+  },
+  {
+    "name": "banana",
+    "emoji": "🍌",
+    "category": ["fruit"]
+  },
+  {
+    "name": "pineapple",
+    "emoji": "🍍",
+    "category": ["fruit"]
+  },
+  {
+    "name": "apple",
+    "emoji": "🍎",
+    "category": ["fruit"]
+  },
+  {
+    "name": "pear",
+    "emoji": "🍐",
+    "category": ["fruit"]
+  },
+  {
+    "name": "peach",
+    "emoji": "🍑",
+    "category": ["fruit"]
+  },
+  {
+    "name": "cherries",
+    "emoji": "🍒",
+    "category": ["fruit"]
+  },
+  {
+    "name": "strawberry",
+    "emoji": "🍓",
+    "category": ["fruit"]
+  },
+  {
+    "name": "kiwi",
+    "emoji": "🥝",
+    "category": ["fruit"]
+  },
+  {
+    "name": "tomato",
+    "emoji": "🍅",
+    "category": ["fruit", "vegetable"]
+  },
+  {
+    "name": "avocado",
+    "emoji": "🥑",
+    "category": ["fruit", "vegetable"]
+  },
+  {
+    "name": "eggplant",
+    "emoji": "🍆",
+    "category": ["vegetable"]
+  },
+  {
+    "name": "potato",
+    "emoji": "🥔",
+    "category": ["vegetable", "starch"]
+  },
+  {
+    "name": "sweet potato",
+    "emoji": "🍠",
+    "category": ["vegetable", "starch"]
+  },
+  {
+    "name": "carrot",
+    "emoji": "🥕",
+    "category": ["vegetable"]
+  },
+  {
+    "name": "corn",
+    "emoji": "🌽",
+    "category": ["vegetable", "starch", "grain"]
+  },
+  {
+    "name": "hot pepper",
+    "emoji": "🌶",
+    "category": ["vegetable"]
+  },
+  {
+    "name": "cucumber",
+    "emoji": "🥒",
+    "category": ["vegetable"]
+  },
+  {
+    "name": "mushroom",
+    "emoji": "🍄",
+    "category": ["vegetable"]
+  },
+  {
+    "name": "peanuts",
+    "emoji": "🥜",
+    "category": ["legume"]
+  },
+  {
+    "name": "hazelnut",
+    "emoji": "🌰",
+    "category": ["tree nut"]
+  },
+  {
+    "name": "coconut",
+    "emoji": "🥥",
+    "category": ["tree nut"]
+  },
+  {
+    "name": "walnut",
+    "emoji": "🌰",
+    "category": ["tree nut"]
+  },
+  {
+    "name": "pecan",
+    "emoji": "🌰",
+    "category": ["tree nut"]
+  },
+  {
+    "name": "whole wheat bread",
+    "emoji": "🍞",
+    "category": ["starch", "bread"]
+  },
+  {
+    "name": "croissant",
+    "emoji": "🥐",
+    "category": ["bread", "starch"]
+  },
+  {
+    "name": "french bread",
+    "emoji": "🥖",
+    "category": ["bread", "starch"]
+  },
+  {
+    "name": "pancakes",
+    "emoji": "🥞",
+    "category": ["bread", "starch", "dessert"]
+  },
+  {
+    "name": "cheese",
+    "emoji": "🧀",
+    "category": ["dairy"]
+  },
+  {
+    "name": "beef",
+    "emoji": "🍖",
+    "category": ["meat"]
+  },
+  {
+    "name": "chicken",
+    "emoji": "🍗",
+    "category": ["meat", "poultry"]
+  },
+  {
+    "name": "bacon",
+    "emoji": "🥓",
+    "category": ["meat", "pork"]
+  },
+  {
+    "name": "cheeseburger",
+    "emoji": "🍔",
+    "category": ["meat", "bread", "dairy", "meal"]
+  },
+  {
+    "name": "french fries",
+    "emoji": "🍟",
+    "category": ["junk food", "snack/side"]
+  },
+  {
+    "name": "cheese pizza",
+    "emoji": "🍕",
+    "category": ["bread", "dairy", "tomato", "meal"]
+  },
+  {
+    "name": "pepperoni pizza",
+    "emoji": "🍕",
+    "category": ["bread", "dairy", "tomato", "meal"]
+  },
+  {
+    "name": "green salad",
+    "emoji": "🥗",
+    "category": ["bread", "dairy", "tomato", "meal"]
+  },
+  {
+    "name": "hotdog",
+    "emoji": "🌭",
+    "category": ["meat", "bread", "meal"]
+  },
+  {
+    "name": "beef taco",
+    "emoji": "🌮",
+    "category": ["meat", "corn", "dairy", "meal"]
+  },
+  {
+    "name": "bean burrito",
+    "emoji": "🌯",
+    "category": ["bread", "meal"]
+  },
+  {
+    "name": "popcorn",
+    "emoji": "🍿",
+    "category": ["corn", "snack/side"]
+  },
+  {
+    "name": "crackers",
+    "emoji": "🍘",
+    "category": ["bread", "snack/side"]
+  },
+  {
+    "name": "rice",
+    "emoji": "🍚",
+    "category": ["starch", "grain"]
+  },
+  {
+    "name": "quinoa",
+    "emoji": "🍚",
+    "category": ["starch", "grain"]
+  },
+  {
+    "name": "barley",
+    "emoji": "🍚",
+    "category": ["starch", "grain"]
+  },
+  {
+    "name": "spaghetti",
+    "emoji": "🍝",
+    "category": ["starch", "tomato", "meal"]
+  },
+  {
+    "name": "shrimp",
+    "emoji": "🍤",
+    "category": ["shellfish"]
+  },
+  {
+    "name": "ice cream",
+    "emoji": "🍨",
+    "category": ["dairy", "dessert", "junk food"]
+  },
+  {
+    "name": "doughnut",
+    "emoji": "🍩",
+    "category": ["bread", "dessert", "junk food"]
+  },
+  {
+    "name": "cookie",
+    "emoji": "🍪",
+    "category": ["bread", "dessert", "junk food", "snack/side"]
+  },
+  {
+    "name": "cake",
+    "emoji": "🍰",
+    "category": ["bread", "dessert", "junk food"]
+  },
+  {
+    "name": "milk chocolate",
+    "emoji": "🍫",
+    "category": ["dairy", "dessert", "junk food"]
+  },
+  {
+    "name": "dark chocolate",
+    "emoji": "🍫",
+    "category": ["dessert", "junk food"]
+  },
+  {
+    "name": "candy",
+    "emoji": "🍬",
+    "category": ["junk food", "sugar"]
+  },
+  {
+    "name": "custard flan",
+    "emoji": "🍮",
+    "category": ["dairy", "dessert", "junk food"]
+  },
+  {
+    "name": "honey",
+    "emoji": "🍯",
+    "category": ["sugar"]
+  },
+  {
+    "name": "lowfat milk",
+    "emoji": "🥛",
+    "category": ["dairy", "beverage"]
+  },
+  {
+    "name": "whole milk",
+    "emoji": "🥛",
+    "category": ["dairy", "beverage"]
+  },
+  {
+    "name": "black tea",
+    "emoji": "🍵",
+    "category": ["beverage"]
+  },
+  {
+    "name": "black coffee",
+    "emoji": "☕️",
+    "category": ["beverage"]
+  },
+  {
+    "name": "champagne",
+    "emoji": "🍾",
+    "category": ["beverage", "alcohol"]
+  },
+  {
+    "name": "red wine",
+    "emoji": "🍷",
+    "category": ["beverage", "alcohol"]
+  },
+  {
+    "name": "beer",
+    "emoji": "🍺",
+    "category": ["beverage", "alcohol"]
+  }
+]
 
 
 module.exports = {
