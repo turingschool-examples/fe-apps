@@ -86,35 +86,6 @@ const newYorkHateCrimes = {
       "occurences" : 1
     }
   ],
-  "Crimes Reported Per Year" : [
-          { "year" : "2010",
-            "count" : 20
-          }, 
-          {
-            "year" : "2011",
-            "count" : 19
-          }, 
-          {
-            "year" : "2012",
-            "count" : 18
-          }, 
-          {
-            "year" : "2013",
-            "count" : 17
-          }, 
-          {
-            "year" : "2014",
-            "count" : 16
-          }, 
-          {
-            "year" : "2015",
-            "count" : 15
-          }, 
-          {
-            "year" : "2016",
-            "count" : 14
-          } 
-  ],
   "Count of Hate Crimes with reported Anti-Male bias" : 3,
   "Count of Hate Crimes with reported Anti-Female bias" : 7,
   "Count of Hate Crimes with reported Anti-Transgender bias" : 20,
