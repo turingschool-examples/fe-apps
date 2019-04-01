@@ -3,35 +3,40 @@ const restaurants = [{
     cuisine: "Japanese",
     neighborhood: "River North",
     rating: 4.8,
-    reservations: true
+    reservations: true,
+    price: 3
   },
   {
     name: "Guard and Grace",
     cuisine: "Steakhouse",
     neighborhood: "Downtown / LoDo",
     rating: 4.8,
-    reservations: true
+    reservations: true,
+    price: 4
   },
   {
     name: "Rioja",
     cuisine: "Mediterranean",
     neighborhood: "Downtown / LoDo",
     rating: "4.7",
-    reservations: true
+    reservations: true,
+    price: 3
   },
   {
     name: "ChoLon",
     cuisine: "Asian",
     neighborhood: "Downtown / LoDo",
     rating: "4.6",
-    reservations: true
+    reservations: true,
+    price: 3
   },
   {
     name: "Potager",
     cuisine: "New American",
     neighborhood: "Capitol Hill",
     rating: 4.6,
-    reservations: false
+    reservations: false,
+    price: 3
   },
   {
     name: "Stoic & Genuine",
@@ -39,13 +44,13 @@ const restaurants = [{
     neighborhood: "Downtown / LoDo",
     rating: 4.6,
     reservations: true,
-    price: 2
+    price: 3
   },
   {
     name: "Courier",
     cuisine: "New American",
     neighborhood: "Downtown / LoDo",
-    rating: 4.2,
+    rating: 3.8,
     reservations: true,
     price: 2
   },
@@ -63,7 +68,7 @@ const restaurants = [{
     neighborhood: "River North",
     rating: 4.5,
     reservations: true,
-    price: 2
+    price: 3
   },
   {
     name: "Mercantile Dining & Provision",
@@ -71,7 +76,7 @@ const restaurants = [{
     neighborhood: "Downtown / LoDo",
     rating: 4.5,
     reservations: false,
-    price: 2
+    price: 3
   },
   {
     name: "narrative.",
@@ -87,7 +92,7 @@ const restaurants = [{
     neighborhood: "River North",
     rating: 4.3,
     reservations: true,
-    price: 2
+    price: 3
   },
   {
     name: "Root Down",
@@ -95,7 +100,7 @@ const restaurants = [{
     neighborhood: "Highlands",
     rating: 4.7,
     reservations: true,
-    price: 2
+    price: 3
   },
   {
     name: "Domo Japanese Country Food",
@@ -103,7 +108,7 @@ const restaurants = [{
     neighborhood: "Auraria",
     rating: 4.4,
     reservations: false,
-    price: 2
+    price: 1
   },
   {
     name: "Acorn",
@@ -111,7 +116,7 @@ const restaurants = [{
     neighborhood: "River North",
     rating: 4.5,
     reservations: false,
-    price: 2
+    price: 3
   },
   {
     name: "Hop Alley",
