@@ -1,0 +1,188 @@
+const apiAnimeList = [
+  {
+    "apiLink": "https://kitsu.io/api/edge",
+    "docsLink": "https://kitsu.docs.apiary.io/#introduction/status-codes"
+  }
+]
+
+const animeGenres = [
+  {
+    "name": "Action",
+    "description": "Overall, the action genre usually possesses lots of battle scenes, fluid animation, and highly-engaging elements that will make your adrenaline rush!",
+    "examples": [
+      "Kill la Kill",
+      "Gurren Lagann",
+      "Fullmetal Alchemist",
+      "Trigun",
+      "Darker than Black"
+    ],
+    "example-image": "https://usercontent2.hubstatic.com/12234915_f520.jpg"
+  },
+  {
+    "name": "Adventure",
+    "description": [
+      "The adventure genre is about travelling and undertaking an adventure in a certain place or around the world",
+      "Adventure anime are so broad and flexible that these shows can usually stretch to a huge number of episodes as well as overlap with multiple genres, usually with action"
+    ],
+    "examples": [
+      "One Piece",
+      "Fairy Tail",
+      "Hunter X Hunter",
+      "Kino's Journey",
+      "Spice and Wolf"
+    ],
+    "example-image": "https://usercontent2.hubstatic.com/12234919_f520.jpg"
+  },
+  {
+    "name": "Comedy",
+    "description": "The animation may not be as impressive as TV shows in the action and drama category, but that can be forgiven for the laughs. Funny moments, hilarious scenes, wacky dialogue, comical happenings—all of these are covered by the comedy genre in anime!",
+    "examples": [
+      "Gintama",
+      "The Melancholy of Haruhi Suzumiya",
+      "The Devil Is a Part-Timer!",
+      "Daily Lives of High School Boys",
+      "Nichijou"
+    ],
+    "example-image": "https://usercontent1.hubstatic.com/12234926.jpg"
+  },
+  {
+    "name": "Drama",
+    "description": [
+      "Bringing us tears and a wave of emotions is basically what the drama genre does best!",
+      "Drama anime tends to connect the viewers to the experiences of the characters. This results in viewers feeling what the characters are going through."
+    ],
+    "examples": [
+      "Clannad",
+      "Anohana: The Flower We Saw That Day",
+      "Your Lie in April",
+      "Kanon",
+      "Little Busters!"
+    ],
+    "example-image": "https://usercontent1.hubstatic.com/12234932_f520.jpg"
+  },
+  {
+    "name": "Slice_of_Life",
+    "description": "Nothing out-of-the-blue happens, but that’s the point! Everyday life is portrayed in a realistic light, with nothing out of the extraordinary wrecking the premise.",
+    "examples": [
+      "Barakamon",
+      "Non Non Biyori",
+      "Koufuku Graffiti",
+      "Lucky Star",
+      "Wagnaria!!"
+    ],
+    "example-image": "https://usercontent1.hubstatic.com/12235292_f520.jpg"
+  },
+  {
+    "name": "Fantasy",
+    "description": [
+      "The fantasy genre in anime primarily deals with fantasy worlds and surreal events and locations.",
+      "Magic is oftentimes a component of this genre, and various mystical elements serve as the building blocks of the story."
+    ],
+    "examples": [
+      "No Game No Life",
+      "Nanatsu no Taizai",
+      "Inuyasha",
+      "Escaflowne",
+      "Slayers"
+    ],
+    "example-image": "https://usercontent1.hubstatic.com/12234980_f520.jpg"
+  },
+  {
+    "name": "Magic",
+    "description": "Magic, in all its essence, is about magical stuff like spells and incantations. It can also include magical sources, beings that grants wishes, and good ol’ sleeve tricks.",
+    "examples": [
+      "Puella Magi Madoka Magica",
+      "Magical Doremi",
+      "Magi: Labyrinth of Magic",
+      "Little Witch Academia",
+      "Maria the Virgin Witch"
+    ],
+    "example-image": "https://usercontent2.hubstatic.com/12235069_f520.jpg"
+  },
+  {
+    "name": "Supernatural",
+    "description": "For this category, supernatural might refer to something mythical, mystical, bizarre, or something outside the bounds of accepted reality.",
+    "examples": [
+      "Mushishi",
+      "Blue Exorcist",
+      "Durarara!!",
+      "Bakemonogatari",
+      "Noragami"
+    ],
+    "example-image": "https://usercontent1.hubstatic.com/12235376_f520.jpg"
+  },
+  {
+    "name": "Horror",
+    "description": [
+      "Usually, if there are ghosts, monsters, gore, and creeps, then you’re likely watching a horror series. Heavy gore and bloody violence is a common trait.",
+      "The most important factor for a show to be considered horror is its ability to scare and creep you out."
+    ],
+    "examples": [
+      "Junji Ito Collection",
+      "Parasyte -the maxim-",
+      "Another",
+      "School-Live!",
+      "Hell Girl"
+    ],
+    "example-image": "https://usercontent2.hubstatic.com/12235031.jpg"
+  },
+  {
+    "name": "Mystery",
+    "description": [
+      "Whether it’s an event, a place, or an item, there’s some sort of mystery surrounding the narrative.",
+      "In the history of anime, the most popular shows in the genre have featured detectives and gumshoes."
+    ],
+    "examples": [
+      "Detective Conan",
+      "Hyouka",
+      "Eden of the East",
+      "Tantei Opera Milky Holmes",
+      "Gosick"
+    ],
+    "example-image": "https://usercontent2.hubstatic.com/12235093_f520.jpg"
+  },
+  {
+    "name": "Psychological",
+    "description": [
+      "Psychological anime are shows that delve into how the mind and psyche work. This genre tackles everything on a psychological level (sometimes even philosophical).",
+      "You’ll often find mind games here as well as battles where the use of the wits is the primary focus. Series in this genre will play with your mind and make you think hard."
+    ],
+    "examples": [
+      "Death Note",
+      "Mirai Nikki",
+      "Zetsuen no Tempest",
+      "Monster",
+      "Paranoia Agent"
+    ],
+    "example-image": "https://usercontent2.hubstatic.com/12235253_f520.jpg"
+  },
+  {
+    "name": "Romance",
+    "description": [
+      "Shows involved with this genre often have the skill to tug everyone’s heartstrings with their romantic scenes and tender moments.",
+      "The focus of these shows is the romantic relationships between the characters as well as their blooming love with one another."
+    ],
+    "examples": [
+      "Honey and Clover",
+      "Golden Time",
+      "Toradora",
+      "Lovely Complex",
+      "Special A"
+    ],
+    "example-image": "https://usercontent2.hubstatic.com/12235225_f520.jpg"
+  },
+  {
+    "name": "Sci-Fi",
+    "description": "Genre that showcases scientific and technological elements in its story. Machines and various kinds of technologies are staples of this genre.",
+    "examples": [
+      "Evangelion",
+      "Space Dandy",
+      "Cowboy Bebop",
+      "Knights of Sidonia",
+      "Outlaw Star"
+    ],
+    "example-image": "https://usercontent2.hubstatic.com/12235267_f520.jpg"
+  }
+]
+
+module.exports = { apiAnimeList, animeGenres };
