@@ -1,5 +1,4 @@
-let camping = {
-"campsites": [
+const camping = [
   {
   "name": "Glacier Basin Campground",
   "location": "Estes Park",
@@ -270,8 +269,9 @@ let camping = {
   "activities": ["Hiking", "Fishing"],
   "reservation-available": true  
     }
-  ], 
-  "trails": [
+  ];
+
+const trails = [
   {
   "name": "Spruce Lakes Trail",
   "length": 8.6,
@@ -369,7 +369,7 @@ let camping = {
   "type": "Out and Back"
     },
          {
-  "name": "Rustler's Gulch",
+  "name": "Rustler/s Gulch",
   "length": 9,
   "elevation-gain": 1791,
   "location": "Gunnison National Forest",
@@ -512,10 +512,9 @@ let camping = {
   "difficulty": "Moderate",
   "type": "Point to Point"
     }
-  ]
-}
+];
 
 module.exports = {
-  campsites,
+  camping,
   trails
 }
