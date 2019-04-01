@@ -5,7 +5,7 @@ const camping = [
   "season": "May-Sept",
   "elevation": 8500,
   "camping": ["Tent", "Car", "RV"],
-  "activities": ["Hiking", "Fishing", "Horseback Riding", "Wildlfie"],
+  "activities": ["Hiking", "Fishing", "Horseback Riding", "Wildlife"],
   "reservation-available": true
     },
     {
@@ -481,7 +481,7 @@ const trails = [
   "type": "Out and Back"
     },
       {
-  "name": "Crystal Falls vis Rainbow Trail",
+  "name": "Crystal Falls via Rainbow Trail",
   "length": 6.4,
   "elevation-gain": 725,
   "location": "Sangre de  Cristo Mountains",
