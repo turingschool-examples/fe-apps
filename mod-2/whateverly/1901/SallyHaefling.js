@@ -211,7 +211,7 @@ const studios = [
     teacherTraining: true,
     link: "https://www.myendorphin.com/",
     img: "https://i.imgur.com/7e8Nzzn.jpg"
-  },
+  }, 
   {
     name: "Kindness Yoga",
     mainTypeOffered: 5,
