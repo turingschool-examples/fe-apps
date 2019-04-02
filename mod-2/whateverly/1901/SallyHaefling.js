@@ -156,7 +156,9 @@ const studios = [
     mission: "Where body and mind become whole.",
     googleRating: 4.8,
     dropInFee: "$17.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "https://wholeyoga.com",
+    img: "https://i.imgur.com/w7KfQWv.jpg"
   },
   {
     name: "Samadhi Yoga",
@@ -167,7 +169,9 @@ const studios = [
     mission: "To honor the science of yoga as a methodical process to create a lifestyle of health, happiness, and abundance.",
     googleRating: 4.7,
     dropInFee: "$20.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "https://samadhiyoga.net",
+    img: "https://i.imgur.com/fkUvUxr.jpg"
   },
   {
     name: "Corepower Yoga",
@@ -178,7 +182,9 @@ const studios = [
     mission: "Discover your most powerful self.",
     googleRating: 4.9,
     dropInFee: "$25.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "https://www.corepoweryoga.com/",
+    img: "https://i.imgur.com/jrHg289.jpg"
   },
   {
     name: "The River Yoga",
@@ -189,7 +195,9 @@ const studios = [
     mission: " Together, we are creating something bigger than any one person or practice. You didnt end up here by accident. The River chose you...and me...and us. We Belong.",
     googleRating: 5.0,
     dropInFee: "$20.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "https://weseektheriver.com",
+    img: "https://i.imgur.com/ncnJd6l.jpg"
   },
   {
     name: "Endorphin Yoga",
@@ -200,7 +208,9 @@ const studios = [
     mission: "Deliver the best experience, by the best instructors, to the happiest community.",
     googleRating: 4.9,
     dropInFee: "$10.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "https://www.myendorphin.com/",
+    img: "https://i.imgur.com/7e8Nzzn.jpg"
   },
   {
     name: "Kindness Yoga",
@@ -211,7 +221,9 @@ const studios = [
     mission: "By making yoga, mindfulness, and community accessible to everyone, we can help support the creation of a kinder, more responsible planet.",
     googleRating: 4.7,
     dropInFee: "$20.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "https://www.kindnesscollective.com/",
+    img: "https://i.imgur.com/lbc6o6r.jpg"
   },
   {
     name: "Yoga High",
@@ -222,7 +234,9 @@ const studios = [
     mission: "Yoga High is a studio that brings science and tradition together. Our mission is to provide a safe, friendly and light-hearted atmosphere for anyone in the downtown area.",
     googleRating: 5.0,
     dropInFee: "$15.00",
-    teacherTraining: false
+    teacherTraining: false,
+    link: "http://www.yogahighdenver.com/",
+    img: "https://i.imgur.com/IHhV8Bi.jpg"
   },
   {
     name: "Freyja Project",
@@ -233,7 +247,9 @@ const studios = [
     mission: "At The Freyja Project, we strive to bring optimal mind-body fitness to the Highland Denver community. Our yoga and dance fitness classes and spa services are thoughtfully designed to help our clients live more vibrant and healthy lives.",
     googleRating: 5.0,
     dropInFee: "$22.00",
-    teacherTraining: false
+    teacherTraining: false,
+    link: "https://www.thefreyjaproject.com/",
+    img: "https://i.imgur.com/09Iz2w1.jpg"
   },
   {
     name: "Kula Yoga",
@@ -244,7 +260,9 @@ const studios = [
     mission: "Building a growing community through collaboration.",
     googleRating: 4.1,
     dropInFee: "$17.00",
-    teacherTraining: false
+    teacherTraining: false,
+    link: "http://www.kulayogacenter.org/",
+    img: "https://i.imgur.com/04uAqXK.jpg"
   },
   {
     name: "Rino Yoga Social",
@@ -255,7 +273,9 @@ const studios = [
     mission: "At RYS, our mission is simple: make yoga accessible for all.",
     googleRating: 5.0,
     dropInFee: "Suggested donation",
-    teacherTraining: false
+    teacherTraining: false,
+    link: "https://www.rinoyogasocial.com/",
+    img: "https://i.imgur.com/nKIbWP2.jpg"
   },
   {
     name: "One Yoga",
@@ -266,7 +286,9 @@ const studios = [
     mission: "Create an inclusive and welcoming community of students and teachers. Practice compassion, authenticity and kindness. Help our students build strength, flexibility, self-acceptance and peace in their bodies, minds and hearts.",
     googleRating: 4.9,
     dropInFee: "$24.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "http://oneyogadenver.com/",
+    img: "https://i.imgur.com/gWGDA2z.jpg"
   },
   {
     name: "Mudra Yoga Studio",
@@ -277,7 +299,9 @@ const studios = [
     mission: "We believe yoga is a journey, not just a physical practice, but an opportunity to find your own truth and liight.",
     googleRating: 4.7,
     dropInFee: "$17.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "http://mudrayogastudio.com/",
+    img: "https://i.imgur.com/fEGZfSY.jpg"
   },
   {
     name: "Bikram Yoga Mile High",
@@ -288,7 +312,9 @@ const studios = [
     mission: "Bikram Yoga Mile High is passionate and committed to bringing pure, clean, original Bikram Yoga to Denver.",
     googleRating: 3.9,
     dropInFee: "$21.00",
-    teacherTraining: false
+    teacherTraining: false,
+    link: "http://bikramyogamilehigh.com/",
+    img: "https://i.imgur.com/BAcva1X.jpg"
   },
   {
     name: "The Iyengar Yoga Center Of Denver",
@@ -299,7 +325,9 @@ const studios = [
     mission: "The Iyengar Yoga Center of Denver emphasizes precision in physical alignment to awaken and realign the whole body/mind complex.",
     googleRating: 4.8,
     dropInFee: "$20.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "http://www.iyengaryogacenter.com/",
+    img: "https://i.imgur.com/wU3E6P0.jpg"
   },
   {
     name: "Ohana Yoga + Barre",
@@ -310,7 +338,9 @@ const studios = [
     mission: "Ohana is the Hawaiian word for family. From the moment you step through the doors of our newly renovated space, you will be welcomed as part of our community, part of our Ohana.",
     googleRating: 5.0,
     dropInFee: "$20.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "https://ohanayoga.com/",
+    img: "https://i.imgur.com/DZyqPaQ.jpg"
   },
   {
     name: "Flex Yoga + Barre Studio",
@@ -321,7 +351,9 @@ const studios = [
     mission: "To bring people together and to inspire our community to find grace in the journey of falling, growing, and embracing imperfection while on the path to a healthier lifestyle.",
     googleRating: 5.0,
     dropInFee: "$18.00",
-    teacherTraining: false
+    teacherTraining: false,
+    link: "https://www.flexyogabarre.com/",
+    img: "https://i.imgur.com/gcICeiK.jpg"
   },
   {
     name: "Atherial Yoga, Barre, and Aerial Fitness Studio",
@@ -332,7 +364,9 @@ const studios = [
     mission: "Atherials mission is to facilitate an inspiring, inclusive, safe space for people to build connection with their bodies, the hammocks, our community and the world.",
     googleRating: 4.9,
     dropInFee: "$20.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "https://atherialfitness.com/",
+    img: "https://i.imgur.com/lEqAnTZ.jpg"
   },
   {
     name: "Ashtanga Yoga Denver",
@@ -343,7 +377,9 @@ const studios = [
     mission: "Practice mindfully with care and consideration for yourself and others.",
     googleRating: 4.6,
     dropInFee: "$20.00",
-    teacherTraining: false
+    teacherTraining: false,
+    link: "https://denverashtangayoga.com/",
+    img: "https://i.imgur.com/9OsC93K.png"
   },
   {
     name: "Elevate Yoga",
@@ -354,7 +390,9 @@ const studios = [
     mission: "Elevate Yoga Denver strives to make the world a better place, one om at a time.",
     googleRating: 5.0,
     dropInFee: "$17.50",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "https://elevateyogadenver.com/",
+    img: "https://i.imgur.com/fMHnNOR.jpg"
   },
   {
     name: "Zenver Yoga",
@@ -365,7 +403,9 @@ const studios = [
     mission: "Welcome home to your sanctuary, your zen den, your safe place. Welcome home to the realization that you are absolutely perfect just the way you are. Come in for a class today and leave feeling calm, refreshed and centered as you walk back out into the world.",
     googleRating: 5.0,
     dropInFee: "$20.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "http://www.zenveryoga.com/",
+    img: "https://i.imgur.com/2ojP0pa.jpg"
   },
   {
     name: "Karma Yoga Center",
@@ -376,7 +416,9 @@ const studios = [
     mission: "The more we practice being present, the more we can flow with our being, our spirit.",
     googleRating: 4.6,
     dropInFee: "$18.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "https://www.karmayogacenter.com/",
+    img: "https://i.imgur.com/71aVAfb.jpg"
   },
   {
     name: "Living Yoga",
@@ -387,7 +429,9 @@ const studios = [
     mission: "Living Yoga is a yoga studio, wellness center, and community space created with the intention of integrating health on all levels.",
     googleRating: 4.7,
     dropInFee: "$16.00",
-    teacherTraining: false
+    teacherTraining: false,
+    link: "http://www.livingyogadenver.com/",
+    img: "https://i.imgur.com/UeaiPkx.jpg"
   },
   {
     name: "Better Buzz Yoga",
@@ -398,7 +442,9 @@ const studios = [
     mission: "We respect and value the experiences that make each of us who we are, honoring that we likely havent lived that experience and so are committed to finding ways to discuss, embrace and possibly even grow through those ideas that may challenge us.",
     googleRating: 5.0,
     dropInFee: "$15.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "https://betterbuzzyoga.com/",
+    img: "https://i.imgur.com/ob7wkby.jpg"
   },
   {
     name: "iBody",
@@ -409,7 +455,9 @@ const studios = [
     mission: "Your body will thank you.",
     googleRating: 4.8,
     dropInFee: "$18.00",
-    teacherTraining: false
+    teacherTraining: false,
+    link: "http://ibodydenver.com/",
+    img: "https://i.imgur.com/jw1uNSh.jpg"
   },
   {
     name: "Passion Force: Yoga, Dance, Movement",
@@ -420,7 +468,9 @@ const studios = [
     mission: "To provide an encouraging enviornment where every body is welcome.",
     googleRating: 5.0,
     dropInFee: "$18.00",
-    teacherTraining: false
+    teacherTraining: false,
+    link: "https://passionforcedenver.com/",
+    img: "https://i.imgur.com/8xXue1K.jpg"
   },
   {
     name: "the mama 'hood Denver",
@@ -431,7 +481,9 @@ const studios = [
     mission: "Help families find joy from conception to 2 through expert instruction, community and the things they need.",
     googleRating: 4.3,
     dropInFee: "$20.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "http://www.themamahood.com/",
+    img: "https://i.imgur.com/bT9HUeV.jpg"
   },
   {
     name: "Container Collective Yoga and Bikes",
@@ -442,7 +494,9 @@ const studios = [
     mission: "Container Collective Yoga and Bikes offers community members a unique environment to practice Baptiste Power Yoga that inspires transformation.",
     googleRating: 4.9,
     dropInFee: "$16.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "https://www.cc360denver.com/",
+    img: "https://i.imgur.com/RWjC8YY.jpg"
   },
   {
     name: "Asana Studio",
@@ -453,7 +507,9 @@ const studios = [
     mission: "Our mission is to support you in connecting to your true Self.",
     googleRating: 4.5,
     dropInFee: "$18.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "https://asanastudio.com/",
+    img: "https://i.imgur.com/9UQY7o0.jpg"
   },
   {
     name: "Belly Bliss",
@@ -464,7 +520,9 @@ const studios = [
     mission: "Belly Bliss is a business dedicated to enhancing the lives of mothers and their families by empowering them and serving as a resource for health and education throughout pregnancy, birth and beyond.",
     googleRating: 4.7,
     dropInFee: "$15.00",
-    teacherTraining: false
+    teacherTraining: false,
+    link: "https://www.bellybliss.org/",
+    img: "https://i.imgur.com/g1MfXBY.jpg"
   },
   {
     name: "Tula Hot Yoga",
@@ -475,7 +533,9 @@ const studios = [
     mission: "At Tula Hot Yoga Denver we are dedicated to helping you find your balance.",
     googleRating: 4.5,
     dropInFee: "$18.00",
-    teacherTraining: false
+    teacherTraining: false,
+    link: "http://www.tulahotyogadenver.com/",
+    img: "https://i.imgur.com/vADCdcd.jpg"
   },
   {
     name: "Maitri Yoga",
@@ -486,7 +546,9 @@ const studios = [
     mission: "Maitri is here to balance out the state of our world today by bringing people together as friends, fully loving and accepting ourselves and others just as we are in this moment while at the same time walking our paths to improve our lives.",
     googleRating: 5.0,
     dropInFee: "$18.00",
-    teacherTraining: true
+    teacherTraining: true,
+    link: "https://maitri.yoga/",
+    img: "https://i.imgur.com/g2M2tsY.jpg"
   }
 ];
 
