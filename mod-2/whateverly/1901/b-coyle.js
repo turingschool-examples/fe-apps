@@ -6,7 +6,8 @@ const camping = [
   "elevation": 8500,
   "camping": ["Tent", "Car", "RV"],
   "activities": ["Hiking", "Fishing", "Horseback Riding", "Wildlife"],
-  "reservation-available": true
+  "reservation-available": true,
+  "nearest-city": null
     },
     {
   "name": "Grand Junction KOA",
@@ -15,7 +16,8 @@ const camping = [
   "elevation": 4600,
   "camping": ["Tent", "Car", "RV"],
   "activities": ["ATVing"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": null
   },
     {
   "name": "Gunnison Lakeside Resort",
@@ -24,7 +26,8 @@ const camping = [
   "elevation": 7540,
   "camping": ["Tent", "RV"],
   "activities": ["Swimming", "Boating"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": null
   },
     {
   "name": "Morefield Campground",
@@ -33,7 +36,8 @@ const camping = [
   "elevation": 7900,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Archeology", "Hiking"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": "Mesa Verde"
   },
       {
   "name": "Arkansas Headwaters Recreation Area",
@@ -42,7 +46,8 @@ const camping = [
   "elevation": 9400,
   "camping": ["Tent","Car", "RV"],
   "activities": ["White Water Rafting", "Gold Panning"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": null
   },  
      {
   "name": "Chatfield State Park",
@@ -51,7 +56,8 @@ const camping = [
   "elevation": 5502,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Boating", "Fishing"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": null
   },  
  {
   "name": "Jacks Gulch ",
@@ -60,7 +66,8 @@ const camping = [
   "elevation": 8100,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Horseback Riding", "Fishing", "White Water Rafting"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": null  
   }, 
    {
   "name": "Echo Lake",
@@ -69,7 +76,8 @@ const camping = [
   "elevation": 10600,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Canoeing", "Scenic Driving"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": null
   }, 
      {
   "name": "Fox Hill Campground",
@@ -78,7 +86,8 @@ const camping = [
   "elevation": 4440,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Swimming", "Archery"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": null  
   }, 
      {
   "name": "Comanche National Grassland",
@@ -87,7 +96,8 @@ const camping = [
   "elevation": 3900,
   "camping": ["Tent","Car"],
   "activities": ["Archeology", "Hiking"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": null
   }, 
    {
   "name": "Crags",
@@ -96,7 +106,8 @@ const camping = [
   "elevation": 10000,
   "camping": ["Tent","Car"],
   "activities": ["Fishing", "Hiking"],
-  "reservation-available": false  
+  "reservation-available": false,
+  "nearest-city": null
   }, 
      {
   "name": "Camp Dick",
@@ -105,7 +116,8 @@ const camping = [
   "elevation": 8753,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Fishing", "Biking", "Horseback Riding"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": null  
   }, 
    {
   "name": "Guanella Pass Campground",
@@ -114,7 +126,8 @@ const camping = [
   "elevation": 10900,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Ghost Towns", "Hiking", "Fishing"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": "Denver"  
   }, 
    {
   "name": "Mueller State Park Campground",
@@ -123,7 +136,8 @@ const camping = [
   "elevation": 9390,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Hiking"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": null  
   }, 
   {
   "name": "Turquoise Lake Recreation Area",
@@ -132,7 +146,8 @@ const camping = [
   "elevation": 9900,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Hiking", "Fishing", "Biking", "Boating"],
-  "reservation-available": false  
+  "reservation-available": false,
+  "nearest-city": "Buena Vista"  
   }, 
   {
   "name": "Granite Tent Campground",
@@ -141,16 +156,18 @@ const camping = [
   "elevation": 8600,
   "camping": ["Tent","Car"],
   "activities": ["Hiking", "Swimming"],
-  "reservation-available": false  
+  "reservation-available": false,
+  "nearest-city": "Gunnison"  
   }, 
   {
   "name": "Aspen Campground",
-  "location": "Jefferson",
+  "location": "Jefferson National Park",
   "season": "May-Sept",
   "elevation": 9900,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Hiking", "Swimming", "Fishing"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": "Denver"  
   }, 
   {
   "name": "Kelly Dahl Campground",
@@ -159,7 +176,8 @@ const camping = [
   "elevation": 8600,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Hiking"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": "Denver" 
   }, 
   {
   "name": "Thunder Ridge",
@@ -168,7 +186,8 @@ const camping = [
   "elevation": 9200,
   "camping": ["Tent","Car"],
   "activities": ["Hiking", "Fishing", "Boating"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": null
   }, 
     {
   "name": "Kelly Flats Campground",
@@ -177,7 +196,8 @@ const camping = [
   "elevation": 6600,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Hiking", "Fishing", "Rafting"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": null  
   }, 
   {
   "name": "Long Draw Campground",
@@ -186,7 +206,8 @@ const camping = [
   "elevation": 10030,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Hiking", "Fishing"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": "Denver" 
   }, 
   {
   "name": "Bear Lake Campground",
@@ -195,16 +216,18 @@ const camping = [
   "elevation": 10480,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Fishing"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": "Sierra" 
   }, 
   {
   "name": "Saddlehorn Campground",
-  "location": "Colorado National Park",
+  "location": "Colorado National Monument",
   "season": "Mar-Oct",
   "elevation": 10000,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Hiking"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": "Grand Junction"  
   }, 
   {
   "name": "Vallecito Reservoir",
@@ -213,7 +236,8 @@ const camping = [
   "elevation": 8000,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Hiking", "Fishing", "Boating"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": null 
   }, 
   {
   "name": "Moraine Park Campground",
@@ -222,7 +246,8 @@ const camping = [
   "elevation": 8160,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Wildlife", "Swimming"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": "Denver" 
   }, 
   {
   "name": "Rosy Lane Campground",
@@ -231,7 +256,8 @@ const camping = [
   "elevation": 8600,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Rafting", "Swimming", "Fishing", "Boating"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": "Gunnison"  
   }, 
   {
   "name": "North Rim Campground",
@@ -240,7 +266,8 @@ const camping = [
   "elevation": 7783,
   "camping": ["Tent","Car"],
   "activities": ["Hiking", "Photography", "Fishing"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": "Gunnison" 
   },
   {
   "name": "Angel of Shavano",
@@ -249,7 +276,8 @@ const camping = [
   "elevation": 9200,
   "camping": ["Tent","Car"],
   "activities": ["Hiking", "ATVing", "Fishing"],
-  "reservation-available": false  
+  "reservation-available": false,
+  "nearest-city": "Buena Vista"  
   },
     {
   "name": "Florida Campground",
@@ -258,7 +286,8 @@ const camping = [
   "elevation": 8148,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Hiking", "Boating", "Fishing"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": "Durango"  
   },
     {
   "name": "Pawnee Campground",
@@ -267,7 +296,8 @@ const camping = [
   "elevation": 10350,
   "camping": ["Tent","Car", "RV"],
   "activities": ["Hiking", "Fishing"],
-  "reservation-available": true  
+  "reservation-available": true,
+  "nearest-city": "Denver"  
     }
   ];
 
@@ -278,7 +308,8 @@ const trails = [
   "elevation-gain": 2129,
   "location": "Arapaho National Forest",
   "difficulty": "Difficult",
-  "type": "Out and back"
+  "type": "Out and back",
+  "nearest-city": "Denver"
     },
       {
   "name": "Maxwell Falls Lower Trail",
@@ -286,7 +317,8 @@ const trails = [
   "elevation-gain": 875,
   "location": "Arapaho National Forest",
   "difficulty": "Moderate",
-  "type": "Loop"
+  "type": "Loop",
+  "nearest-city": "Denver"
     },
       {
   "name": "Sauls Creek Trail",
@@ -294,7 +326,8 @@ const trails = [
   "elevation-gain": 705,
   "location": "Bayfield",
   "difficulty": "Easy",
-  "type": "Loop"
+  "type": "Loop",
+  "nearest-city": null
     },
        {
   "name": "Midland Hill Trail",
@@ -302,7 +335,8 @@ const trails = [
   "elevation-gain": 1607,
   "location": "Buena Vista",
   "difficulty": "Moderate",
-  "type": "Loop"
+  "type": "Loop",
+  "nearest-city": null
     },
        {
   "name": "Lower Columbine Trail",
@@ -310,7 +344,8 @@ const trails = [
   "elevation-gain": 308,
   "location": "Colorado Springs",
   "difficulty": "Easy",
-  "type": "Out and back"
+  "type": "Out and back",
+  "nearest-city": null
     },
        {
   "name": "Cliff Palace Loop Trail",
@@ -318,7 +353,8 @@ const trails = [
   "elevation-gain": 85,
   "location": "Cortez-Mesa Verde National Park ",
   "difficulty": "Easy",
-  "type": "Loop"
+  "type": "Loop",
+  "nearest-city": "Mesa Verde"
     },
        {
   "name": "Womens Forest West Creek Loop",
@@ -326,7 +362,8 @@ const trails = [
   "elevation-gain": 252,
   "location": "Divide",
   "difficulty": "Moderate",
-  "type": "Loop"
+  "type": "Loop",
+  "nearest-city": null
     },
        {
   "name": "Gem Lake Trail",
@@ -334,7 +371,8 @@ const trails = [
   "elevation-gain": 990,
   "location": "Estes Park",
   "difficulty": "Moderate",
-  "type": "Out and Back"
+  "type": "Out and Back",
+  "nearest-city": null
     },
          {
   "name": "Poudre River Trail",
@@ -342,7 +380,8 @@ const trails = [
   "elevation-gain": 295,
   "location": "Fort Collins",
   "difficulty": "Easy",
-  "type": "Out and Back"
+  "type": "Out and Back",
+  "nearest-city": null
     },
          {
   "name": "Spring Creek Trail",
@@ -350,7 +389,8 @@ const trails = [
   "elevation-gain": 229,
   "location": "Fort Collins",
   "difficulty": "Easy",
-  "type": "Out and back"
+  "type": "Out and back",
+  "nearest-city": null
     },
          {
   "name": "Tabeguache Trail",
@@ -358,7 +398,8 @@ const trails = [
   "elevation-gain": 364,
   "location": "Grand Junction",
   "difficulty": "Difficulty",
-  "type": "Loop"
+  "type": "Loop",
+  "nearest-city": null
     },
          {
   "name": "Judd Falls Trail",
@@ -366,7 +407,8 @@ const trails = [
   "elevation-gain": 462,
   "location": "Gunnison National Forest",
   "difficulty": "Easy",
-  "type": "Out and Back"
+  "type": "Out and Back",
+  "nearest-city": "Gunnison"
     },
          {
   "name": "Rustler/s Gulch",
@@ -374,7 +416,8 @@ const trails = [
   "elevation-gain": 1791,
   "location": "Gunnison National Forest",
   "difficulty": "Moderate",
-  "type": "Out and Back"
+  "type": "Out and Back",
+  "nearest-city": "Gunnison"
     },
          {
   "name": "Washington Gulch",
@@ -382,7 +425,8 @@ const trails = [
   "elevation-gain": 2142,
   "location": "Gunnison National Forest",
   "difficulty": "Moderate",
-  "type": "Out and Back"
+  "type": "Out and Back",
+  "nearest-city": "Gunnison"
     },
            {
   "name": "Hartman Rocks",
@@ -390,7 +434,8 @@ const trails = [
   "elevation-gain": 1469,
   "location": "Gunnison National Forest",
   "difficulty": "Moderate",
-  "type": "Loop"
+  "type": "Loop",
+  "nearest-city": "Gunnison"
     },
               {
   "name": "Mount Evans Scenic Byway",
@@ -398,7 +443,8 @@ const trails = [
   "elevation-gain": 7060,
   "location": "Idaho Springs",
   "difficulty": "Easy",
-  "type": "Point to Point"
+  "type": "Point to Point",
+  "nearest-city": null
     },
               {
   "name": "Oh-my-god Road",
@@ -406,15 +452,17 @@ const trails = [
   "elevation-gain": 1827,
   "location": "Idaho Springs",
   "difficulty": "Easy",
-  "type": "Point to Point"
+  "type": "Point to Point",
+  "nearest-city": null
     },
               {
   "name": "Kenosha Path North",
   "length": 7,
   "elevation-gain": 1089,
-  "location": "Jefferson",
+  "location": "Jefferson National Park",
   "difficulty": "Moderate",
-  "type": "Out and Back"
+  "type": "Out and Back",
+  "nearest-city": "Denver"
     },
               {
   "name": "High Line Canal Loop Trail",
@@ -422,7 +470,8 @@ const trails = [
   "elevation-gain": 114,
   "location": "Littleton",
   "difficulty": "Easy",
-  "type": "Loop"
+  "type": "Loop",
+  "nearest-city": null
     },
  {
   "name": "Nighthawk Trail",
@@ -430,7 +479,8 @@ const trails = [
   "elevation-gain": 1624,
   "location": "Lyons",
   "difficulty": "Moderate",
-  "type": "Out and back"
+  "type": "Out and back",
+  "nearest-city": null
     },
      {
   "name": "Button Rock Dam via Sleepy Lion Trail",
@@ -438,7 +488,8 @@ const trails = [
   "elevation-gain": 921,
   "location": "Lyons",
   "difficulty": "Moderate",
-  "type": "Loop"
+  "type": "Loop",
+  "nearest-city": null
     },
      {
   "name": "Emerald Lake Trail",
@@ -446,7 +497,8 @@ const trails = [
   "elevation-gain": 708,
   "location": "Rocky Mountain National Park ",
   "difficulty": "Easy",
-  "type": "Out and Back"
+  "type": "Out and Back",
+  "nearest-city": "Denver"
     },
      {
   "name": "Lake Isabelle Trail",
@@ -454,7 +506,8 @@ const trails = [
   "elevation-gain": 488,
   "location": "Roosevelt National Forest",
   "difficulty": "Easy",
-  "type": "Out and Back"
+  "type": "Out and Back",
+  "nearest-city": "Denver"
     },
      {
   "name": "Lily Mountain Trail",
@@ -462,7 +515,8 @@ const trails = [
   "elevation-gain": 1240,
   "location": "Roosevelt National Forest",
   "difficulty": "Moderate",
-  "type": "Out and Back"
+  "type": "Out and Back",
+  "nearest-city": "Denver"
     },
       {
   "name": "Newlin Creek Trail",
@@ -470,7 +524,8 @@ const trails = [
   "elevation-gain": 2125,
   "location": "San Isabel National Forest",
   "difficulty": "Moderate",
-  "type": "Out and Back"
+  "type": "Out and Back",
+  "nearest-city": "Buena Vista"
     },
      {
   "name": "Waterdog Lakes Trail",
@@ -478,7 +533,8 @@ const trails = [
   "elevation-gain": 1076,
   "location": "San Isabel National Forest",
   "difficulty": "Moderate",
-  "type": "Out and Back"
+  "type": "Out and Back",
+  "nearest-city": "Buena Vista"
     },
       {
   "name": "Crystal Falls via Rainbow Trail",
@@ -486,7 +542,8 @@ const trails = [
   "elevation-gain": 725,
   "location": "Sangre de  Cristo Mountains",
   "difficulty": "Easy",
-  "type": "Out and Back"
+  "type": "Out and Back",
+  "nearest-city": "Sierra"
     },
      {
   "name": "Bridal Veil Falls via Cow Creek Trail",
@@ -494,7 +551,8 @@ const trails = [
   "elevation-gain": 964,
   "location": "Estes Park",
   "difficulty": "Moderate",
-  "type": "Out and Back"
+  "type": "Out and Back",
+  "nearest-city": null
     },
      {
   "name": "Chatfield Dog Park",
@@ -502,15 +560,17 @@ const trails = [
   "elevation-gain": 22,
   "location": "Littleton",
   "difficulty": "Easy",
-  "type": "Loop"
+  "type": "Loop",
+  "nearest-city": null
     },
      {
   "name": "Colorado Trail from Kenosha Pass",
   "length": 11.6,
   "elevation-gain": 2837,
-  "location": "Jefferson",
+  "location": "Jefferson National Park",
   "difficulty": "Moderate",
-  "type": "Point to Point"
+  "type": "Point to Point",
+  "nearest-city": "Denver"
     }
 ];
 
