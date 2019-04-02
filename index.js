@@ -29,6 +29,4 @@ if (!module.parent) {
   });
 }
 
-// Adding this comment to test push privelage
-
 module.exports = app;
