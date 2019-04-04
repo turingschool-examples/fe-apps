@@ -9,13 +9,13 @@ const climbingPlaces = [
 		"closestTown": "Boulder, Colorado",
 		"climbingId": 3 },
 	{ "place": "Garden of The Gods",
-		"closestTown": "Colorado Springs, Colorado"
+		"closestTown": "Colorado Springs, Colorado",
 		"climbingId": 4 },
 	{ "place": "The Flat Irons",
-		"closestTown": "Boulder, Colorado" 
+		"closestTown": "Boulder, Colorado",
 		"climbingId": 5 },
 	{ "place": "Castlewood Canyon State Park",
-		"closestTown": "Castle Rock, Colorado"
+		"closestTown": "Castle Rock, Colorado",
 		"climbingId": 6 },
 	{ "place": "Eldorado Canyon State Park",
 		"closestTown": "Boulder, Colorado", 
