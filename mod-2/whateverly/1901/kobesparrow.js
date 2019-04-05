@@ -342,7 +342,7 @@ const boardGames = [
       "card drafting",
       "hand management"
     ],
-    "image": "https://imgur.com/lkrz4I3",
+    "image": "https://i.imgur.com/lkrz4I3.jpg",
     "gameId": 1
   },
   {
@@ -356,7 +356,7 @@ const boardGames = [
       "economic",
       "worker placement"
     ],
-    "image": "https://imgur.com/WWkmwwr",
+    "image": "https://i.imgur.com/WWkmwwr.jpg",
     "gameId": 2
   },
   {
@@ -371,7 +371,7 @@ const boardGames = [
       "card game",
       "hand management"
     ],
-    "image": "https://imgur.com/HqnAIxh",
+    "image": "https://i.imgur.com/HqnAIxh.jpg",
     "gameId": 3
   },
   {
@@ -387,7 +387,7 @@ const boardGames = [
       "dice rolling",
       "cooperative"
     ],
-    "image": "https://imgur.com/t12PXuZ",
+    "image": "https://i.imgur.com/t12PXuZ.jpg",
     "gameId": 4
   },
   {
@@ -401,7 +401,7 @@ const boardGames = [
       "auction",
       "family"
     ],
-    "image": "https://imgur.com/pbutakO",
+    "image": "https://i.imgur.com/pbutakO.jpg",
     "gameId": 5
   },
   {
@@ -416,7 +416,7 @@ const boardGames = [
       "family",
       "wagering"
     ],
-    "image": "https://imgur.com/93iAMYa",
+    "image": "https://i.imgur.com/93iAMYa.jpg",
     "gameId": 6
   },
   {
@@ -430,7 +430,7 @@ const boardGames = [
       "city building",
       "family"
     ],
-    "image": "https://imgur.com/z2yn7Zk",
+    "image": "https://i.imgur.com/z2yn7Zk.jpg",
     "gameId": 7
   },
   {
@@ -445,7 +445,7 @@ const boardGames = [
       "dice rolling",
       "family"
     ],
-    "image": "https://imgur.com/X88PcfC",
+    "image": "https://i.imgur.com/X88PcfC.jpg",
     "gameId": 8
   },
   {
@@ -460,7 +460,7 @@ const boardGames = [
       "deduction",
       "memory"
     ],
-    "image": "https://imgur.com/GjIgusi",
+    "image": "https://i.imgur.com/GjIgusi.jpg",
     "gameId": 9
   },
   {
@@ -475,7 +475,7 @@ const boardGames = [
       "card game",
       "memory"
     ],
-    "image": "https://imgur.com/3QBG5r1",
+    "image": "https://i.imgur.com/3QBG5r1.jpg",
     "gameId": 10
   },
   {
@@ -490,7 +490,7 @@ const boardGames = [
       "dice rolling",
       "hidden traitor"
     ],
-    "image": "https://imgur.com/jZ0nBWW",
+    "image": "https://i.imgur.com/jZ0nBWW.jpg",
     "gameId": 11
   },
   {
@@ -505,7 +505,7 @@ const boardGames = [
       "science fiction",
       "dice rolling"
     ],
-    "image": "https://imgur.com/528BkXG",
+    "image": "https://i.imgur.com/528BkXG.jpg",
     "gameId": 12
   },
   {
@@ -520,7 +520,7 @@ const boardGames = [
       "card game",
       "memory"
     ],
-    "image": "https://imgur.com/UZbJtfX",
+    "image": "https://i.imgur.com/UZbJtfX.jpg",
     "gameId": 13
   },
   {
@@ -534,7 +534,7 @@ const boardGames = [
       "area control",
       "auction"
     ],
-    "image": "https://imgur.com/LK1PBOH",
+    "image": "https://i.imgur.com/LK1PBOH.jpg",
     "gameId": 14
   },
   {
@@ -549,7 +549,7 @@ const boardGames = [
       "adventure",
       "modular board"
     ],
-    "image": "https://imgur.com/tC9mVfa",
+    "image": "https://i.imgur.com/tC9mVfa.jpg",
     "gameId": 15
   },
   {
@@ -563,7 +563,7 @@ const boardGames = [
       "set collection",
       "deck building"
     ],
-    "image": "https://imgur.com/2VUqHE3",
+    "image": "https://i.imgur.com/2VUqHE3.jpg",
     "gameId": 16
   },
   {
@@ -577,7 +577,7 @@ const boardGames = [
       "dice rolling",
       "tile placement"
     ],
-    "image": "https://imgur.com/fKT57qx",
+    "image": "https://i.imgur.com/fKT57qx.jpg",
     "gameId": 17
   },
   {
@@ -592,7 +592,7 @@ const boardGames = [
       "hand management",
       "area movement"
     ],
-    "image": "https://imgur.com/z5ZaZOb",
+    "image": "https://i.imgur.com/z5ZaZOb.jpg",
     "gameId": 18
   },
   {
@@ -606,7 +606,7 @@ const boardGames = [
       "grid movement",
       "tile placement"
     ],
-    "image": "https://imgur.com/VaZN5l8",
+    "image": "https://i.imgur.com/VaZN5l8.jpg",
     "gameId": 19
   },
   {
@@ -621,7 +621,7 @@ const boardGames = [
       "grid movement",
       "pick-up and deliver"
     ],
-    "image": "https://imgur.com/rXzdNjt",
+    "image": "https://i.imgur.com/rXzdNjt.jpg",
     "gameId": 20
   },
   {
@@ -635,7 +635,7 @@ const boardGames = [
       "card drafting",
       "set collection"
     ],
-    "image": "https://imgur.com/Y1lMCOX",
+    "image": "https://i.imgur.com/Y1lMCOX.jpg",
     "gameId": 21
   },
   {
@@ -649,7 +649,7 @@ const boardGames = [
       "tile placement",
       "hand management"
     ],
-    "image": "https://imgur.com/6nnQGYo",
+    "image": "https://i.imgur.com/6nnQGYo.jpg",
     "gameId": 22
   },
   {
@@ -664,7 +664,7 @@ const boardGames = [
       "card drafting",
       "worker placement"
     ],
-    "image": "https://imgur.com/dWWepJF",
+    "image": "https://i.imgur.com/dWWepJF.jpg",
     "gameId": 23
   },
   {
@@ -678,7 +678,7 @@ const boardGames = [
       "card drafting",
       "dice rolling"
     ],
-    "image": "https://imgur.com/395NatC",
+    "image": "https://i.imgur.com/395NatC.jpg",
     "gameId": 24
   },
   {
@@ -691,7 +691,7 @@ const boardGames = [
     "features": [
       "roll / spin and move"
     ],
-    "image": "https://imgur.com/f3IneLM",
+    "image": "https://i.imgur.com/f3IneLM.jpg",
     "gameId": 25
   },
   {
@@ -706,7 +706,7 @@ const boardGames = [
       "tile placement",
       "card drafting"
     ],
-    "image": "https://imgur.com/IbkG4sC",
+    "image": "https://i.imgur.com/IbkG4sC.jpg",
     "gameId": 26
   },
   {
@@ -720,7 +720,7 @@ const boardGames = [
       "hand management",
       "pick-up and deliver"
     ],
-    "image": "https://imgur.com/9rk1YRW",
+    "image": "https://i.imgur.com/9rk1YRW.jpg",
     "gameId": 27
   },
   {
@@ -734,7 +734,7 @@ const boardGames = [
       "cooperative",
       "card drafting"
     ],
-    "image": "https://imgur.com/sf2mYGJ",
+    "image": "https://i.imgur.com/sf2mYGJ.jpg",
     "gameId": 28
   },
   {
@@ -748,7 +748,7 @@ const boardGames = [
       "card drafting",
       "tile placement"
     ],
-    "image": "https://imgur.com/7OtnVf1",
+    "image": "https://i.imgur.com/7OtnVf1.jpg",
     "gameId": 29
   },
   {
@@ -761,7 +761,7 @@ const boardGames = [
     "features": [
       "hand management"
     ],
-    "image": "https://imgur.com/uhpyVRi",
+    "image": "https://i.imgur.com/uhpyVRi.jpg",
     "gameId": 30
   },
   {
@@ -775,7 +775,7 @@ const boardGames = [
       "area control",
       "grid movement"
     ],
-    "image": "https://imgur.com/GsRqPxz",
+    "image": "https://i.imgur.com/GsRqPxz.jpg",
     "gameId": 31
   },
   {
@@ -789,7 +789,7 @@ const boardGames = [
       "card game",
       "hand management"
     ],
-    "image": "https://imgur.com/YiBIgWM",
+    "image": "https://i.imgur.com/YiBIgWM.jpg",
     "gameId": 32
   },
   {
@@ -803,7 +803,7 @@ const boardGames = [
       "card drafting",
       "dice rolling"
     ],
-    "image": "https://imgur.com/0dAj8Jy",
+    "image": "https://i.imgur.com/0dAj8Jy.jpg",
     "gameId": 33
   },
   {
@@ -817,7 +817,7 @@ const boardGames = [
       "card drafting",
       "bluffing"
     ],
-    "image": "https://imgur.com/QCRzKwR",
+    "image": "https://i.imgur.com/QCRzKwR.jpg",
     "gameId": 34
   },
   {
@@ -831,7 +831,7 @@ const boardGames = [
       "auction",
       "hand management"
     ],
-    "image": "https://imgur.com/j0jCA9a",
+    "image": "https://i.imgur.com/j0jCA9a.jpg",
     "gameId": 35
   },
   {
@@ -845,7 +845,7 @@ const boardGames = [
       "dice rolling",
       "area control"
     ],
-    "image": "https://imgur.com/LpD6ubg",
+    "image": "https://i.imgur.com/LpD6ubg.jpg",
     "gameId": 36
   },
   {
@@ -859,7 +859,7 @@ const boardGames = [
       "set collection",
       "card drafting"
     ],
-    "image": "https://imgur.com/bLhlTCj",
+    "image": "https://i.imgur.com/bLhlTCj.jpg",
     "gameId": 37
   },
   {
@@ -873,7 +873,7 @@ const boardGames = [
       "card drafting",
       "hand management"
     ],
-    "image": "https://imgur.com/Sop5ijM",
+    "image": "https://i.imgur.com/Sop5ijM.jpg",
     "gameId": 38
   },
   {
@@ -888,7 +888,7 @@ const boardGames = [
       "modular board",
       "dice rolling"
     ],
-    "image": "https://imgur.com/5ulz6sb",
+    "image": "https://i.imgur.com/5ulz6sb.jpg",
     "gameId": 39
   },
   {
@@ -901,7 +901,7 @@ const boardGames = [
     "features": [
       "set collection"
     ],
-    "image": "https://imgur.com/IzYOwcx",
+    "image": "https://i.imgur.com/IzYOwcx.jpg",
     "gameId": 40
   },
   {
@@ -916,7 +916,7 @@ const boardGames = [
       "card drafting",
       "tile placement"
     ],
-    "image": "https://imgur.com/xvN2EWY",
+    "image": "https://i.imgur.com/xvN2EWY.jpg",
     "gameId": 41
   },
   {
@@ -930,7 +930,7 @@ const boardGames = [
       "hand management",
       "worker placement"
     ],
-    "image": "https://imgur.com/qdeYX6B",
+    "image": "https://i.imgur.com/qdeYX6B.jpg",
     "gameId": 42
   },
   {
@@ -945,7 +945,7 @@ const boardGames = [
       "dice rolling",
       "hand management"
     ],
-    "image": "https://imgur.com/KWKrMpG",
+    "image": "https://i.imgur.com/KWKrMpG.jpg",
     "gameId": 43
   },
   {
@@ -960,7 +960,7 @@ const boardGames = [
       "modular board",
       "memory"
     ],
-    "image": "https://imgur.com/3L4cMfA",
+    "image": "https://i.imgur.com/3L4cMfA.jpg",
     "gameId": 44
   },
   {
@@ -976,7 +976,7 @@ const boardGames = [
       "modular board",
       "campaign"
     ],
-    "image": "https://imgur.com/qcyc4cg",
+    "image": "https://i.imgur.com/qcyc4cg.jpg",
     "gameId": 45
   },
   {
@@ -991,7 +991,7 @@ const boardGames = [
       "hand management",
       "area control"
     ],
-    "image": "https://imgur.com/qVFdsJh",
+    "image": "https://i.imgur.com/qVFdsJh.jpg",
     "gameId": 46
   },
   {
@@ -1006,7 +1006,7 @@ const boardGames = [
       "area control",
       "dice rolling"
     ],
-    "image": "https://imgur.com/3LdaW9S",
+    "image": "https://i.imgur.com/3LdaW9S.jpg",
     "gameId": 47
   },
   {
@@ -1021,7 +1021,7 @@ const boardGames = [
       "area control",
       "hand management"
     ],
-    "image": "https://imgur.com/P691LRS",
+    "image": "https://i.imgur.com/P691LRS.jpg",
     "gameId": 48
   },
   {
@@ -1035,7 +1035,7 @@ const boardGames = [
       "auction",
       "route building"
     ],
-    "image": "https://imgur.com/yN5Zskw",
+    "image": "https://i.imgur.com/yN5Zskw.jpg",
     "gameId": 49
   },
   {
@@ -1048,7 +1048,7 @@ const boardGames = [
     "features": [
       "action point allowance"
     ],
-    "image": "https://imgur.com/bCaRe7u",
+    "image": "https://i.imgur.com/bCaRe7u.jpg",
     "gameId": 50
   },
   {
@@ -1063,7 +1063,7 @@ const boardGames = [
       "area control",
       "hand management"
     ],
-    "image": "https://imgur.com/ZA04kW4",
+    "image": "https://i.imgur.com/ZA04kW4.jpg",
     "gameId": 51
   },
   {
@@ -1077,7 +1077,7 @@ const boardGames = [
       "area movement",
       "pick-up and deliver"
     ],
-    "image": "https://imgur.com/N2MhSxE",
+    "image": "https://i.imgur.com/N2MhSxE.jpg",
     "gameId": 52
   },
   {
@@ -1090,7 +1090,7 @@ const boardGames = [
     "features": [
       "hand management"
     ],
-    "image": "https://imgur.com/D5sXbfY",
+    "image": "https://i.imgur.com/D5sXbfY.jpg",
     "gameId": 53
   },
   {
@@ -1103,7 +1103,7 @@ const boardGames = [
     "features": [
       "roll / spin and move"
     ],
-    "image": "https://imgur.com/wYbcM13",
+    "image": "https://i.imgur.com/wYbcM13.jpg",
     "gameId": 54
   },
   {
@@ -1116,7 +1116,7 @@ const boardGames = [
     "features": [
       "pattern building"
     ],
-    "image": "https://imgur.com/pCz4Quv",
+    "image": "https://i.imgur.com/pCz4Quv.jpg",
     "gameId": 55
   },
 ]
