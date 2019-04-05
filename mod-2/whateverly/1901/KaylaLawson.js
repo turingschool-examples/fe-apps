@@ -3,7 +3,7 @@ const endangeredSpecies = [
   "name": "Snow Leopard",
   "genus": "Panthera",
   "endangeredStatus": "Vulnerable",
-  "locations": ["China", "Mongolia", "India"],
+  "locations": ["Eastern Himalayas", "Yangtze"],
   "population": 6000,
   "threats": ["Poaching","Climate Change"],
   "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Snow_Leopard_in_Ladakh%28_Photo_by_Tashi_Lonchay%29.jpg"
@@ -48,7 +48,7 @@ const endangeredSpecies = [
   "name": "Indochinese Tiger",
   "genus": "Panthera",
   "endangeredStatus": "Endangered",
-  "locations": ["China", "Myanmar", "Laos", "Thailand", "Cambodia", "Vietnam" ],
+  "locations": ["Greater Mekong"],
   "population": 350,
   "threats": ["Poaching", "Habitat Loss" ],
   "image": "https://c402277.ssl.cf1.rackcdn.com/photos/1624/images/story_full_width/Indochinese_TIger_8.9.2012_Why_They_Matter_MID_243229.jpg?1345549014"
@@ -120,7 +120,7 @@ const endangeredSpecies = [
   "name": "Red Panda",
   "genus": "Ailurus",
   "endangeredStatus": "Endangered",
-  "locations": ["Nepal", "Bhutan", "India", "Tibet", "Myanmar"],
+  "locations": ["Eastern Himalayas"],
   "population": 9000,
   "threats": ["Hunting"],
   "image": "https://c402277.ssl.cf1.rackcdn.com/photos/806/images/hero_full/SCR_47384.jpg?1345530917"
@@ -219,7 +219,7 @@ const endangeredSpecies = [
   "name": "Saola",
   "genus": "Pseudoryx",
   "endangeredStatus": "Critically Endangered",
-  "locations": ["China", "Myanmar", "Laos", "Thailand", "Cambodia", "Vietnam"], 
+  "locations": ["Greater Mekong"], 
   "population": "Unknown",
   "threats": ["Habitat Loss", "Hunting"],
   "image": "https://c402277.ssl.cf1.rackcdn.com/photos/156/images/hero_full/LG-Saola_Hero_image_%28c%29_David_Hulse_WWF_Canon.jpg?1345515547"
@@ -309,7 +309,7 @@ const endangeredSpecies = [
   "name": "Irrawaddy Dolphin",
   "genus": "Orcaella",
   "endangeredStatus": "Endangered",
-  "locations": ["China", "Myanmar", "Laos", "Thailand", "Cambodia", "Vietnam"],
+  "locations": ["Greater Mekong"],
   "population": 92,
   "threats": ["ByCatch"],
   "image": "https://c402277.ssl.cf1.rackcdn.com/photos/2715/images/hero_full/Mekong_Irrawaddy_Dolphin_breaching_%28c%29_WWF_Greater_Mekong.jpg?1421877230"
@@ -327,7 +327,7 @@ const endangeredSpecies = [
   "name": "Black Spider Monkey",
   "genus": "Ateles Paniscus",
   "endangeredStatus": "Vulnerable",
-  "locations": "Amazonian Brazil", 
+  "locations": ["Amazonian Brazil"], 
   "population": "Unknown",
   "threats": ["Habitat Loss", "Hunting"],
   "image": "http://animalia.bio/uploads/animals/photos/full/1x1/black-spider-monkey-2.jpg"
@@ -336,7 +336,7 @@ const endangeredSpecies = [
   "name": "Beluga Whale",
   "genus": "Delphinapterus Leucas",
   "endangeredStatus": "Near Threatened",
-  "locations": "Arctic", 
+  "locations": ["Arctic"], 
   "population": 150000,
   "threats": ["Climate Change", "Human Intolerance"],
   "image": "https://c402277.ssl.cf1.rackcdn.com/photos/2942/images/story_full_width/beluga_224991.jpg?1353100459"
