@@ -233,7 +233,7 @@ const marvelComics = {
     "adapted": false,
     "summary": "Mutant Scarlet Witch suffers a breakdown and cannot control her powers. The Avengers quarrel on how to help her, some of them think there is no other way than to kill her, while others think they could control her magic. When they try to talk to her, she alters the reality of Earth and the lives of the heroes in it.",
     "link": "https://marvel.fandom.com/wiki/Earth-58163",
-    "img": "https://vignette.wikia.nocookie.net/marveldatabase/images/6/67/Family_Magnus_%28Earth-58163%29_from_House_of_M_Vol_1_6_001.jpg/revision/latest/scale-to-width-down/700?cb=20061206101145",
+    "img": "https://vignette.wikia.nocookie.net/marveldatabase/images/d/dc/House_of_M_Vol_1_1.jpg/revision/latest?cb=20160328145809",
     "id": 16,
     "favorite": false
   },
@@ -250,7 +250,7 @@ const marvelComics = {
     "adapted": true,
     "summary": "The fall of Asgard has come and Thor must defend his home against those who would see it crumble.",
     "link": "https://marvel.fandom.com/wiki/Ragnarok_(Event)",
-    "img": "https://vignette.wikia.nocookie.net/marveldatabase/images/9/97/Ragnarok_%28Event%29_from_Thor_Vol_1_128_001.jpg/revision/latest/scale-to-width-down/250?cb=20170425185039",
+    "img": "https://static.comicvine.com/uploads/scale_large/0/4/66329-6226-99326-1-thor.jpg",
     "id": 17,
     "favorite": false
   },
@@ -301,7 +301,7 @@ const marvelComics = {
     "adapted": true,
     "summary": "The Hulk lands on an alien planet known as Sakaar and winds up a gladiator alongside other creatures, such as Miek and Korg, fighting under the Red King.",
     "link": "https://marvel.fandom.com/wiki/Planet_Hulk",
-    "img": "https://vignette.wikia.nocookie.net/marveldatabase/images/c/c9/Incredible_Hulk_Vol_2_92_Textless.jpg/revision/latest/scale-to-width-down/200?cb=20090803143444",
+    "img": "https://vignette.wikia.nocookie.net/marveldatabase/images/f/f3/Incredible_Hulk_Vol_2_92.jpg/revision/latest?cb=20090803141013",
     "id": 20,
     "favorite": false
   },
