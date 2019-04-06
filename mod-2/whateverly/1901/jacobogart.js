@@ -252,7 +252,7 @@ const data = {
       "id": 1500,
       "imageURL": "https://scontent-dfw5-1.cdninstagram.com/vp/90d88990a816a857bc7344bc252f8d5d/5D3BC2AC/t51.2885-19/s320x320/25010576_640902069634252_8311160960739966976_n.jpg?_nc_ht=scontent-dfw5-1.cdninstagram.com",
       "instagram": "https://www.instagram.com/maryschicago/",
-      "mamp": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.94638061166!2d-87.67071468514638!3d41.97996097921412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd188ae19c66f%3A0x37ed45fea2fdee8a!2sHamburger+Mary&#39;s!5e0!3m2!1sen!2sus!4v1554175689558!5m2!1sen!2sus\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>",
+      "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.94638061166!2d-87.67071468514638!3d41.97996097921412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd188ae19c66f%3A0x37ed45fea2fdee8a!2sHamburger+Mary&#39;s!5e0!3m2!1sen!2sus!4v1554175689558!5m2!1sen!2sus\" width=\"400\" height=\"300\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>",
       "name": "Hamburger Mary's",
       "notes": "American bar & grill chain where diner classics & cocktails meet quirky entertainment.",
       "phone": "(773) 784-6969",
