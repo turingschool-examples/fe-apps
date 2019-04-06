@@ -32,7 +32,7 @@ const data = {
       }, {
         "category": "drag show",
         "dayOfWeek": "Sunday",
-        "frequency": "monthly",
+        "frequency": "first",
         "host": ["T Rex"],
         "id": 1003,
         "lineups": {
@@ -58,7 +58,7 @@ const data = {
       "shows": [{
         "category": "drag show",
         "dayOfWeek": "Monday",
-        "frequency": "1st Monday",
+        "frequency": "first",
         "id": 1101,
         "lineups": {
           "04/01/19": ["Alex Kay", "Blondebenét", "Logan Zass", "Joonage À Trois"]
@@ -70,7 +70,7 @@ const data = {
       }, {
         "category": "competition",
         "dayOfWeek": "Wednesday",
-        "frequency": "1st",
+        "frequency": "first",
         "id": 1102,
         "lineups": {
           "04/03/19": ["Lady Ivory", "Claire Voyant", "Kat Sass", "Tenderoni", "Masha Potato", "Siichele"]
@@ -96,7 +96,7 @@ const data = {
       }, {
         "category": "drag show",
         "dayOfWeek": "Monday",
-        "frequency": "3rd Monday",
+        "frequency": "third",
         "host": ["T Rex"],
         "id": 1104,
         "lineups": {
@@ -108,8 +108,8 @@ const data = {
         "name": "Plot Twist"
       }, {
         "category": "competition",
-        "dayOfWeek": "Monday",
-        "frequency": "2nd and 4th Mondays",
+        "dayOfWeek": "Mondays",
+        "frequency": "second and fourth",
         "host": ["T Rex", "Nico"],
         "id": 1105,
         "notes": "A 3 Round Competition for Drag Queens, Bio Queens, Kings, and Straight Up Aliens",
@@ -223,16 +223,27 @@ const data = {
         "name": "Honeys on Halsted"
       }, {
         "category": "drag show",
-        "dayOfWeek": ["Friday", "Saturday"],
-        "frequency": "semi-weekly",
+        "dayOfWeek": "Friday",
+        "frequency": "weekly",
         "host": ["Naysha Lopez", "Mz. Ruff ‘N Stuff"],
         "id": 1403,
         "notes": "With weekly guest performers!",
         "reoccuring": true,
         "startTime": 2115,
-        "name": "Beauties & Beaus",
+          "name": "Beauties & Beaus (Friday)",
         "website": "http://beautiesandbeaus.com/"
-      }],
+      }, {
+          "category": "drag show",
+          "dayOfWeek": "Saturday",
+          "frequency": "weekly",
+          "host": ["Naysha Lopez", "Mz. Ruff ‘N Stuff"],
+          "id": 1403,
+          "notes": "With weekly guest performers!",
+          "reoccuring": true,
+          "startTime": 2115,
+          "name": "Beauties & Beaus (Satruday)",
+          "website": "http://beautiesandbeaus.com/"
+        }],
       "twitter": "https://twitter.com/HydrateChicago",
       "website": "http://www.hydratechicago.com/"
     }, {
@@ -290,7 +301,7 @@ const data = {
       }, {
         "category": "drag show",
         "dayOfWeek": "Friday",
-        "frequency": "semi-weekly",
+        "frequency": "weekly",
         "id": 1505,
         "notes": "Seating will begin about a half hour before showtime.  Shows run about an hour.",
         "reoccuring": true,
@@ -300,7 +311,7 @@ const data = {
       }, {
         "category": "drag show",
         "dayOfWeek": "Saturday",
-        "frequency": "semi-weekly",
+        "frequency": "weekly",
         "id": 1506,
         "notes": "Seating will begin about a half hour before showtime.  Shows run about an hour.",
         "reoccuring": true,
@@ -310,7 +321,7 @@ const data = {
       }, {
         "category": "drag show",
         "dayOfWeek": "Sunday",
-        "frequency": "semi-weekly",
+        "frequency": "weekly",
         "id": 1507,
         "notes": "Seating begins at 10:15am for the first show and 12:15pm for the second show.",
         "reoccuring": true,
@@ -424,7 +435,7 @@ const data = {
       "shows": [{
         "category": "drag show",
         "dayOfWeek": "Thursday",
-        "frequency": "2nd Thrusday",
+        "frequency": "second",
         "host": ["Lady Ivory"],
         "id": 1801,
         "notes": "$5 at the door",
