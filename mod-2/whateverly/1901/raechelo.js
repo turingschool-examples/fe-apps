@@ -385,8 +385,8 @@ const marvelComics = {
     "characters": ["Captain Marvel", "Captain America"],
     "adapted": true,
     "summary": "The first appearance of Carol Danvers as Captain Marvel, ace pilot and legendary avenger.",
-    "link": "https://marvel.fandom.com/wiki/File:Captain_Marvel_Vol_1_1.jpg",
-    "img": "https://vignette.wikia.nocookie.net/marveldatabase/images/9/92/Captain_Marvel_Vol_1_1.jpg/revision/latest/scale-to-width-down/317?cb=20080816201429",
+    "link": "https://marvel.fandom.com/wiki/Captain_Marvel_Vol_7_1",
+    "img": "https://vignette.wikia.nocookie.net/marveldatabase/images/e/e5/Captain_Marvel_Vol_7_1.jpg/revision/latest/scale-to-width-down/300?cb=20120713051932",
     "id": 25,
     "favorite": false
   },
