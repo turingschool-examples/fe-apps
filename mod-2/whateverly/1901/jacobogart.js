@@ -171,17 +171,6 @@ const data = {
       "notes": "DJs & drink specials fuel the early bar & late-night lounge scenes at this vintage-inspired gay bar.",
       "phone": "(773) 348-1053",
       "shows": [{
-        "category": "drag show",
-        "dayOfWeek": "Wednesday",
-        "facebookEvent": "https://www.facebook.com/events/2347284362197354/",
-        "frequency": null,
-        "host": ["Abhijeet", "Irregular Girl"],
-        "id": 1301,
-        "notes": "Starting at 8:30pm we will be playing /“Mary Poppins Returns/” and afterwards the SingAlong event will begin! Also, at the don’t miss our new Disney themed Drag Show!",
-        "reoccuring": false,
-        "startTime": 2000,
-        "name": "SingAlong! “Mary Poppins Returns” Viewing Party!"
-      }, {
         "category": "dance party",
         "dayOfWeek": "Friday",
         "frequency": "weekly",
