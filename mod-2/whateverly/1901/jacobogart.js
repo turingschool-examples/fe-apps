@@ -25,6 +25,7 @@ const data = {
         "frequency": "weekly",
         "host": ["T Rex"],
         "id": 1002,
+        "imageURL": "http://i63.tinypic.com/2mzwfox.png",
         "notes": "Doors open at 5PM. Seating begins at 6PM. New episode begins at 8PM. No Cover!",
         "reoccuring": true,
         "startTime": [2000],
@@ -35,6 +36,7 @@ const data = {
         "frequency": "first",
         "host": ["T Rex"],
         "id": 1003,
+        "imageURL": "http://i66.tinypic.com/292s2o5.png",
         "lineups": {
           "04/07/19": ["Bambi Banks Couleé", "Denali", "Ashley Malone", "Kat Sass", "Keri Traid", "Tenderoni"]
         },
@@ -60,6 +62,7 @@ const data = {
         "dayOfWeek": "Monday",
         "frequency": "first",
         "id": 1101,
+        "imageURL": "http://i67.tinypic.com/10nw8br.png",
         "lineups": {
           "04/01/19": ["Alex Kay", "Blondebenét", "Logan Zass", "Joonage À Trois"]
         },
@@ -72,6 +75,7 @@ const data = {
         "dayOfWeek": "Wednesday",
         "frequency": "first",
         "id": 1102,
+        "imageURL": "http://i63.tinypic.com/jjtok8.png",
         "lineups": {
           "04/03/19": ["Lady Ivory", "Claire Voyant", "Kat Sass", "Tenderoni", "Masha Potato", "Siichele"]
         },
@@ -84,6 +88,7 @@ const data = {
         "frequency": "weekly",
         "host": ["T Rex"],
         "id": 1103,
+        "imageURL": "https://pbs.twimg.com/profile_images/1039156251450589184/qjFEnLvd_400x400.jpg",
         "lineups": {
           "04/06/19": ["Laila McQueen", "Sasha Belle", "Chasity Marie", "Lucy Stoole", "Aunty Chan", "Savannah Westbrooke", "Aura Mayari"],
           "04/13/19": ["Ophelia Belle", "Monica Beverly Hillz", "Imp Queen", "Denali", "Irregular Girl", "Tiffany Diamond", "Raven Samore"],
@@ -99,6 +104,7 @@ const data = {
         "frequency": "third",
         "host": ["T Rex"],
         "id": 1104,
+          "imageURL": "http://berlinchicago.com/uploads/1/0/9/5/109512121/plottwistsept_orig.jpg",
         "lineups": {
           "04/15/19": []
         },
@@ -112,6 +118,7 @@ const data = {
         "frequency": "second and fourth",
         "host": ["T Rex", "Nico"],
         "id": 1105,
+        "imageURL": "http://i68.tinypic.com/261c2ur.jpg",
         "notes": "A 3 Round Competition for Drag Queens, Bio Queens, Kings, and Straight Up Aliens",
         "reoccuring": true,
         "startTime": [2200],
@@ -135,6 +142,7 @@ const data = {
         "frequency": "weekly",
         "host": ["Dixie Lynn Cartwright", "DiDa Ritz"],
         "id": 1201,
+        "imageURL": "http://i63.tinypic.com/209gabq.png",
         "reoccuring": true,
         "startTime": [2000],
         "name": "Chicago's RuPaul's Drag Race Season 11 Viewing Party"
@@ -144,6 +152,7 @@ const data = {
         "frequency": "weekly",
         "host": ["Dixie Lynn Cartwright", "Danika Bone't"],
         "id": 1202,
+        "imageURL": "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/53271390_10156373287414315_5394039475607175168_n.jpg?_nc_cat=100&_nc_ht=scontent-dfw5-2.xx&oh=2e43bcbec35ec63918b1344d3047f61c&oe=5D39D003",
         "reoccuring": true,
         "startTime": [2200],
         "name": "Shantay You Stay!"
@@ -153,6 +162,7 @@ const data = {
         "frequency": "last",
         "host": ["Dixie Lynn Cartwright", "Alexis Bevels"],
         "id": 1203,
+        "imageURL": "https://pbs.twimg.com/media/Duu6AAvW0AAjftY.jpg",
         "notes": "You are the judge for who wins (well, Dixie says she's the winner, but we'll see about that) so join us to cheer on your faves.",
         "reoccuring": true,
         "startTime": [2130],
@@ -176,15 +186,17 @@ const data = {
         "frequency": "weekly",
         "host": ["Kenzie Coulee"],
         "id": 1302,
+        "imageURL": "https://scontent-frt3-2.cdninstagram.com/vp/85df2cd143c7ecd7bff0829e2b24b577/5CF298AD/t51.2885-15/e35/51003736_2257383837859963_1778335853370214959_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com",
         "reoccuring": true,
         "startTime": [2300],
-        "name": "Friday's with Kenzie Coulee"
+        "name": "Fridays with Kenzie Coulee"
       }, {
         "category": "dance party",
         "dayOfWeek": "Thursday",
         "frequency": "weekly",
         "host": ["Khloe Park"],
         "id": 1303,
+        "imageURL": "https://static1.squarespace.com/static/5a46b15d4c0dbf9d8de63839/5bf8a48070a6ad835e592bf4/5c1423dc40ec9afaeae80748/1544823776181/48269164_2309201902425302_3429143610438713344_o.jpg?format=2500w",
         "reoccuring": true,
         "startTime": [2200],
         "name": "Frat Night"
@@ -207,6 +219,7 @@ const data = {
         "frequency": "weekly",
         "host": ["Mz. Ruff ‘N Stuff"],
         "id": 1401,
+        "imageURL": "http://www.hydratechicago.com/wp-content/uploads/2018/09/HY_Mask_Square.png",
         "notes": "Monday nights get an upgrade with a show unlike any you’ve seen before!",
         "reoccuring": true,
         "startTime": [2300],
@@ -217,6 +230,7 @@ const data = {
         "frequency": "weekly",
         "host": ["Mz. Ruff ‘N Stuff", "Mimi Marks"],
         "id": 1402,
+        "imageURL": "http://www.hydratechicago.com/wp-content/uploads/2018/06/HY_HoneysNew.jpg",
         "notes": "With weekly guest performers!",
         "reoccuring": true,
         "startTime": [2300],
@@ -227,22 +241,24 @@ const data = {
         "frequency": "weekly",
         "host": ["Naysha Lopez", "Mz. Ruff ‘N Stuff"],
         "id": 1403,
+        "imageURL": "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/52033947_2523848607842214_2866732525089193984_o.jpg?_nc_cat=110&_nc_ht=scontent-dfw5-2.xx&oh=2fbc1505a53b38e1880dc6ab6dd962ab&oe=5D4FF0C4",
         "notes": "With weekly guest performers!",
         "reoccuring": true,
         "startTime": [2115],
           "name": "Beauties & Beaus (Friday)",
         "website": "http://beautiesandbeaus.com/"
       }, {
-          "category": "drag show",
-          "dayOfWeek": "Saturday",
-          "frequency": "weekly",
-          "host": ["Naysha Lopez", "Mz. Ruff ‘N Stuff"],
-          "id": 1403,
-          "notes": "With weekly guest performers!",
-          "reoccuring": true,
-          "startTime": [2115],
-          "name": "Beauties & Beaus (Satruday)",
-          "website": "http://beautiesandbeaus.com/"
+        "category": "drag show",
+        "dayOfWeek": "Saturday",
+        "frequency": "weekly",
+        "host": ["Naysha Lopez", "Mz. Ruff ‘N Stuff"],
+        "id": 1403,
+        "imageURL": "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/52033947_2523848607842214_2866732525089193984_o.jpg?_nc_cat=110&_nc_ht=scontent-dfw5-2.xx&oh=2fbc1505a53b38e1880dc6ab6dd962ab&oe=5D4FF0C4",
+        "notes": "With weekly guest performers!",
+        "reoccuring": true,
+        "startTime": [2115],
+        "name": "Beauties & Beaus (Satruday)",
+        "website": "http://beautiesandbeaus.com/"
         }],
       "twitter": "https://twitter.com/HydrateChicago",
       "website": "http://www.hydratechicago.com/"
@@ -262,6 +278,7 @@ const data = {
         "frequency": "weekly",
         "host": ["Granny Mattress"],
         "id": 1501,
+        "imageURL": "https://www.hamburgermarys.com/chicago/wp/wp-content/uploads/2016/05/BingoPoster-2018.png",
         "notes": "Guests are asked to make a $15 donation to play all night (10 games, three chances to win each game).",
         "reoccuring": true,
         "startTime": [2000],
@@ -273,7 +290,8 @@ const data = {
         "frequency": "weekly",
         "host": ["Fay Ludes"],
         "id": 1502,
-        "notes": "We start off with 6-8 contestants who compete for the chance to come back the next week. The bi-weekly winner gets a booking at one of Mary’s “Dining with the Divas” shows ",
+        "imageURL": "https://scontent-dfw5-2.xx.fbcdn.net/v/t31.0-8/17917176_1647040288658037_7118891493677235149_o.jpg?_nc_cat=108&_nc_ht=scontent-dfw5-2.xx&oh=ddd5737fa846e0d7e3adf8381362e0f1&oe=5D3AAAA5",
+        "notes": "We start off with 6-8 contestants who compete for the chance to come back the next week. The bi-weekly winner gets a booking at one of Mary’s “Dining with the Divas” shows.",
         "reoccuring": true,
         "startTime": [2000],
         "name": "Let’s Make a DIVA!",
@@ -284,6 +302,7 @@ const data = {
         "frequency": "weekly",
         "host": ["Diana Tunnel"],
         "id": 1503,
+        "imageURL": "https://www.hamburgermarys.com/chicago/wp/wp-content/uploads/2019/02/RP11-Watch-Chicago-1024x1024.png",
         "reoccuring": true,
         "startTime": [2000],
         "name": "Drag Race at Mary's"
@@ -293,6 +312,7 @@ const data = {
         "frequency": "weekly",
         "host": ["Alexis Bevels"],
         "id": 1504,
+        "imageURL": "https://www.hamburgermarys.com/chicago/wp/wp-content/uploads/2016/05/BingoPoster-2018.png",
         "notes": "Guests are asked to make a $15 donation to play all night (10 games, three chances to win each game).",
         "reoccuring": true,
         "startTime": [1900],
@@ -303,6 +323,7 @@ const data = {
         "dayOfWeek": "Friday",
         "frequency": "weekly",
         "id": 1505,
+        "imageURL": "https://www.hamburgermarys.com/chicago/wp/wp-content/uploads/2016/11/FRI-Generic-1024x1024.jpg",
         "notes": "Seating will begin about a half hour before showtime.  Shows run about an hour.",
         "reoccuring": true,
         "startTime": [1930, 2130],
@@ -313,6 +334,7 @@ const data = {
         "dayOfWeek": "Saturday",
         "frequency": "weekly",
         "id": 1506,
+        "imageURL": "https://www.hamburgermarys.com/chicago/wp/wp-content/uploads/2016/05/SAT-Divas-1024x1024.jpg",
         "notes": "Seating will begin about a half hour before showtime.  Shows run about an hour.",
         "reoccuring": true,
         "startTime": [1930, 2130],
@@ -323,6 +345,7 @@ const data = {
         "dayOfWeek": "Sunday",
         "frequency": "weekly",
         "id": 1507,
+        "imageURL": "https://www.hamburgermarys.com/chicago/wp/wp-content/uploads/2018/10/DivasBrunch2018-Poster.png",
         "notes": "Seating begins at 10:15am for the first show and 12:15pm for the second show.",
         "reoccuring": true,
         "startTime": [1100, 1300],
@@ -346,6 +369,7 @@ const data = {
         "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         "frequency": "nightly",
         "id": 1601,
+        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-81yRN3OxAJbEsK5_wfz9Y76wDJ17PDgYtFm8K2DG7nnGM4HHjQ",
         "notes": "Kit Kat's nightly shows run every 20 minutes starting at 6.30pm through midnight.",
         "reoccuring": true,
         "startTime": [1830],
@@ -369,6 +393,7 @@ const data = {
         "frequency": "weekly",
         "host": ["Danika Bone't"],
         "id": 1701,
+        "imageURL": "http://www.charlieschicago.com/shared/images/weeklyspecial/659914/sunday/",
         "reoccuring": true,
         "startTime": [1900],
         "name": "Sing-Sational Sunday!"
@@ -378,6 +403,7 @@ const data = {
         "frequency": "weekly",
         "host": ["Darla Dae", "Danika Bone't"],
         "id": 1702,
+        "imageURL": "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/50550856_1036554066530610_6260149261824950272_o.jpg?_nc_cat=100&_nc_ht=scontent-dfw5-2.xx&oh=c40574ba575b0255c56f3fb1b578eeb6&oe=5D01CFB8",
         "reoccuring": true,
         "startTime": [2100],
         "name": "Double 'D' Bingo"
@@ -387,6 +413,7 @@ const data = {
         "frequency": "weekly",
         "host": ["Danika Bone't"],
         "id": 1703,
+          "imageURL": "http://www.charlieschicago.com/shared/images/weeklyspecial/659914/tuesday/",
         "notes": "Special guests weekly",
         "reoccuring": true,
         "startTime": [2330],
@@ -397,6 +424,7 @@ const data = {
         "frequency": "weekly",
         "host": ["Alexandrea Diamond"],
         "id": 1704,
+        "imageURL": "http://www.charlieschicago.com/shared/images/weeklyspecial/659914/thursday/",
         "notes": "1st Week Of The Month: 80’s. 2nd Week Of The Month: 90’s. 3rd Week Of The Month: Early 2000’s. 4th Week Of the Month: Body Beautiful.",
         "reoccuring": true,
         "startTime": [2200],
@@ -407,6 +435,7 @@ const data = {
         "frequency": "weekly",
         "host": ["Veronica Pop"],
         "id": 1705,
+        "imageURL": "http://www.charlieschicago.com/shared/images/weeklyspecial/659914/friday/",
         "reoccuring": true,
         "startTime": [2300],
         "name": "Veronica's POP OFF!"
@@ -416,6 +445,7 @@ const data = {
         "frequency": "weekly",
         "host": ["Veronica Pop", "Tiffany Diamond"],
         "id": 1706,
+        "imageURL": "http://www.charlieschicago.com/shared/images/weeklyspecial/659914/saturday/",
         "reoccuring": true,
         "startTime": [2230],
         "name": "#POPular"
@@ -438,6 +468,7 @@ const data = {
         "frequency": "second",
         "host": ["Lady Ivory"],
         "id": 1801,
+        "imageURL": "https://scontent-lga3-1.cdninstagram.com/vp/1aa3b8a7b1e97de59d576731cb2d1fd4/5D18EA0D/t51.2885-15/sh0.08/e35/s640x640/53014747_637602680024426_2601303389675340335_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com",
         "notes": "$5 at the door",
         "reoccuring": true,
         "startTime": [2200],
@@ -461,6 +492,7 @@ const data = {
         "frequency": "weekly",
         "host": ["Lucy Stoole"],
         "id": 1901,
+        "imagesURL": "https://kikipaedia.com/resources/images/bars/chi/events/queen.jpg",
         "reoccuring": true,
         "startTime": [2200],
         "name": "Queen!"
@@ -482,6 +514,7 @@ const data = {
         "frequency": "weekly",
         "host": ["Elektra Del Rio"],
         "id": 2001,
+        "imageURL": "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/55541882_397251107731915_4410611536712695808_o.jpg?_nc_cat=101&_nc_ht=scontent-dfw5-2.xx&oh=6d3ada26770727bc6d7901a1e68c1113&oe=5D3469F9",
         "notes": "This 10 week competition is about to take you on the ride of your life featuring: guest judges, weekly challenges, prizes, lip sync for your life battles and audience chosen eliminations.",
         "reoccuring": true,
         "startTime": [2200],
@@ -504,6 +537,7 @@ const data = {
         "frequency": "weekly",
         "host": ["Chamilla Foxx"],
         "id": 2101,
+        "imageURL": "https://pbs.twimg.com/media/D1Any4VWkAA86HL.jpg",
         "reoccuring": true,
         "startTime": [1400],
         "name": "Sunday Social"
@@ -1046,7 +1080,7 @@ const data = {
         "https://scontent-ort2-1.cdninstagram.com/vp/ac1eec2cedf917e701916bdefa480e67/5D35788B/t51.2885-19/s320x320/50574467_247231406153269_5896326885738020864_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com",
       "instagram": "https://www.instagram.com/kenziecoulee/n",
       "name": "Kenzie Coulee",
-      "shows": ["Friday's with Kenzie Coulee"]
+      "shows": ["Fridays with Kenzie Coulee"]
     },
     {
       "bio":
