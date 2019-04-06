@@ -17,7 +17,7 @@ const data = {
         "id": 1001,
         "imageURL": "https://kikipaedia.com/resources/images/bars/chi/events/roscoesdragrace.jpg",
         "reoccuring": true,
-        "startTime": 2300,
+        "startTime": [2300],
         "name": "Roscoe's Drag Race"
       }, {
         "category": "viewing party",
@@ -27,7 +27,7 @@ const data = {
         "id": 1002,
         "notes": "Doors open at 5PM. Seating begins at 6PM. New episode begins at 8PM. No Cover!",
         "reoccuring": true,
-        "startTime": 2000,
+        "startTime": [2000],
         "name": "Roscoe’s RPDR S11 Viewing Party"
       }, {
         "category": "drag show",
@@ -40,7 +40,7 @@ const data = {
         },
         "notes": "Bringing Generations X, Y, & Z together to celebrate their shared love of the music from the mid 1990’s through the early 2000’s with DJ Ron!",
         "reoccuring": true,
-        "startTime": 2100,
+        "startTime": [2100],
         "name": "XYZ"
       }],
       "twitter": "https://twitter.com/Roscoestavern",
@@ -65,7 +65,7 @@ const data = {
         },
         "notes": "3 Year Anniversary! Join us for a Small Tribute to the Memories we've made Throughout the Years",
         "reoccuring": true,
-        "startTime": 2200,
+        "startTime": [2200],
         "name": "Squad Goals"
       }, {
         "category": "competition",
@@ -76,7 +76,7 @@ const data = {
           "04/03/19": ["Lady Ivory", "Claire Voyant", "Kat Sass", "Tenderoni", "Masha Potato", "Siichele"]
         },
         "reoccuring": true,
-        "startTime": 2200,
+        "startTime": [2200],
         "name": "SLAY"
       }, {
         "category": "drag show",
@@ -91,7 +91,7 @@ const data = {
           "04/27/19": ["Serena Cha Cha", "Gilda Wabbit", "Umi Naughty", "Zsa Zsa Gabortion", "Khloe Park", "Bambi Banks Couleé", "Elektra Del Rio"]
         },
         "reoccuring": true,
-        "startTime": 2230,
+        "startTime": [2230],
         "name": "Drag Matinee"
       }, {
         "category": "drag show",
@@ -104,7 +104,7 @@ const data = {
         },
         "notes": "THE HALF-TIME SHOW: Surprises, Reveals, and OMG Moments! Bring the Drama and Snatch the Gig!",
         "reoccuring": true,
-        "startTime": 2230,
+        "startTime": [2230],
         "name": "Plot Twist"
       }, {
         "category": "competition",
@@ -114,7 +114,7 @@ const data = {
         "id": 1105,
         "notes": "A 3 Round Competition for Drag Queens, Bio Queens, Kings, and Straight Up Aliens",
         "reoccuring": true,
-        "startTime": 2200,
+        "startTime": [2200],
         "name": "Crash Landing"
       }],
       "twitter": "https://twitter.com/BerlinNightclub",
@@ -136,7 +136,7 @@ const data = {
         "host": ["Dixie Lynn Cartwright", "DiDa Ritz"],
         "id": 1201,
         "reoccuring": true,
-        "startTime": 2000,
+        "startTime": [2000],
         "name": "Chicago's RuPaul's Drag Race Season 11 Viewing Party"
       }, {
         "category": "competition",
@@ -145,7 +145,7 @@ const data = {
         "host": ["Dixie Lynn Cartwright", "Danika Bone't"],
         "id": 1202,
         "reoccuring": true,
-        "startTime": 2200,
+        "startTime": [2200],
         "name": "Shantay You Stay!"
       }, {
         "category": "competition",
@@ -155,7 +155,7 @@ const data = {
         "id": 1203,
         "notes": "You are the judge for who wins (well, Dixie says she's the winner, but we'll see about that) so join us to cheer on your faves.",
         "reoccuring": true,
-        "startTime": 2130,
+        "startTime": [2130],
         "name": "Dixie Wins A Talent Show"
       }],
       "twitter": "https://twitter.com/sidetrackbar",
@@ -177,7 +177,7 @@ const data = {
         "host": ["Kenzie Coulee"],
         "id": 1302,
         "reoccuring": true,
-        "startTime": 2300,
+        "startTime": [2300],
         "name": "Friday's with Kenzie Coulee"
       }, {
         "category": "dance party",
@@ -186,7 +186,7 @@ const data = {
         "host": ["Khloe Park"],
         "id": 1303,
         "reoccuring": true,
-        "startTime": 2200,
+        "startTime": [2200],
         "name": "Frat Night"
       }],
       "twitter": "https://twitter.com/scarletchicago",
@@ -209,7 +209,7 @@ const data = {
         "id": 1401,
         "notes": "Monday nights get an upgrade with a show unlike any you’ve seen before!",
         "reoccuring": true,
-        "startTime": 2300,
+        "startTime": [2300],
         "name": "Ruffy’s Lipstick & Mascara"
       }, {
         "category": "drag show",
@@ -219,7 +219,7 @@ const data = {
         "id": 1402,
         "notes": "With weekly guest performers!",
         "reoccuring": true,
-        "startTime": 2300,
+        "startTime": [2300],
         "name": "Honeys on Halsted"
       }, {
         "category": "drag show",
@@ -229,7 +229,7 @@ const data = {
         "id": 1403,
         "notes": "With weekly guest performers!",
         "reoccuring": true,
-        "startTime": 2115,
+        "startTime": [2115],
           "name": "Beauties & Beaus (Friday)",
         "website": "http://beautiesandbeaus.com/"
       }, {
@@ -240,7 +240,7 @@ const data = {
           "id": 1403,
           "notes": "With weekly guest performers!",
           "reoccuring": true,
-          "startTime": 2115,
+          "startTime": [2115],
           "name": "Beauties & Beaus (Satruday)",
           "website": "http://beautiesandbeaus.com/"
         }],
@@ -264,7 +264,7 @@ const data = {
         "id": 1501,
         "notes": "Guests are asked to make a $15 donation to play all night (10 games, three chances to win each game).",
         "reoccuring": true,
-        "startTime": 2000,
+        "startTime": [2000],
         "name": "Charity HamBingo Mary’s",
         "website": "https://www.hamburgermarys.com/chicago/events/event/charity-hambingo-marys/"
       }, {
@@ -275,7 +275,7 @@ const data = {
         "id": 1502,
         "notes": "We start off with 6-8 contestants who compete for the chance to come back the next week. The bi-weekly winner gets a booking at one of Mary’s “Dining with the Divas” shows ",
         "reoccuring": true,
-        "startTime": 2000,
+        "startTime": [2000],
         "name": "Let’s Make a DIVA!",
         "website": "https://www.hamburgermarys.com/chicago/events/event/lets-make-a-diva-2/"
       }, {
@@ -285,7 +285,7 @@ const data = {
         "host": ["Diana Tunnel"],
         "id": 1503,
         "reoccuring": true,
-        "startTime": 2000,
+        "startTime": [2000],
         "name": "Drag Race at Mary's"
       }, {
         "category": "bingo",
@@ -295,7 +295,7 @@ const data = {
         "id": 1504,
         "notes": "Guests are asked to make a $15 donation to play all night (10 games, three chances to win each game).",
         "reoccuring": true,
-        "startTime": 1900,
+        "startTime": [1900],
         "name": "Charity HamBingo Mary’s",
         "website": "https://www.hamburgermarys.com/chicago/events/event/charity-hambingo-marys/"
       }, {
@@ -348,7 +348,7 @@ const data = {
         "id": 1601,
         "notes": "Kit Kat's nightly shows run every 20 minutes starting at 6.30pm through midnight.",
         "reoccuring": true,
-        "startTime": 1830,
+        "startTime": [1830],
         "name": "Kit Kat's Nightly Show"
       }],
       "twitter": "https://twitter.com/kitkatlounge?lang=en",
@@ -370,7 +370,7 @@ const data = {
         "host": ["Danika Bone't"],
         "id": 1701,
         "reoccuring": true,
-        "startTime": 1900,
+        "startTime": [1900],
         "name": "Sing-Sational Sunday!"
       }, {
         "category": "bingo",
@@ -379,7 +379,7 @@ const data = {
         "host": ["Darla Dae", "Danika Bone't"],
         "id": 1702,
         "reoccuring": true,
-        "startTime": 2100,
+        "startTime": [2100],
         "name": "Double 'D' Bingo"
       }, {
         "category": "drag show",
@@ -389,7 +389,7 @@ const data = {
         "id": 1703,
         "notes": "Special guests weekly",
         "reoccuring": true,
-        "startTime": 2330,
+        "startTime": [2330],
         "name": "Twisted Tuesdays"
       }, {
         "category": "drag show",
@@ -399,7 +399,7 @@ const data = {
         "id": 1704,
         "notes": "1st Week Of The Month: 80’s. 2nd Week Of The Month: 90’s. 3rd Week Of The Month: Early 2000’s. 4th Week Of the Month: Body Beautiful.",
         "reoccuring": true,
-        "startTime": 2200,
+        "startTime": [2200],
         "name": "Throwback Thursdays"
       }, {
         "category": "drag show",
@@ -408,7 +408,7 @@ const data = {
         "host": ["Veronica Pop"],
         "id": 1705,
         "reoccuring": true,
-        "startTime": 2300,
+        "startTime": [2300],
         "name": "Veronica's POP OFF!"
       }, {
         "category": "competition",
@@ -417,7 +417,7 @@ const data = {
         "host": ["Veronica Pop", "Tiffany Diamond"],
         "id": 1706,
         "reoccuring": true,
-        "startTime": 2230,
+        "startTime": [2230],
         "name": "#POPular"
       }],
       "twitter": "https://twitter.com/CharliesBarChi",
@@ -440,7 +440,7 @@ const data = {
         "id": 1801,
         "notes": "$5 at the door",
         "reoccuring": true,
-        "startTime": 2200,
+        "startTime": [2200],
         "name": "Killer Babes"
       }],
       "twitter": "https://twitter.com/replaylakeview?lang=en",
@@ -462,7 +462,7 @@ const data = {
         "host": ["Lucy Stoole"],
         "id": 1901,
         "reoccuring": true,
-        "startTime": 2200,
+        "startTime": [2200],
         "name": "Queen!"
       }],
       "twitter": "https://twitter.com/smartbar",
@@ -484,7 +484,7 @@ const data = {
         "id": 2001,
         "notes": "This 10 week competition is about to take you on the ride of your life featuring: guest judges, weekly challenges, prizes, lip sync for your life battles and audience chosen eliminations.",
         "reoccuring": true,
-        "startTime": 2200,
+        "startTime": [2200],
         "name": "TENS"
       }],
       "twitter": "https://twitter.com/Splash_Chicago",
@@ -505,7 +505,7 @@ const data = {
         "host": ["Chamilla Foxx"],
         "id": 2101,
         "reoccuring": true,
-        "startTime": 1400,
+        "startTime": [1400],
         "name": "Sunday Social"
       }],
       "twitter": "https://twitter.com/meetinghousechi",
