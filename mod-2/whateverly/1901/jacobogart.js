@@ -1100,7 +1100,7 @@ const data = {
     {
       "bio": "",
       "id": 152,
-      "imageURL": "Granny-Mattress.jpg",
+      "imageURL": "http://i67.tinypic.com/14cduvo.jpg",
       "name": "Granny Mattress",
       "shows": ["Charity HamBingo Mary’s"]
     },
