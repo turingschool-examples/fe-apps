@@ -165,7 +165,7 @@ const endangeredSpecies = [
   "name": "Leatherback Turtle",
   "genus": "Dermochelys",
   "endangeredStatus": "Vulnerable",
-  "locations": ["Mesoamerican Reef", "Coastal East Africa", "Gulf of California", "Coral Triangle", "The Galápagos"], 
+  "locations": ["Mesoamerican Reef", "Coastal East Africa", "Gulf of California", "Coral Triangle", "The Galapagos"], 
   "population": "Unknown",
   "threats": ["ByCatch", "Habitat Loss", "Overharvesting", "Poaching"],
   "image": "https://c402277.ssl.cf1.rackcdn.com/photos/319/images/story_full_width/SCR_105025.jpg?1345568794"
@@ -174,7 +174,7 @@ const endangeredSpecies = [
   "name": "Green Turtle",
   "genus": "Chelonia",
   "endangeredStatus": "Endangered",
-  "locations": ["Mesoamerican Reef", "Coastal East Africa", "Gulf of California", "Coral Triangle", "The Galápagos"], 
+  "locations": ["Mesoamerican Reef", "Coastal East Africa", "Gulf of California", "Coral Triangle", "The Galapagos"], 
   "population": "Unknown",
   "threats": ["ByCatch", "Habitat Loss", "Overharvesting", "Poaching"],
   "image": "https://c402277.ssl.cf1.rackcdn.com/photos/322/images/hero_full/Green_Turtle_Hero_image_260214.jpg?1345519611"
@@ -273,16 +273,16 @@ const endangeredSpecies = [
   "name": "Great White Shark",
   "genus": "Carcharodon",
   "endangeredStatus": "Vulnerable",
-  "locations": ["Gulf of California", "Southern Chile", "The Galápagos", "Coastal East Africa"],
+  "locations": ["Gulf of California", "Southern Chile", "The Galapagos", "Coastal East Africa"],
   "population": "Unknown",
   "threats": ["ByCatch", "Hunting", "Fishing Nets", "Climate Change"],
   "image": "https://c402277.ssl.cf1.rackcdn.com/photos/1087/images/hero_full/Species_Great_White_Shark_WWF_Carlos_Aguilera.jpg?1345585501"
   },
   { 
-  "name": "Galápagos Penguin",
+  "name": "Galapagos Penguin",
   "genus": "Spheniscus",
   "endangeredStatus": "Endangered",
-  "locations": ["The Galápagos"],
+  "locations": ["The Galapagos"],
   "population": 2000,
   "threats": ["ByCatch", "Pollution", "Climate Change"],
   "image": "https://c402277.ssl.cf1.rackcdn.com/photos/493/images/hero_full/shutterstock_89694280.jpg?1367330837"
@@ -452,7 +452,7 @@ const countries = [
     ]
   },
   {
-    "name": "Myanmar",
+    "name": "Myanmar, Greater Mekong",
     "population": 143895551,
     "topThreats": ["Poaching", "Climate Change", "Habitat Loss"],
     "conservationGroups": [
@@ -462,7 +462,7 @@ const countries = [
     ]
   },
   {
-    "name": "Laos",
+    "name": "Laos, Greater Mekong",
     "population": 7037709,
     "topThreats": ["Poaching", "Climate Change", "Habitat Loss"],
     "conservationGroups": [
@@ -471,7 +471,7 @@ const countries = [
     ]
   },
   {
-    "name": "Thailand",
+    "name": "Thailand, Greater Mekong",
     "population": 69306160,
     "topThreats": ["Poaching", "Climate Change", "Habitat Loss"],
     "conservationGroups": [
@@ -481,7 +481,7 @@ const countries = [
     ]
   },
   {
-    "name": "Cambodia",
+    "name": "Cambodia, Greater Mekong",
     "population": 16482646,
     "topThreats": ["Poaching", "Climate Change", "Habitat Loss"],
     "conservationGroups": [
@@ -490,7 +490,7 @@ const countries = [
     ]
   },
   {
-    "name": "Vietnam",
+    "name": "Vietnam, Greater Mekong",
     "population": 97429061,	
     "topThreats": ["Poaching", "Climate Change", "Habitat Loss"],
     "conservationGroups": [
@@ -533,7 +533,7 @@ const countries = [
     ]
   },
   {
-    "name": "Nepal",
+    "name": "Nepal, Eastern Himalayas",
     "population": 29942018,	
     "topThreats": ["Climate Change", "Habitat Loss", "Human Intolerance"],
     "conservationGroups": [ 
@@ -543,7 +543,7 @@ const countries = [
     ]
   },
   {
-    "name": "Bhutan",
+    "name": "Bhutan, Eastern Himalayas",
     "population": 826229,
     "topThreats": ["Climate Change", "Habitat Loss", "Human Intolerance"],
     "conservationGroups": [ 
@@ -552,7 +552,7 @@ const countries = [
     ]
   },
   {
-    "name": "Tibet",
+    "name": "Tibet, Eastern Himalayas",
     "population": 3180000,
     "topThreats": ["Climate Change", "Habitat Loss", "Human Intolerance"],
     "conservationGroups": [ 
@@ -611,7 +611,7 @@ const countries = [
     ]
   },
   {
-    "name": "The Galápagos",
+    "name": "The Galapagos",
     "population": 25124,
     "topThreats": ["Climate Change", "Habitat Loss", "ByCatch"],
     "conservationGroups": [ 
