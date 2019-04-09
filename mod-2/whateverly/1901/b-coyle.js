@@ -397,7 +397,7 @@ const trails = [
   "length": 2.7,
   "elevation-gain": 364,
   "location": "Grand Junction",
-  "difficulty": "Difficulty",
+  "difficulty": "Difficult",
   "type": "Loop",
   "nearest-city": null
     },
@@ -411,7 +411,7 @@ const trails = [
   "nearest-city": "Gunnison"
     },
          {
-  "name": "Rustler/s Gulch",
+  "name": "Rustler's Gulch",
   "length": 9,
   "elevation-gain": 1791,
   "location": "Gunnison National Forest",
