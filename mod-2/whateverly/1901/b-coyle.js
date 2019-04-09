@@ -574,7 +574,6 @@ const trails = [
     }
 ];
 
-
 module.exports = {
   camping,
   trails
