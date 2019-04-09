@@ -368,7 +368,7 @@ const trails = [
        {
   "name": "Gem Lake Trail",
   "length": 3.1,
-  "elevation-gain": 9 90,
+  "elevation-gain": 990,
   "location": "Estes Park",
   "difficulty": "Moderate",
   "type": "Out and Back",
