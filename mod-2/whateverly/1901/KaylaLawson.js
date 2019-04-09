@@ -6,7 +6,7 @@ const endangeredSpecies = [
   "locations": ["Eastern Himalayas", "Yangtze"],
   "population": 6000,
   "threats": ["Poaching","Climate Change"],
-  "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Snow_Leopard_in_Ladakh%28_Photo_by_Tashi_Lonchay%29.jpg"
+  "image": "https://c402277.ssl.cf1.rackcdn.com/photos/1341/images/hero_full/snow-leopard-test.jpg?1345592123"
   },
   {
   "name": "Jaguar",
@@ -330,7 +330,7 @@ const endangeredSpecies = [
   "locations": ["Amazonian Brazil"], 
   "population": "Unknown",
   "threats": ["Habitat Loss", "Hunting"],
-  "image": "http://animalia.bio/uploads/animals/photos/full/1x1/black-spider-monkey-2.jpg"
+  "image": "https://c402277.ssl.cf1.rackcdn.com/photos/1175/images/hero_full/Black_Spider_Monkey_8.1.2012_Hero_and_circle_HI_105023.jpg?1345587861"
   },
   { 
   "name": "Beluga Whale",
@@ -339,7 +339,7 @@ const endangeredSpecies = [
   "locations": ["Arctic"], 
   "population": 150000,
   "threats": ["Climate Change", "Human Intolerance"],
-  "image": "https://c402277.ssl.cf1.rackcdn.com/photos/2942/images/story_full_width/beluga_224991.jpg?1353100459"
+  "image": "https://c402277.ssl.cf1.rackcdn.com/photos/1960/images/hero_full/beluga_whale_Kevin_Schafer_WWF-Canon.jpg?1345556165"
   },
   { 
   "name": "Narwhal",
@@ -348,7 +348,7 @@ const endangeredSpecies = [
   "locations": ["Arctic"],
   "population": 80000,
   "threats": ["ByCatch", "Pollution", "Climate Change"],
-  "image": "https://c402277.ssl.cf1.rackcdn.com/photos/493/images/hero_full/shutterstock_89694280.jpg?1367330837"
+  "image": "https://c402277.ssl.cf1.rackcdn.com/photos/2977/images/hero_full/GPN232813_%28c%29_Paul_Nicklen_National_Geographic_Stock_WWF_Canada.jpg?1354046148"
   },
   { 
   "name": "Sei Whale",
@@ -357,7 +357,7 @@ const endangeredSpecies = [
   "locations": ["Southern Chile", "Arctic", "The Galapagos", "Coral Triangle", "Gulf of California", "Coastal East Africa"],
   "population": "Unknown",
   "threats": ["ByCatch", "Pollution", "Climate Change"],
-  "image": "https://c402277.ssl.cf1.rackcdn.com/photos/493/images/hero_full/shutterstock_89694280.jpg?1367330837"
+  "image": "https://c402277.ssl.cf1.rackcdn.com/photos/340/images/hero_full/HI_257682.jpg?1434400464"
   }
 ]
 
