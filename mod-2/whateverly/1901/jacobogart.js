@@ -251,7 +251,7 @@ const bars = [
       "dayOfWeek": "Saturday",
       "frequency": "weekly",
       "host": ["Naysha Lopez", "Mz. Ruff ‘N Stuff"],
-      "id": 1403,
+      "id": 1404,
       "imageURL": "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/52033947_2523848607842214_2866732525089193984_o.jpg?_nc_cat=110&_nc_ht=scontent-dfw5-2.xx&oh=2fbc1505a53b38e1880dc6ab6dd962ab&oe=5D4FF0C4",
       "notes": "With weekly guest performers!",
       "reoccuring": true,
@@ -281,7 +281,7 @@ const bars = [
       "notes": "Guests are asked to make a $15 donation to play all night (10 games, three chances to win each game).",
       "reoccuring": true,
       "startTime": [2000],
-      "name": "Charity HamBingo Mary’s",
+      "name": "Charity HamBingo Mary’s (Monday)",
       "website": "https://www.hamburgermarys.com/chicago/events/event/charity-hambingo-marys/"
     }, {
       "category": "competition",
@@ -315,7 +315,7 @@ const bars = [
       "notes": "Guests are asked to make a $15 donation to play all night (10 games, three chances to win each game).",
       "reoccuring": true,
       "startTime": [1900],
-      "name": "Charity HamBingo Mary’s",
+      "name": "Charity HamBingo Mary’s (Sunday)",
       "website": "https://www.hamburgermarys.com/chicago/events/event/charity-hambingo-marys/"
     }, {
       "category": "drag show",
@@ -490,7 +490,7 @@ const bars = [
       "frequency": "weekly",
       "host": ["Lucy Stoole"],
       "id": 1901,
-      "imagesURL": "https://kikipaedia.com/resources/images/bars/chi/events/queen.jpg",
+      "imagesURL": "http://i67.tinypic.com/2hh1zz7.png",
       "reoccuring": true,
       "startTime": [2200],
       "name": "Queen!"
@@ -531,7 +531,7 @@ const bars = [
     "phone": "(773) 696-4211",
     "shows": [{
       "category": "drag show",
-      "dayOfWeek": "Sudnay",
+      "dayOfWeek": "Sunday",
       "frequency": "weekly",
       "host": ["Chamilla Foxx"],
       "id": 2101,
@@ -616,7 +616,7 @@ const queens = [
       "https://scontent-ort2-1.cdninstagram.com/vp/3323d98df624de2eb095ffb9c89ba111/5D32DDAF/t51.2885-19/s320x320/45673485_490667418097105_7862612748352356352_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com",
     "instagram": "https://www.instagram.com/kat.sass/?hl=en",
     "name": "Kat Sass",
-    "shows": ["XYZ", "SLAY: Afterbirth"],
+    "shows": ["XYZ", "SLAY"],
     "twitter": "https://twitter.com/ihatekatsass?lang=en"
   },
   {
@@ -636,7 +636,7 @@ const queens = [
       "https://scontent-ort2-1.cdninstagram.com/vp/13e995a8636ec47ffde09c03a0f9ed8b/5D2B0C3A/t51.2885-19/s320x320/46231105_215610492568777_3332799123098173440_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com",
     "instagram": "https://www.instagram.com/tenderoni88/?hl=en",
     "name": "Tenderoni",
-    "shows": ["XYZ", "SLAY: Afterbirth"],
+    "shows": ["XYZ", "SLAY"],
     "twitter": "https://twitter.com/tender_oni?lang=en"
   },
   {
@@ -688,7 +688,7 @@ const queens = [
       "https://scontent-ort2-1.cdninstagram.com/vp/4d0b3df6131f8d888306a9df15cca084/5D4AD8C8/t51.2885-19/s320x320/51960968_314889779378337_6930784065515683840_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com",
     "instagram": "https://www.instagram.com/theladyivory/?hl=en",
     "name": "Lady Ivory",
-    "shows": ["SLAY: Afterbirth", "Killer Babes"]
+    "shows": ["SLAY", "Killer Babes"]
   },
   {
     "bio":
@@ -699,7 +699,7 @@ const queens = [
       "https://scontent-ort2-1.cdninstagram.com/vp/b246ef70004ec4f6064ab1a87cf80ccc/5D43AC73/t51.2885-19/s320x320/52771929_384172695710068_8393887159051878400_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com",
     "instagram": "https://www.instagram.com/claire.voyant.queen/?hl=en",
     "name": "Claire Voyant",
-    "shows": ["SLAY: Afterbirth"],
+    "shows": ["SLAY"],
     "twitter": "https://twitter.com/_claire_voyant"
   },
   {
@@ -709,7 +709,7 @@ const queens = [
       "https://scontent-ort2-1.cdninstagram.com/vp/1181c4aab94a68f11bdd0b27da9721e6/5D40BC83/t51.2885-19/s320x320/39245126_321538398619721_6782979199884853248_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com",
     "instagram": "https://www.instagram.com/crinklecutqueen/?hl=en",
     "name": "Masha Potato",
-    "shows": ["SLAY: Afterbirth"],
+    "shows": ["SLAY"],
     "twitter": "https://twitter.com/crinklecutqueen"
   },
   {
@@ -720,7 +720,7 @@ const queens = [
       "https://scontent-ort2-1.cdninstagram.com/vp/ac7b8fa47fcba73ef5acb00ffc95b89d/5D3F3A29/t51.2885-19/s320x320/52993442_2202217859839848_8598534538160766976_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com",
     "instagram": "https://www.instagram.com/siichele/?hl=en",
     "name": "Siichele",
-    "shows": ["SLAY: Afterbirth"],
+    "shows": ["SLAY"],
     "twitter": "https://twitter.com/siichele?lang=en"
   },
   {
