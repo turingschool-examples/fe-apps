@@ -490,7 +490,7 @@ const bars = [
       "frequency": "weekly",
       "host": ["Lucy Stoole"],
       "id": 1901,
-      "imagesURL": "http://i67.tinypic.com/2hh1zz7.png",
+      "imageURL": "http://i67.tinypic.com/2hh1zz7.png",
       "reoccuring": true,
       "startTime": [2200],
       "name": "Queen!"
