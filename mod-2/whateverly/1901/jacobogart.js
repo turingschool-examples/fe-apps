@@ -531,7 +531,7 @@ const bars = [
     "phone": "(773) 696-4211",
     "shows": [{
       "category": "drag show",
-      "dayOfWeek": "Sudnay",
+      "dayOfWeek": "Sunday",
       "frequency": "weekly",
       "host": ["Chamilla Foxx"],
       "id": 2101,
