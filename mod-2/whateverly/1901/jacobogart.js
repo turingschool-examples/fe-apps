@@ -367,6 +367,7 @@ const bars = [
       "category": "drag show",
       "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
       "frequency": "nightly",
+      "id": 1601,
       "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-81yRN3OxAJbEsK5_wfz9Y76wDJ17PDgYtFm8K2DG7nnGM4HHjQ",
       "notes": "Kit Kat's nightly shows run every 20 minutes starting at 6.30pm through midnight.",
       "reoccuring": true,
