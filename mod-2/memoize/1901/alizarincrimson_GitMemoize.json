@@ -1,0 +1,105 @@
+let commands = [
+
+  {
+    "definition": "Initialize a New Git Repository",
+    "answer": "git init",
+    "choices": ["git start", "git init", "git push"],
+    "id": 1
+  },
+  {
+    "definition": "Commit Tracked Files with Message",
+    "answer": "git commit -m",
+    "choices": ["git init", "git merge -m", "git commit"],
+    "id": 2
+  },
+  {
+    "definition": "See Working Version vs. Staged Version",
+    "answer": "git diff",
+    "choices": ["git remote", "git reset", "git diff"],
+    "id": 3
+  },
+  {
+    "definition": "Begin Tracking a File",
+    "answer": "git add",
+    "choices": ["git add", "git track", "git start"],
+    "id": 4
+  },
+   {
+    "definition": "Set User Name and Email in Configuration File",
+    "answer": "git config",
+    "choices": ["git set", "git config", "git init"],
+    "id": 5
+  },
+  {
+    "definition": "Copy a Repository from a Remote Source",
+    "answer": "git clone",
+    "choices": ["git init", "git remote", "git clone"],
+    "id": 6
+  },
+  {
+    "definition": "Return to Latest Commit Version",
+    "answer": "git reset",
+    "choices": ["git remote", "git reset", "git return"],
+    "id": 7
+  },
+  {
+    "definition": "Merge Two Branches",
+    "answer": "git merge",
+    "choices": ["git combine", "git add", "git merge"],
+    "id": 8
+  },
+  {
+    "definition": "Create and Switch to a New Branch",
+    "answer": "git checkout -b",
+    "choices": ["git checkout", "git checkout -b", "git switch"],
+    "id": 9
+  },
+  {
+    "definition": "Save Changes Without Commit",
+    "answer": "git stash",
+    "choices": ["git stash", "git merge", "git save"],
+    "id": 10
+  },
+  {
+    "definition": "Show All Working Branches",
+    "answer": "git branch",
+    "choices": ["git checkout", "git branch", "git all"],
+    "id": 11
+  },
+  {
+    "definition": "Switch to a Different Branch",
+    "answer": "git checkout",
+    "choices": ["git switch", "git branch", "git checkout"],
+    "id": 12
+  },
+   {
+    "definition": "Retrieve Latest Changes from Remote Source",
+    "answer": "git pull",
+    "choices": ["git pull", "git set", "git push"],
+    "id": 13
+  },
+  {
+    "definition": "Restore Saved Changes on Working Directory",
+    "answer": "git stash pop",
+    "choices": ["git stash", "git stash pop", "git clone"],
+    "id": 14
+  },
+  {
+    "definition": "Delete a Branch",
+    "answer": "git branch -d",
+    "choices": ["git delete", "git remove", "git branch -d"],
+    "id": 15
+  },
+  {
+    "definition": "Revert to Changes on a Specific Commit",
+    "answer": "git revert [SHA1]",
+    "choices": ["git recall [SHA1]", "git revert [SHA1]", "git merge [SHA1]"],
+    "id": 16
+  },
+  {
+
+  }
+
+];
+
+module.exports = commands
