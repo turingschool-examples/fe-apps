@@ -145,7 +145,7 @@ const methods = [
       "type": "math"
     }, 
     {
-      "name": "min(x,y,z,...,n))", 
+      "name": "min(x,y,z,...,n)", 
       "description" : "Returns the number with the lowest value",
       "type": "math"
     }, 
