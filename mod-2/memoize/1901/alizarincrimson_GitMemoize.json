@@ -97,8 +97,145 @@ let commands = [
     "id": 16
   },
   {
-
-  }
+    "definition": "View Commit History for Current Branch",
+    "answer": "git log",
+    "choices": [
+      "git view",
+      "git show",
+      "git log"
+    ],
+    "id": 17
+  },
+  {
+    "definition": "Discard Latest Commit",
+    "answer": "git reset HEAD~",
+    "choices": [
+      "git undo HEAD~",
+      "git discard HEAD~",
+      "git reset HEAD~"
+    ],
+    "id": 18
+  },
+  {
+    "definition": "Show Commit History for Another Working Branch",
+    "answer": "git log [branch]",
+    "choices": [
+      "git show [branch]",
+      "git log [branch]",
+      "git history [branch]"
+    ],
+    "id": 19
+  },
+  {
+    "definition": "Merge Onto Existing Branch",
+    "answer": "git merge [name]",
+    "choices": [
+      "git save [name]",
+      "git commit [name]",
+      "git merge [name]"
+    ],
+    "id": 20
+  },
+  {
+    "definition": "List Modified Files",
+    "answer": "git status",
+    "choices": [
+      "git status",
+      "git diff",
+      "git files"
+    ],
+    "id": 21
+  },
+  {
+    "definition": "Revert a File to the Last Commit",
+    "answer": "git checkout [file-name]",
+    "choices": [
+      "git save [file-name]",
+      "git checkout [file-name]",
+      "git return [file-name]"
+    ],
+    "id": 22
+  },
+  {
+    "definition": "Staged Version vs. Last Commit Version",
+    "answer": "git diff --staged",
+    "choices": [
+      "git show --staged",
+      "git diff --staged",
+      "git compare --staged"
+    ],
+    "id": 23
+  },
+  {
+    "definition": "Make Changes to Last Commit",
+    "answer": "git commit --amend -m",
+    "choices": [
+      "git change --commit -m",
+      "git updarte --change -m",
+      "git commit --amend -m"
+    ],
+    "id": 24
+    },
+    {
+      "definition": "View Single Line Log",
+      "answer": "git log --oneline",
+      "choices": [
+        "git log --single",
+        "git log --oneline",
+        "git log --one"
+      ],
+      "id": 25
+    },
+    {
+      "definition": "Undo Latest Merge",
+      "answer": "git merge --abort",
+      "choices": [
+        "git merge --abort",
+        "git merge --cancel",
+        "git merge --undo"
+      ],
+      "id": 26
+    },
+    {
+      "definition": "Reset Files to Last Commit and Discard Tracked File Changes",
+      "answer": "git reset --hard",
+      "choices": [
+        "git reset --discard",
+        "git reset --hard",
+        "git reset --delete"
+      ],
+      "id": 27
+    },
+    {
+      "definition": "Add a New Branch to Remote",
+      "answer": "git push -u",
+      "choices": [
+        "git add -u",
+        "git push -u",
+        "git save -u"
+      ],
+      "id": 28
+    },
+    {
+      "definition": "Show Changes Since Commit",
+      "answer": "git status",
+      "choices": [
+        "git view",
+        "git show",
+        "git status"
+      ],
+      "id": 29
+    },
+    {
+      "definition": "Remove a Tracked File from Index and Working Directory",
+      "answer": "git rm [file-name]",
+      "choices": [
+        "git rm [file-name]",
+        "git discard [file-name]",
+        "git delete [file-name]"
+      ],
+      "id": 30
+    },
 
 ];
 
