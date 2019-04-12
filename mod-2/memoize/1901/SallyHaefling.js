@@ -224,7 +224,6 @@ const reactTrivia = [
     id: 32
   }
 ]
-
 module.exports = {
   reactTrivia
 }
