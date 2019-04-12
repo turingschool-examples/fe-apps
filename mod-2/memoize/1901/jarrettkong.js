@@ -11,7 +11,7 @@ const lessons = [
   {
     "id": 2,
     "category": "Classes",
-    "regex": "\d",
+    "regex": "\\d",
     "instructions": "Finds a single occurance of any digit 0-9",
     "prompt": "find",
     "examples": ["1234567890"],
