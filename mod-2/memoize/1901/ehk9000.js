@@ -1,20 +1,20 @@
 [
     {
-        "question": "What string prototype would you use to find the first charecter in this string",
+        "question": "What string prototype would you use to find the first character in this string",
         "exampleString":  "let lsp = \"Lumpy Space Princes\"",
         "answer": "lsp.charAt(0)",
         "category" : "easy",
         "id": 1
     },
     {
-        "queston": "What string prototype would you use to see if \"glob\" is used in this string?",
+        "question": "What string prototype would you use to see if \"glob\" is used in this string?",
         "exampleString": "let  finn = \"Oh my glob!\"",
         "answer": "finn.includes(\"glob\")",
         "category": "easy",
         "id": 2
     },
     {
-        "question": "What string prototype would you use to find the first occurance of \"Finn\"?",
+        "question": "What string prototype would you use to find the first occurrence of \"Finn\"?",
         "exampleString": "let bemo = \" Who wants Finn cakes?\" ",
         "answer": "bemo.indexOf(\"Finn\")",
         "category": "easy",
@@ -62,10 +62,76 @@
         "id": 9
     },
     {
+        "question": "How would you get rid of all of those extra spaces?",
+        "exampleString": "let time = \"      Dude, I found out my human dad is still alive.              \" ",
+        "answer": "time.trim()",
+        "category": "easy",
+        "id": 10
+    },
+    {
         "question" : "How would you make a new string that says \"Finn the Human\" from the provided string?",
         "exampleString": "let title = \"Jake the dog and Finn the Human\"",
         "answer": "title.slice(17)",
-        "category": "meduim",
-        "id": 10
+        "category": "medium",
+        "id": 11
+    },
+    {
+        "question": "What would this return?",
+        "exampleString": "let title = \"Dude, what the bjork?\" title.charAt(5)" ,
+        "answer": ",",
+        "category": "medium",
+        "id": 12
+    },
+    {
+        "question": "Using one line and one type of string prototype, use prototypes to return the string P.B",
+        "exampleString": "let princess = \"Princess bubblegum\"",
+        "answer": "(princess[0] + \".\" + princess[9]).toUpperCase();",
+        "category": "hard",
+        "id": 13
+    },
+    {
+        "question": "What would be returned from this statement?",
+        "exampleString": "let jake = \"I love food more than I love people\" jake.includes(\"more\")",
+        "answer": "true",
+        "category": "easy",
+        "id": 14
+    },
+    {
+        "question": "What would be returned from this statement?",
+        "exampleString": " let jake = \"Bro, you gotta let things take their natural path \" jake.startsWith(\"Bro, yo\")",
+        "answer": "true",
+        "category": "medium",
+        "id": 15
+    },
+    {
+        "question": "What is returned from this statement?",
+        "exampleString": "let bemo = \"Sometimes life is scary and dark.\"; bemo.length",
+        "answer": "33",
+        "category": "medium",
+        "id": 16
+    },
+    {
+        "question": "What is returned from this statement?",
+        "exampleString": "let jake = \"To live life, you need problems. If you get everything you want the minute you want it, then what\’s the point of livin\’ ? \"; jake.toUpperCase() ",
+        "answer": "TO LIVE LIFE, YOU NEED PROBLEMS. IF YOU GET EVERYTHING YOU WANT THE MINUTE YOU WANT IT, THEN WHAT\'S THE POINT OF LIVIN\'?\"",
+        "category": "medium",
+        "id": 17
+    },
+    {
+        "question": "How would you make this one variable?",
+        "exampleString": "let jake = \" I say 'creepy' is just another label we use to distance ourselves from stuff we don\'t understand.\" let theDog= \"Or that it reminds us of something in ourselves that we're not comfortable with. It just ain't a real thing, ya know? Unless you choose to believe it\"",
+        "answer": "jake.concat(theDog)",
+        "category": "medium",
+        "id": 18
+    },
+    {
+        "question": "How would you make this one variable and add an exclamation point at the end of the variable king?",
+        "exampleString": "let king = \"You don\'t understand \" let ice = \"If you were me you\'d do the things I\'ve done.\"",
+        "answer": "king.concat(\"!\", ice)",
+        "category" : "hard",
+        "id": 19
+    },
+    {
+        "question": ""
     }
 ]
