@@ -49,7 +49,7 @@
         "id": 7
     },
     {
-        "question": "What does the string prototype split return?",
+        "question": "What does the string prototype .split return?",
         "answer": "an array",
         "category": "easy",
         "id": 8
@@ -152,5 +152,60 @@
         "category": "medium",
         "id": 22
     },
-    
+    {
+        "question": "Return the 10th character in this string",
+        "exampleString": "let marcie = \"Sucking at something is the first step towards being sorta good at something\" ",
+        "answer": "marcie.charAt(12)",
+        "category": "medium",
+        "id": 23
+    },
+    {
+        "question": "What will be returned after this statement?",
+        "exampleString": "let marcie = \"Sucking at something is the first step towards being sorta good at something\"; marcie.charAt(12)",
+        "answer": " ",
+        "category": "hard",
+        "id": 24
+    },
+    {
+        "question": "What datatype does the string prototype .startsWith() return?",
+        "answer": "boolean",
+        "category": "easy",
+        "id": 25
+    },
+    {
+        "question": "What datatype does the string prototype .indexOf() return?",
+        "answer": "boolean",
+        "category": "easy",
+        "id": 26   
+    },
+    {
+        "question": "What datatype does the string prototype .endsWith() return?",
+        "answer": "boolean",
+        "category": "easy",
+        "id": 27
+    },
+    {
+        "question": "What datatype does the string prototype .charAt() return?",
+        "answer": "string",
+        "category": "easy",
+        "id": 28
+    },
+    {
+        "question": "What datatype does the string prototype .substring() return?",
+        "answer": "string",
+        "category": "easy",
+        "id": 29
+    },
+    {
+        "question": "What datatype does the string prototype .slice() return?",
+        "answer": "string",
+        "category": "easy",
+        "id": 30
+    },
+    {
+        "question": "What datatype does the string prototype .includes() return?",
+        "answer": "boolean",
+        "category": "easy",
+        "id": 31
+    }
 ]
