@@ -187,7 +187,7 @@ const cats = [
   },
   {
     "name": "Milo",
-    "color": "gray",
+    "color": "gray", 
     "age": 5,
     "fed": false
   }
