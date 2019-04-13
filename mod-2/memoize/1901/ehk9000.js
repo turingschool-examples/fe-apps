@@ -132,6 +132,25 @@
         "id": 19
     },
     {
-        "question": ""
-    }
+        "question": "Return the third letter in the string capitalized",
+        "exampleString": "let vampire = \"Marceline the Vampire Queen\"",
+        "answer": "vampire.charAt(2).toUpperCase();",
+        "category": "hard",
+        "id": 20
+    },
+    {
+        "question": "What will be returned after this statement?",
+        "exampleString": "let finn = \" People get built different. We don't need to figure it out, we just need to respect it.\" finn.endsWith(\"o respect it\")",
+        "answer": "true",
+        "category": "medium",
+        "id": 21
+    },
+    {
+        "question": "What will be returned after this statement?",
+        "exampleString": "let jake = \"You guys are so cute, I could just maul you to death.\" jake.indexOf(\"cute\")",
+        "answer": "16",
+        "category": "medium",
+        "id": 22
+    },
+    
 ]
