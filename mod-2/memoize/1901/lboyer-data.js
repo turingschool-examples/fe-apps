@@ -1,31 +1,31 @@
 const keyCommands = [
   {
 		"task": "Copy",
-		"command": "control C",
+		"command": "command C",
 		"level": "Beginner"
 	},
 
 	{
 		"task": "Paste",
-		"command": "control P",
+		"command": "command P",
 		"level": "Beginner"
 	},
 
 	{
 		"task": "Cut",
-		"command": "control X",
+		"command": "command X",
 		"level": "Beginner"
 	},
 
 	{
 		"task": "Save",
-		"command": "control S",
+		"command": "command S",
 		"level": "Beginner"
 	},
 
 	{
 		"task": "Select All",
-		"command": "control A",
+		"command": "command A",
 		"level": "Beginner"
 	},
 
@@ -175,7 +175,7 @@ const keyCommands = [
 
 	{
 		"task": "Open or close directory in your text editor",
-		"command": "Command K B",
+		"command": "command K B",
 		"level": "Advanced"
 	}
 
