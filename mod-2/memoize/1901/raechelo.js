@@ -185,7 +185,7 @@ const questions = [
   {
     "question": "When referring to Router, what is one key difference between Link and NavLink?",
     "correctAnswer": "NavLink comes with an active class",
-    "allAnswers": ["NavLink comes with an active class", "NavLink comes with an active class", "NavLink comes with an active class", "NavLink comes with an active class"],
+    "allAnswers": ["Link does not come with a disabled class", "Link comes with an active class", "NavLink comes with an active class", "NavLink comes with an disabled class"],
     "category": "Router",
     "id": 27
   },
