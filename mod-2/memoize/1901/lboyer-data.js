@@ -7,7 +7,7 @@ const keyCommands = [
 
 	{
 		"task": "Paste",
-		"command": "command P",
+		"command": "command V",
 		"level": "Beginner"
 	},
 
