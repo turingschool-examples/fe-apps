@@ -101,7 +101,7 @@ const learnPrototypes = [{
   "id": "2932-288-7brw1-mvdks",
   "category": "Array Prototype",
   "questions": "When using .filter() what does it return ?",
-  "answers": ["The entire element ", "the properties you choose", "nothing is returned"],
+  "answers": ["The entire element", "the properties you choose", "nothing is returned"],
   "correctAnswer": "The entire element",
   "correct": false,
   "resource": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
@@ -146,8 +146,8 @@ const learnPrototypes = [{
   "id": "2932-3dj-kq73n-pbdks",
   "category": "String Prototype",
   "questions": "What combination of string prototypes can be used to capitalize the following string let words = have a great day!  to let bigWord = HAVE A GREAT DAY! ?",
-  "answers": ["toUpperCase", ".charAt", ".normalize"],
-  "correctAnswer": "toUpperCase",
+  "answers": [".toUpperCase", ".charAt", ".normalize"],
+  "correctAnswer": ".toUpperCase",
   "correct": false,
   "resource": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase"
 },
