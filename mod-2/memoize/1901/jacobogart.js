@@ -91,7 +91,7 @@ const keywords = [
   {
     "word": "mockData value",
     "nextWords": [
-      "New Line"
+      ";"
     ],
     "value": "",
     "isEditable": true,
@@ -126,7 +126,7 @@ const keywords = [
     "nextWords": [
       "Arrow Function",
     ],
-    "value": "-,",
+    "value": "'Component Name', ",
     "isEditable": true,
     "phase": ["S"],
     "details": "A label for a testing block, most likely a component name or method",
@@ -135,9 +135,7 @@ const keywords = [
   {
     "word": "Arrow Function",
     "nextWords": [
-      "let",
-      "wrapper",
-      "expect"
+      "New Line"
     ],
     "value": "() => {",
     "isEditable": false,
@@ -150,7 +148,7 @@ const keywords = [
     "nextWords": [
       "wrapper",
     ],
-    "value": "let",
+    "value": "let ",
     "isEditable": false,
     "phase": ["S"],
     "details": "Declare a variable that can be reassigned",
@@ -184,7 +182,7 @@ const keywords = [
   {
     "word": "shallow",
     "nextWords": [
-      "React Component Name"
+      "New Line"
     ],
     "value": "shallow(",
     "isEditable": false,
@@ -195,10 +193,9 @@ const keywords = [
   {
     "word": "React Component Name",
     "nextWords": [
-      "Prop Name",
-      "/>"
+      "New Line"
     ],
-    "value": "<-",
+    "value": "<Component Name",
     "isEditable": true,
     "phase": ["S"],
     "details": "The name of the React compnent you are testing",
@@ -210,7 +207,7 @@ const keywords = [
       "mockData Name",
       "mockPropFunction"
     ],
-    "value": "-={",
+    "value": "yourPropName={",
     "isEditable": true,
     "phase": ["S"],
     "details": "Similar to a key, this is how you will access the prop's value in the child component",
@@ -219,7 +216,7 @@ const keywords = [
   {
     "word": "}",
     "nextWords": [
-      "/>"
+      "New Line"
     ],
     "value": "}",
     "isEditable": false,
@@ -230,7 +227,7 @@ const keywords = [
   {
     "word": "/>",
     "nextWords": [
-      ")"
+      "New Line"
     ],
     "value": "/>",
     "isEditable": false,
@@ -356,9 +353,18 @@ const keywords = [
   {
     "word": "New Line",
     "nextWords": [
-      ")"
+      ")",
+      "let",
+      "wrapper",
+      "expect",
+      "beforeEach",
+      "Prop Name",
+      "/>",
+      "}",
+      "describe",
+      "React Component Name"
     ],
-    "value": "\n",
+    "value": "New Line",
     "isEditable": false,
     "phase": ["S", "E", "A", "T"],
     "details": "Start a new line of testing",
