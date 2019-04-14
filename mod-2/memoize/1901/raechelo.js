@@ -99,8 +99,8 @@ const questions = [
   },
   {
     "question": "What is Provider?",
-    "correctAnswer": "makes store avialable to all containers",
-    "allAnswers": ["makes store avialable to all containers", "makes state avialable to all containers", "makes store avialable to all components", "makes state avialable to all components"],
+    "correctAnswer": "makes store available to all containers",
+    "allAnswers": ["makes store available to all containers", "makes state available to all containers", "makes store available to all components", "makes state available to all components"],
     "category": "Redux",
     "id": 15
   },
