@@ -1,4 +1,4 @@
-const emilySemanticHTML = [
+const semanticHTML = [
   {
     "id": 1,
     "prompt": "A container which typically contains the site logo and site navigation",
