@@ -223,7 +223,7 @@ const reactTrivia = [
     correct: false,
     id: 32
   }
-];
+]
 
 module.exports = {
   reactTrivia
