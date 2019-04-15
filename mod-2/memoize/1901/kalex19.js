@@ -185,5 +185,5 @@ const questions = [
 ]
 
 module.exports = {
-  codeSnippets
+  questions
 }
