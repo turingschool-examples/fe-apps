@@ -198,7 +198,7 @@ const prototypeQuestions = [
     },
     {
         "question": "What datatype does the string prototype .slice() return?",
-        "answer": "string",
+        "answer": "an array",
         "category": "easy",
         "id": 30
     },
