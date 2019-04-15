@@ -52,6 +52,7 @@ function importDataFiles(directories) {
     let project = details.pop(); // get the current project from the directory ('whateverly')
     let dataFiles = readdirSync(dir); // get an array of all files in the directory
 
+    dataFiles = dataFiles.filter(file => !(/(^|\/)\.[^\/\.]/g).test(file));
     dataFiles.forEach(dataFile => { 
       let studentName = `${basename(dataFile, '.js')}`; // get the student name from the file name ('lizAsbell')
       let filePath = join(dir, dataFile); // build the file path so we can require in its exports

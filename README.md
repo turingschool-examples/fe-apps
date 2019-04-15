@@ -49,7 +49,7 @@ Begin by **forking** this repo, then cloning down your forked copy to your machi
 
 ## Heroku Setup & Deployment
 
-* Go to heroku.com and login to the turing instructors account (credentials in staff channel posted by Katelyn)
+* Go to heroku.com and login to the turing instructors account (Search for instructors@turing.io in the instructional-staff channel for credentials)
 * Click on the `fe-apps` project > Access
 * Add yourself as a collaborator with your personal Heroku account
 * Install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) if you don't have it yet, and login with your personal Heroku credentials from your terminal with `heroku login`
