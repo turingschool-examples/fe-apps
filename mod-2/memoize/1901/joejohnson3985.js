@@ -1,4 +1,4 @@
-const Terms = 
+const terms = 
   [
     {
       "type": "html tag", 
@@ -153,5 +153,5 @@ const Terms =
   ]
 
 module.exports = {
-  Terms
+  terms
 }
