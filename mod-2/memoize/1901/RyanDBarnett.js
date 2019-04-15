@@ -193,4 +193,6 @@ const cards = [
   }
 ]
 
-module.exports = cards;
+module.exports = {
+  cards
+}
