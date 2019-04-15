@@ -47,7 +47,7 @@ const terms =
     },
     {
       "type": "html tag", 
-      "term": "<Code>", 
+      "term": "<code>", 
       "definition": "Displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code."
     },
     {
