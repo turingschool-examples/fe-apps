@@ -212,3 +212,7 @@ const flexBox = [
     "wrongAnswers": ["Fill", "Length", "Contain"]
   }
 ]
+
+module.exports = {
+  flexBox
+}

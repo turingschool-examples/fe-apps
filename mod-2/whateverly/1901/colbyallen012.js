@@ -355,7 +355,7 @@ const leoAwards = [
 ]
 
   
-  module exports = {
+  module.exports = {
     leoMovies,
     leoAwards
   }
