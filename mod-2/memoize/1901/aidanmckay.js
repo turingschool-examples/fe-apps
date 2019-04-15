@@ -318,4 +318,6 @@ const commandQuestions = [{
     "category": "Cache/Staging Area"
 }]
 
-export default commandQuestions;
+module.exports = {
+  commandQuestions
+}
