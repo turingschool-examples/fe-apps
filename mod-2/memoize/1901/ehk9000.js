@@ -1,4 +1,4 @@
-[
+const prototypeQuestions = [
     {
         "question": "What string prototype would you use to find the first character in this string",
         "exampleString":  "let lsp = \"Lumpy Space Princes\"",
@@ -209,3 +209,7 @@
         "id": 31
     }
 ]
+
+module.exports = {
+  prototypeQuestions
+}
