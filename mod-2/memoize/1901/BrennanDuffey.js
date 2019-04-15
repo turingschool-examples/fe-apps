@@ -218,4 +218,6 @@ const questions = [
   }
 ];
 
-module.exports = {data}
+module.exports = {
+  questions
+}
