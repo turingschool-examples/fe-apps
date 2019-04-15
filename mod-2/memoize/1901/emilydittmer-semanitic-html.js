@@ -300,3 +300,7 @@ const semanticHTML = [
     "correctAnswer": "<area>"
   }
 ]
+
+module.exports = {
+  semanticHTML
+}
