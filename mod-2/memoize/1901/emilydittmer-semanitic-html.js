@@ -45,7 +45,7 @@ const emilySemanticHTML = [
     "possibleChoices": [
     "<nav>",
     "<menu>",
-    "<secltion>"
+    "<section>"
     ],
     "correctAnswer": "<menu>"
   },
