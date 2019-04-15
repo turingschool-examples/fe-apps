@@ -224,4 +224,6 @@ const Terms =
 //   }
 // ]
 
-export default Terms;
+module.exports = {
+  Terms
+}
