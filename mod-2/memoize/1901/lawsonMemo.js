@@ -2,7 +2,7 @@ const cards = [
   {
     "id": 1,
     "question": "What does Sass stand for?", 
-    "multipleChoice": ["Syntactically Awesome Stylesheet", "Sassy Syntactically Awesome StyleSheet", "Version 3"], 
+    "multipleChoice": ["Syntactically Awesome Stylesheet", "Sassy Syntactically Awesome StyleSheet", "Sassy StyleSheets"], 
     "correctAnswer": "Syntactically Awesome Stylesheet",
     "img": "https://i.imgur.com/KPJj9ZV.png"
 
@@ -10,16 +10,16 @@ const cards = [
   {
     "id": 2,
     "question": "What does Scss stand for?", 
-    "multipleChoice": ["Syntactically Awesome Stylesheet", "Sassy Syntactically Awesome StyleSheet", "Version 2"], 
+    "multipleChoice": ["Syntactically Awesome Stylesheet", "Sassy Syntactically Awesome StyleSheet", "Sassy Stylesheets"], 
     "correctAnswer": "Sassy Syntactically Awesome Stylesheet",
     "img": "https://i.imgur.com/KPJj9ZV.png"
 
   }, 
   {
     "id": 3,
-    "question": "Is scss a pre-processor?", 
+    "question": "Is Scss a pre-processor?", 
     "multipleChoice": ["Yes", "No"], 
-    "correctAnswer": "true",
+    "correctAnswer": "Yes",
     "img": "https://i.imgur.com/KPJj9ZV.png"
 
   }, 
@@ -35,7 +35,7 @@ const cards = [
     "question": "Can you have indents and spaces within your scss files?", 
     "multipleChoice": ["Yes", "No"], 
     "correctAnswer": "",
-    "trueOrFalse": "true",
+    "trueOrFalse": "Yes",
     "img": "https://i.imgur.com/KPJj9ZV.png"
   }, 
   {
@@ -50,7 +50,7 @@ const cards = [
     "id": 7,
     "question": "Is css a pre-processor?", 
     "multipleChoice": ["Yes", "No"], 
-    "correctAnswer": "false",
+    "correctAnswer": "No",
     "img": "https://i.imgur.com/KPJj9ZV.png"
 
   }, 
@@ -58,7 +58,7 @@ const cards = [
     "id": 8,
     "question": "Is this the correct way to nest selctors?",
     "multipleChoice": ["Yes", "No"], 
-    "correctAnswer": "false",
+    "correctAnswer": "No",
     "img": "https://imgur.com/Ux9uOFy.png"
   }, 
   {
@@ -84,7 +84,7 @@ const cards = [
     "id": 11,
     "question": "Can you pass in values with a mixin?", 
     "multipleChoice": ["Yes", "No"],
-    "correctAnswer": "true",
+    "correctAnswer": "Yes",
     "img": "https://i.imgur.com/KPJj9ZV.png"
   },
   {
@@ -98,14 +98,14 @@ const cards = [
     "id": 13,
     "question": "Is this the correct way to use the complement color function with scss?", 
     "multipleChoice": ["Yes", "No"],
-    "correctAnswer": "true",
+    "correctAnswer": "Yes",
     "img": "https://imgur.com/VSfVuDd.png"
   },
   {
     "id": 14,
     "question": "Is this the correct way to nest selctors?",
     "multipleChoice": ["Yes", "No"], 
-    "correctAnswer": "true",
+    "correctAnswer": "Yes",
     "img": "https://imgur.com/XI5JNzy.png"
   },
   {
@@ -122,42 +122,42 @@ const cards = [
     "id": 16,
     "question": "Does @mixin need to also have @inlcude?",
     "multipleChoice": [ "Yes", "No"], 
-    "correctAnswer": "true",
+    "correctAnswer": "Yes",
     "img": "https://i.imgur.com/KPJj9ZV.png" 
   },
   {
     "id": 17,
     "question": "Is this correct declaration for a @inlcude?",
     "multipleChoice": [ "Yes", "No"], 
-    "correctAnswer": "false",
+    "correctAnswer": "No",
     "img": "https://imgur.com/o4FR70e.png" 
   },
   {
     "id": 18,
     "question": "Is this correct declaration for a @inlcude?",
     "multipleChoice": [ "Yes", "No"], 
-    "correctAnswer": "true",
+    "correctAnswer": "Yes",
     "img": "https://imgur.com/38aMwEI.png" 
   },
   {
     "id": 19,
     "question": "Is this correct syntax for sass?",
     "multipleChoice": [ "Yes", "No"], 
-    "correctAnswer": "true",
+    "correctAnswer": "Yes",
     "img": "https://imgur.com/J57gvRt.png" 
   },
   {
     "id": 20,
     "question": "Is this correct syntax for a scss",
     "multipleChoice": [ "Yes", "No"], 
-    "correctAnswer": "true",
+    "correctAnswer": "Yes",
     "img": "https://imgur.com/s2o48im.png" 
   },
   {
     "id": 21,
     "question": "Does sass use bracket syntax?",
     "multipleChoice": [ "Yes", "No"], 
-    "correctAnswer": "false",
+    "correctAnswer": "No",
     "img": "https://i.imgur.com/KPJj9ZV.png" 
   },
   {
@@ -190,7 +190,7 @@ const cards = [
   },
   {
     "id": 26,
-    "question": "Which answer best describes the use of operators in scss",
+    "question": "Which answer best describes the use of operators in scss?",
     "multipleChoice": [ "Operations let us do something like take pixel values and convert them to percentages", 
                   "Operators act very similar to JS operators like || , &&",
                   "Operators are not used for math within styling"], 
@@ -218,14 +218,14 @@ const cards = [
     "id": 29,
     "question": "Can animations and transitions be stored to variables with css?",
     "multipleChoice": ["Yes", "No"], 
-    "correctAnswer": "false",
+    "correctAnswer": "No",
     "img": "https://i.imgur.com/KPJj9ZV.png"  
   },
   {
     "id": 30,
     "question": "Can animations and transitions be stored to variables with scss?",
     "multipleChoice": ["Yes", "No"], 
-    "correctAnswer": "true",
+    "correctAnswer": "Yes",
     "img": "https://i.imgur.com/KPJj9ZV.png"  
   }
   
