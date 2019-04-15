@@ -25,9 +25,9 @@ const reactTerms = [
     "example": "npm and Yarn are two of these that are commonly used in React applications."
   }, {
     "id": 5,
-    "term": "CDN (Content Delivery Networks)",
+    "term": "CDN",
     "fakeAnswers": ["Internet", "Http"],
-    "definition": "A system of distributed servers that deliver pages/Web content to a user based on the geo locations, webpage origin, and the content delivery server.",
+    "definition": "The acronym for a system of distributed servers that deliver pages/Web content to a user based on the geo locations, webpage origin, and the content delivery server.",
     "example": "Akamai, Amazon CloudFront, CacheFly are examples of these."
   }, {
     "id": 6,
@@ -75,29 +75,29 @@ const reactTerms = [
     "id": 13,
     "term": "Controlled Component",
     "fakeAnswers": ["Uncontrolled Component", "Class Component"],
-    "definition": "This is an input form that when a user enters data into it, a change event handler is triggered and your code decides whether the input is valid (by re-rendering with the updated value). If you don't re-render then the form element won't change.",
+    "definition": "This is an input form that when a user enters data into it, a change event handler is triggered and your code decides whether the input is valid (by re-rendering w/ it). If you don't re-render, the form element won't change.",
     "example": "./images/example{exampleId}.png"
   }, {
     "id": 14,
     "term": "Uncontrolled Component",
     "fakeAnswers": ["Controlled Component", "Class Component"],
-    "definition": "This works like form elements do outside of React. When a user inputs data into a form field, the updated info is reflected without React needing to do anything. However, this also means that you can’t force the field to have a certain value.",
+    "definition": "This works like regular form elements do. When a user inputs data into a form field, the updated info is reflected without React needing to do anything. However, this also means that you can’t force the field to have a certain value.",
     "example": "./images/example{exampleId}.png"
   }, {
     "id": 15,
     "term": "Keys",
     "fakeAnswers": ["State", "Props"],
     "definition": "This is a special string attribute you need to include when creating arrays of elements. It helps React identify which items were changed, added, or removed, and should be given to the elements inside an array to give them a stable identity.",
-    "example": "./images/example{exampleId}.png"
+    "example": ""
   }, {
     "id": 16,
     "term": "Refs",
     "fakeAnswers": ["Keys", "Props"],
-    "definition": "These are a special attribute that you can attach to any component and can be an object created by a function or a callback, or a string. When it's a callback, the function receives the underlying DOM element or class instance as its argument. This allows you to have direct access to the DOM element or component instance.",
-    "example": "./images/example{exampleId}.png"
+    "definition": "It's a special attribute you can attach to any component. When it's a callback function, it receives the underlying DOM element or class instance as its argument. This allows you direct access to the DOM element or component instance.",
+    "example": ""
   }, {
     "id": 17,
-    "term": "Events",
+    "term": "Event Listeners",
     "fakeAnswers": ["Functions", "Properties"],
     "definition": "These are something commonly used across JavaScript to handle user interactions, but they have syntactic differences in React e.g. named w/ camelCase rather than lowercase, and with JSX passing a function rather than a string.",
     "example": "./images/example{exampleId}.png"
@@ -105,8 +105,8 @@ const reactTerms = [
     "id": 18,
     "term": "Reconciliation",
     "fakeAnswers": ["Recreation", "Navigation"],
-    "definition": "A process in React where when a component’s props or state change, and React decides whether an actual DOM update is necessary by comparing the newly returned element with the previously rendered one. When they are not equal, React will update the DOM.",
-    "example": "./images/example{exampleId}.png"
+    "definition": "A process in React where when a component’s props or state change, and React decides whether a DOM update is necessary by comparing the newly returned element with the previously rendered one. When different, React will update the DOM.",
+    "example": ""
   }, {
     "id": 19,
     "term": "Factories",
@@ -117,7 +117,7 @@ const reactTerms = [
     "id": 20,
     "term": "Screen Component",
     "fakeAnswers": ["Functional Component", "Class Component"],
-    "definition": "This is a type of component we use in our route configuration with special props.  It allows us to set up what apepars as different 'pages' in our application.",
+    "definition": "This is a type of component we use in our route configuration with special props.  It allows us to set up what appears as different 'pages' in our application.",
     "example": "./images/example{exampleId}.png"
   }, {
     "id": 21,
@@ -148,49 +148,49 @@ const reactTerms = [
     "term": "setState()",
     "fakeAnswers": ["componentDidMount()", "constructor()"],
     "definition": "A react method used to update a component state property.",
-    "example": "./images/example{exampleId}.png"
+    "example": ""
   }, {
     "id": 26,
     "term": "componentDidMount()",
     "fakeAnswers": ["componentWillMount()", "componentWillUpdate()"],
     "definition": "A react lifecycle method used to do all the setup you couldn't do without a DOM.  Typically used to load your data, and also do things you couldn't before there was a component and DOM to play with.  Can call setState.",
-    "example": "./images/example{exampleId}.png"
+    "example": ""
   }, {
     "id": 27,
     "term": "componentWillMount()",
     "fakeAnswers": ["componentDidMount()", "componentWillUpdate()"],
     "definition": "One of the react lifecycle methods that is called only one time before the initial render.  It can be tricky because there's nothing to play with yet involving the DOM. The most common use case is App configuration in your root component.",
-    "example": "./images/example{exampleId}.png"
+    "example": ""
   }, {
     "id": 28,
     "term": "componentWillReceiveProps()",
     "fakeAnswers": ["componentWillMount()", "shouldComponentUpdate()"],
-    "definition": "May be used when some data was loaded by a parent component and is being passed down.  Before the component does anything with the new props, this method is called, with the next props as the argument.  We now have access to both the next props and our current props.  The most common use case is for acting on particular prop changes to trigger state transitions.",
-    "example": "./images/example{exampleId}.png"
+    "definition": "May be used when data was loaded by a parent component and is being passed down to get access to both next and current props.  Before the component does anything w/ the new props, this method is called, with the next props as the arg.",
+    "example": ""
   }, {
     "id": 29,
     "term": "shouldComponentUpdate()",
     "fakeAnswers": ["componentWillMount()", "componentWillUpdate()"],
     "definition": "May be used when you want to explicitly tell a component not to render when it receives new props or new state.  It returns true or false, and defaults to true.",
-    "example": "./images/example{exampleId}.png"
+    "example": ""
   }, {
     "id": 30,
     "term": "componentWillUpdate()",
     "fakeAnswers": ["componentWillMount()", "shouldComponentUpdate()"],
     "definition": "May be used if you were using shouldComponentUpdate and needed to do something when props change.  Similar to componentWillReceiveProps(), but you are now allowed to call this.setState.",
-    "example": "./images/example{exampleId}.png"
+    "example": ""
   }, {
     "id": 31,
     "term": "componentDidUpdate()",
     "fakeAnswers": ["componentWillMount()", "componentWillUpdate()"],
     "definition": "May be used to update the DOM in response to prop or state changes, e.g. if you want to avoid rerendering certain things in the DOM but not others.",
-    "example": "./images/example{exampleId}.png"
+    "example": ""
   }, {
     "id": 32,
     "term": "componentWillUnmount()",
     "fakeAnswers": ["shouldComponentUpdate()", "componentWillUpdate()"],
-    "definition": "May be used when a component is going away forever to cancel any outgoing network requests, or remove all event listeners associated with the component. Basically, it can clean up anything to do that solely involves the component in question to make it completely gone.",
-    "example": "./images/example{exampleId}.png"
+    "definition": "May be used when a component is going away forever to cancel outgoing network requests, or remove event listeners associated with it (a.k.a. clean up anything to do that solely involves the component in question).",
+    "example": ""
   }, {
     "id": 33,
     "term": "Functional Component",
