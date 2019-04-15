@@ -318,4 +318,6 @@ const neighborhoods = [{
   }
 ];
 
-export default { restaurants, neighborhoods };
+module.exports = { 
+  restaurants, neighborhoods
+}
