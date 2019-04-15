@@ -190,4 +190,6 @@ const lessons = [
   },
 ]
 
-export default lessons;
+module.exports = {
+  lessons
+}
