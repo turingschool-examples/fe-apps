@@ -184,4 +184,6 @@ const questions = [
   }
 ]
 
-export default codeSnippets
+module.exports = {
+  codeSnippets
+}
