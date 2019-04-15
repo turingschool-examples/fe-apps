@@ -212,4 +212,6 @@ const reactTerms = [
   }
 ]
 
-export default reactTerms;
+module.exports = {
+  reactTerms
+}
