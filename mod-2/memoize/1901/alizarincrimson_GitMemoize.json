@@ -239,4 +239,6 @@ let commands = [
 
 ];
 
-module.exports = commands
+module.exports = {
+  commands
+}
