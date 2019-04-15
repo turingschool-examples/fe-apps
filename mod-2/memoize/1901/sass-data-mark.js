@@ -274,7 +274,7 @@ const drSass = [
       "* is used to link variables together",
       "* is not used in Sass and will throw an error"],
     "correctAnswer": "* is not used in Sass and will throw an error"
-  },
+  },  
   {
     "id": "40",
     "Question": "What does the @onceler directive do",
@@ -284,3 +284,7 @@ const drSass = [
     "correctAnswer": "@onceler is not a Sass directive"
   }
 ]
+
+module.exports = {
+  drSass
+}
