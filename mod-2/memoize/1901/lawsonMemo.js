@@ -34,8 +34,7 @@ const cards = [
     "id": 5,
     "question": "Can you have indents and spaces within your scss files?", 
     "multipleChoice": ["Yes", "No"], 
-    "correctAnswer": "",
-    "trueOrFalse": "Yes",
+    "correctAnswer": "Yes",
     "img": "https://i.imgur.com/KPJj9ZV.png"
   }, 
   {
@@ -176,7 +175,7 @@ const cards = [
   },
   {
     "id": 24,
-    "question": "Do you @import all your seperate scss files into index.js, index.html, index.scss?",
+    "question": "Which file do you @import all your seperate scss files into?",
     "multipleChoice": ["index.html", "index.scss", "index.js"], 
     "correctAnswer": "index.scss",
     "img": "https://i.imgur.com/KPJj9ZV.png"  
@@ -191,10 +190,10 @@ const cards = [
   {
     "id": 26,
     "question": "Which answer best describes the use of operators in scss?",
-    "multipleChoice": [ "Operations let us do something like take pixel values and convert them to percentages", 
+    "multipleChoice": [ "Operators in Scss let us do something like take pixel values and convert them to percentages", 
                   "Operators act very similar to JS operators like || , &&",
                   "Operators are not used for math within styling"], 
-    "correctAnswer": "Operations in Scss let us do something like take pixel values and convert them to percentages",
+    "correctAnswer": "Operators in Scss let us do something like take pixel values and convert them to percentages",
     "img": "https://i.imgur.com/KPJj9ZV.png"  
   },
   {
