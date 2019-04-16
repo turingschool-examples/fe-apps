@@ -184,4 +184,6 @@ const questions = [
   }
 ]
 
-export default questions 
+module.exports = {
+  questions
+} 
