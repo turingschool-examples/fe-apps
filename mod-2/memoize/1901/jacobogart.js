@@ -34,6 +34,9 @@ const stages = [
     "name": "Tear Down",
     "letter": "T",
     "description": "Clean up any resources you used in your test (this usully happens automatically)",
+    "starterWords": [
+      "afterEach"
+    ],
     "id": 4
   }
 
@@ -126,7 +129,7 @@ const keywords = [
     "nextWords": [
       "Arrow Function",
     ],
-    "value": "'Component Name', ",
+    "value": "'Component/Method Name', ",
     "isEditable": true,
     "phase": ["S"],
     "details": "A label for a testing block, most likely a component name or method",
@@ -160,7 +163,9 @@ const keywords = [
       "=",
       ";",
       ")",
-      "state("
+      "state(",
+      "instance",
+      "find("
     ],
     "value": "wrapper",
     "isEditable": false,
@@ -176,7 +181,7 @@ const keywords = [
     "value": "beforeEach(",
     "isEditable": false,
     "phase": ["S"],
-    "details": "A function that will becalled at the begining of each it block",
+    "details": "A function that will be called at the begining of each it block",
     "id": 111
   },
   {
@@ -191,7 +196,7 @@ const keywords = [
     "id": 112
   },
   {
-    "word": "React Component Name",
+    "word": "Component Name",
     "nextWords": [
       "New Line"
     ],
@@ -210,13 +215,14 @@ const keywords = [
     "value": "yourPropName={",
     "isEditable": true,
     "phase": ["S"],
-    "details": "Similar to a key, this is how you will access the prop's value in the child component",
+    "details": "This is how you will access the prop's value in the child component",
     "id": 114
   },
   {
     "word": "}",
     "nextWords": [
-      "New Line"
+      "New Line",
+      ")"
     ],
     "value": "}",
     "isEditable": false,
@@ -241,7 +247,9 @@ const keywords = [
       ";",
       ".toMatchSnapshot()",
       ")",
-      ".toEqual("
+      ".toEqual(",
+      ".toHaveBeenCalled()",
+      ".toHaveBeenCalledWith("
     ],
     "value": ")",
     "isEditable": false,
@@ -265,7 +273,7 @@ const keywords = [
     "nextWords": [
       "Arrow Function"
     ],
-    "value": "'-', ",
+    "value": "'should ', ",
     "isEditable": true,
     "phase": ["S"],
     "details": "Text describing what you are testing, that will show in the terminal",
@@ -362,7 +370,8 @@ const keywords = [
       "/>",
       "}",
       "describe",
-      "React Component Name"
+      "Component Name",
+      "it"
     ],
     "value": "New Line",
     "isEditable": false,
@@ -380,6 +389,153 @@ const keywords = [
     "phase": ["S", "E", "A", "T"],
     "details": "Punctuation for ending complete code statements",
     "id": 128
+  },
+  {
+    "word": "instance",
+    "nextWords": [
+      "setState",
+      "Class Method"
+    ],
+    "value": ".instance()",
+    "isEditable": false,
+    "phase": ["E", "A"],
+    "details": "The single class instance of the wrapper",
+    "id": 129
+  },
+  {
+    "word": "setState",
+    "nextWords": [
+      ";"
+    ],
+    "value": ".setState(newStateProp/Object)",
+    "isEditable": true,
+    "phase": ["E"],
+    "details": "Change one or more pieces of state for this it block",
+    "id": 130
+  },
+  {
+    "word": "Class Method",
+    "nextWords": [
+      ")",
+      "arugment"
+    ],
+    "value": ".yourMethod(",
+    "isEditable": true,
+    "phase": ["E", "A"],
+    "details": "Invoke the class method you are testing or utilzing",
+    "id": 131
+  },
+  {
+    "word": "arugment",
+    "nextWords": [
+      ")",
+      ","
+    ],
+    "value": "",
+    "isEditable": true,
+    "phase": ["E", "A"],
+    "details": "An arument for your method, possible mock data",
+    "id": 132
+  },
+  {
+    "word": ",",
+    "nextWords": [
+      "argument"
+    ],
+    "value": ", ",
+    "isEditable": false,
+    "phase": ["E", "A"],
+    "details": "An coma to separate arguments",
+    "id": 133
+  },
+  {
+    "word": ".toHaveBeenCalledWith(",
+    "nextWords": [
+      "argument"
+    ],
+    "value": ".toHaveBeenCalledWith(",
+    "isEditable": false,
+    "phase": ["A"],
+    "details": "Asserts that a spied on method was called with the correct argument",
+    "id": 134
+  },
+  {
+    "word": ".toHaveBeenCalled()",
+    "nextWords": [
+      ";"
+    ],
+    "value": ".toHaveBeenCalled()",
+    "isEditable": false,
+    "phase": ["A"],
+    "details": "Assers if a spied on method has been called",
+    "id": 135
+  },
+  {
+    "word": "find(",
+    "nextWords": [
+      "selector"
+    ],
+    "value": ".find(",
+    "isEditable": false,
+    "phase": ["E"],
+    "details": "Returns every element with that selector",
+    "id": 136
+  },
+  {
+    "word": "selector",
+    "nextWords": [
+      "simulate("
+    ],
+    "value": "yourSelector)",
+    "isEditable": true,
+    "phase": ["E"],
+    "details": "A valid CSS selector or React component name",
+    "id": 137
+  },
+  {
+    "word": "simulate(",
+    "nextWords": [
+      "Event Type"
+    ],
+    "value": ".simulate(",
+    "isEditable": false,
+    "phase": ["E"],
+    "details": "Used to simulate events in the wrapper",
+    "id": 138
+  },
+  {
+    "word": "Event Type",
+    "nextWords": [
+      "Mock Event Object",
+      ")"
+    ],
+    "value": "'eventType'",
+    "isEditable": true,
+    "phase": ["E"],
+    "details": "The event name (as a string) to be simulated",
+    "id": 139
+  },
+  {
+    "word": "Mock Event Object",
+    "nextWords": [
+      ")"
+    ],
+    "value": "{your event object}",
+    "isEditable": true,
+    "phase": ["E"],
+    "details": "A object that replicates the event object's values used in a method",
+    "id": 140
+  },
+  {
+    "word": "afterEach",
+    "nextWords": [
+      "Arrow Function"
+    ],
+    "value": "afterEach(",
+    "isEditable": false,
+    "phase": ["T"],
+    "details": "A function that will be called at the end of each it block",
+    "id": 141
   }
 ]
 
