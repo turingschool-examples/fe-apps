@@ -999,6 +999,6 @@ const bookings = [
     "date": "30/12/2019",
     "roomNumber": 120
   }
-]
+];
 
 module.exports = { bookings };
