@@ -1,4 +1,4 @@
-const users = [
+const users = { users: [
   {
     "id": 1,
     "name": "Neil Stoltenberg"
@@ -199,6 +199,6 @@ const users = [
     "id": 50,
     "name": "Burdette Romaguera"
   }
-];
+]};
 
-module.exports = {users};
+module.exports = users;
