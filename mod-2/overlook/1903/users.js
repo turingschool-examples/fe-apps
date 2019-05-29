@@ -201,4 +201,4 @@ const users = { users: [
   }
 ]};
 
-module.exports = users;
+module.exports = { users };
