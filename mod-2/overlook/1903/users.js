@@ -1,4 +1,4 @@
-module.exports = [
+const users = [
   {
     "id": 1,
     "name": "Neil Stoltenberg"
@@ -199,4 +199,6 @@ module.exports = [
     "id": 50,
     "name": "Burdette Romaguera"
   }
-]
+];
+
+module.exports = {users};
