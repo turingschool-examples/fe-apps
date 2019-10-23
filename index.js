@@ -45,7 +45,19 @@ datasets.forEach(dataset => {
       const newData = request.body;
       const allowedParameters = ['userID', 'date', 'hoursSlept', 'sleepQuality', 'numOunces', 'flightsOfStairs', 'minutesActive', 'numSteps'];
 
+      const necessaryParameters = {
+        sleepData: ['userID', 'date', 'hoursSlept', 'sleepQuality'],
+        activityData: ['userID', 'date', 'flightsOfStairs', 'minutesActive', 'numSteps'],
+        hydrationData: ['userID', 'date', 'numOunces']
+      };
+
       let validDate = isValidDate(newData.date);
+
+      if (newData.userID > 50 || newData.userID < 1) {
+        return response.status(422).json({
+          message: `No user found with ID of ${newData.userID}`
+        });
+      }
 
       if (!validDate) {
         return response.status(422).json({
@@ -54,7 +66,7 @@ datasets.forEach(dataset => {
       }
 
 
-      for (let requiredParameter of ['userID', 'date']) {
+      for (let requiredParameter of necessaryParameters[data]) {
         if (!newData[requiredParameter]) {
           return response.status(422).json({
             message: `You are missing a required parameter of ${requiredParameter}`
@@ -65,9 +77,9 @@ datasets.forEach(dataset => {
       let newDataKeys = Object.keys(newData);
 
       newDataKeys.forEach(key => {
-        if (!allowedParameters.includes(key)) {
+        if (!necessaryParameters[data].includes(key)) {
           return response.status(422).json({
-            message: `Invalid key passed through: ${key}`
+            message: `Invalid key for ${data} passed through: ${key}`
           });
         }
       })
