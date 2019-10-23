@@ -42,8 +42,28 @@ datasets.forEach(dataset => {
   fitLitDatasets.forEach(data => {
     app.post(`${pathPrefix}/${data}`, (request, response) => {
       const newData = request.body;
+      const allowedParameters = ['userID', 'date', 'hoursSlept', 'sleepQuality', 'numOunces', 'flightsOfStairs', 'minutesActive', 'numSteps'];
+
+      for (let requiredParameter of ['userID', 'date']) {
+        if (!newData[requiredParameter]) {
+          return response.status(422).json({
+            message: `You are missing a required parameter of ${requiredParameter}`
+          });
+        }
+      }
+
+      let newDataKeys = Object.keys(newData);
+
+      newDataKeys.forEach(key => {
+        if (!allowedParameters.includes(key)) {
+          return response.status(422).json({
+            message: `Invalid key passed through: ${key}`
+          });
+        }
+      })
+    
       app.locals[data].push(newData);
-      response.status(201).json(newData);
+      return response.status(201).json(newData);
     });
   });
 
