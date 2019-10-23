@@ -45,6 +45,15 @@ datasets.forEach(dataset => {
       const newData = request.body;
       const allowedParameters = ['userID', 'date', 'hoursSlept', 'sleepQuality', 'numOunces', 'flightsOfStairs', 'minutesActive', 'numSteps'];
 
+      let validDate = isValidDate(newData.date);
+
+      if (!validDate) {
+        return response.status(422).json({
+          message: `Invalid date format. Date must be in YYYY/MM/DD format`
+        });
+      }
+
+
       for (let requiredParameter of ['userID', 'date']) {
         if (!newData[requiredParameter]) {
           return response.status(422).json({
@@ -69,6 +78,12 @@ datasets.forEach(dataset => {
   });
 
 });
+
+
+function isValidDate(dateString) {
+  var regEx = /^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/;
+  return regEx.test(dateString);
+}
 
 if (!module.parent) {
   app.listen(app.get('port'), () => {
