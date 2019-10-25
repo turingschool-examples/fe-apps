@@ -16,8 +16,11 @@ app.set('port', process.env.PORT || 3000);
 app.locals = {
   sleepData: [],
   activityData: [],
-  hydrationData: []
+  hydrationData: [],
+  roomServices: [],
+  bookings: []
 }
+
 
 
 // Import Mod 2 Datasets
@@ -28,10 +31,12 @@ datasets.forEach(dataset => {
   let { project, cohort, studentName, dataVariables } = dataset;
   let pathPrefix = `/api/v1/${project}/${cohort}/${studentName}`;
   let fitLitDatasets = ['sleepData', 'activityData', 'hydrationData'];
+  let overlookDatasets = ['bookings', 'roomServices'];
+  let postEndpointDatasets = fitLitDatasets.concat(overlookDatasets);
 
   Object.keys(dataVariables).forEach(data => {
     app.get(`${pathPrefix}/${data}`, (request, response) => {
-      if (fitLitDatasets.includes(data)) {
+      if (postEndpointDatasets.includes(data)) {
         response.send({ [data]: dataVariables[data].concat(app.locals[data])});
       } else {
         response.send({ [data]: dataVariables[data] });
@@ -39,8 +44,8 @@ datasets.forEach(dataset => {
     });
   });
 
-  // Create POST endpoints for FitLit
-  fitLitDatasets.forEach(data => {
+  // Create POST endpoints for FitLit & Overlook
+  postEndpointDatasets.forEach(data => {
     app.post(`${pathPrefix}/${data}`, (request, response) => {
       const newData = request.body;
       const allowedParameters = ['userID', 'date', 'hoursSlept', 'sleepQuality', 'numOunces', 'flightsOfStairs', 'minutesActive', 'numSteps'];
@@ -48,7 +53,9 @@ datasets.forEach(dataset => {
       const necessaryParameters = {
         sleepData: ['userID', 'date', 'hoursSlept', 'sleepQuality'],
         activityData: ['userID', 'date', 'flightsOfStairs', 'minutesActive', 'numSteps'],
-        hydrationData: ['userID', 'date', 'numOunces']
+        hydrationData: ['userID', 'date', 'numOunces'],
+        bookings: ['userID', 'date', 'roomNumber'],
+        roomServices: ['userID', 'date', 'food', 'totalCost']
       };
 
       let validDate = isValidDate(newData.date);
