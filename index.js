@@ -11,38 +11,46 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.set('port', process.env.PORT || 3000);
 
-
-// APP LOCALS for FITLIT
-app.locals = {
-  sleepData: [],
-  activityData: [],
-  hydrationData: [],
-  roomServices: [],
-  bookings: []
-}
-
-
-
 // Import Mod 2 Datasets
 const datasets = require('./mod-2/project-datasets.js');
+
+
+// APP LOCALS for FITLIT & OVERLOOK
+app.locals = {
+  sleepData: datasets.find(dataset => dataset.studentName === 'sleep').dataVariables.sleepData,
+  activityData: datasets.find(dataset => dataset.studentName === 'activity').dataVariables.activityData,
+  hydrationData: datasets.find(dataset => dataset.studentName === 'hydration').dataVariables.hydrationData,
+  bookings: datasets.find(dataset => dataset.studentName === 'bookings').dataVariables.bookings
+}
 
 // Create GET Endpoints
 datasets.forEach(dataset => {
   let { project, cohort, studentName, dataVariables } = dataset;
   let pathPrefix = `/api/v1/${project}/${cohort}/${studentName}`;
   let fitLitDatasets = ['sleepData', 'activityData', 'hydrationData'];
-  let overlookDatasets = ['bookings', 'roomServices'];
+  let overlookDatasets = ['bookings'];
   let postEndpointDatasets = fitLitDatasets.concat(overlookDatasets);
+  let deleteEndpointDatasets = ['bookings'];
 
   Object.keys(dataVariables).forEach(data => {
     app.get(`${pathPrefix}/${data}`, (request, response) => {
-      if (postEndpointDatasets.includes(data)) {
-        response.send({ [data]: dataVariables[data].concat(app.locals[data])});
+      if (postEndpointDatasets.includes(data) || deleteEndpointDatasets.includes(data)) {
+        response.send({ [data]: app.locals[data]});
       } else {
         response.send({ [data]: dataVariables[data] });
       }
     });
   });
+
+
+  deleteEndpointDatasets.forEach(data => {
+    app.delete(`${pathPrefix}/${data}`, (request, response) => {
+      let newData = request.body;
+      app.locals.bookings = app.locals.bookings.filter(booking => booking.id !== newData.id);
+      return response.sendStatus(200);
+    });
+  });
+
 
   // Create POST endpoints for FitLit & Overlook
   postEndpointDatasets.forEach(data => {
@@ -89,7 +97,11 @@ datasets.forEach(dataset => {
             message: `Invalid key for ${data} passed through: ${key}`
           });
         }
-      })
+      });
+
+      if (data === 'bookings') {
+        newData.id = Date.now();
+      }
     
       app.locals[data].push(newData);
       return response.status(201).json(newData);
