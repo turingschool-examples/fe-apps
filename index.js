@@ -20,7 +20,8 @@ app.locals = {
   sleepData: datasets.find(dataset => dataset.studentName === 'sleep').dataVariables.sleepData,
   activityData: datasets.find(dataset => dataset.studentName === 'activity').dataVariables.activityData,
   hydrationData: datasets.find(dataset => dataset.studentName === 'hydration').dataVariables.hydrationData,
-  bookings: datasets.find(dataset => dataset.studentName === 'bookings').dataVariables.bookings
+  bookings: datasets.find(dataset => dataset.studentName === 'bookings').dataVariables.bookings,
+  gameTimeLeaderBoard: []
 }
 
 // Create GET Endpoints
@@ -49,6 +50,26 @@ datasets.forEach(dataset => {
       app.locals.bookings = app.locals.bookings.filter(booking => booking.id !== newData.id);
       return response.sendStatus(200);
     });
+  });
+
+  app.get('/api/v1/gametime/leaderboard', (request, response) => {
+    response.send({ highScores: app.locals.gameTimeLeaderBoard });
+  })
+
+  app.post('/api/v1/gametime/leaderboard', (request, response) => {
+    const scoreData = request.body;
+    const requiredParameters = ['appId', 'playerName', 'playerScore'];
+
+    for (let requiredParameter of requiredParameters) {
+      if (!scoreData[requiredParameter]) {
+        return response.status(422).json({
+          message: `You are missing a required parameter of ${requiredParameter}`
+        });
+      }
+    }
+
+    app.locals.gameTimeLeaderBoard.push(scoreData);
+    return response.status(201).json(scoreData);
   });
 
 
