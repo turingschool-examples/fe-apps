@@ -357,13 +357,6 @@ const data = {
           description: 'Any two (or more) related phrases separated by a comma or otherwise used consecutively',
           correct_answer: 'Good Morning',
         },{  
-          category: 'Around The House',
-          number_of_words: 2,
-          total_number_of_letters: 11,
-          first_word: 11,
-          description: 'Location or object(s) found within a typical house.',
-          correct_answer: 'Windowpanes',
-        },{  
           category:'Rhyme Time',
           number_of_words: 2,
           total_number_of_letters: 8,
@@ -517,14 +510,6 @@ const data = {
           first_word: 2, 
           description: 'Any two (or more) related phrases separated by a comma or otherwise used consecutively',
           correct_answer: 'By The Way',
-        },
-        {  
-          category: 'Phrase',
-          number_of_words: 3,
-          total_number_of_letters: 8,
-          first_word: 5, 
-          description: 'Any two (or more) related phrases separated by a comma or otherwise used consecutively',
-          correct_answer: 'Admit One',
         },
         {  
           category: 'Phrase',
