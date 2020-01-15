@@ -57,7 +57,7 @@ datasets.forEach(dataset => {
   })
 
   app.get('/api/v1/numbers/:num', (request, response) => {
-    response.send(request.params.num);
+    response.send({ topScore: request.params.num });
   });
 
   app.post('/api/v1/gametime/leaderboard', (request, response) => {
