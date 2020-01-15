@@ -56,6 +56,10 @@ datasets.forEach(dataset => {
     response.send({ highScores: app.locals.gameTimeLeaderBoard });
   })
 
+  app.get('/api/v1/numbers/:num', (request, response) => {
+    response.send(request.params.num);
+  });
+
   app.post('/api/v1/gametime/leaderboard', (request, response) => {
     const scoreData = request.body;
     const requiredParameters = ['appId', 'playerName', 'playerScore'];
