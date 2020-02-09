@@ -15,12 +15,15 @@ app.set('port', process.env.PORT || 3000);
 const datasets = require('./mod-2/project-datasets.js');
 
 
-// APP LOCALS for FITLIT & OVERLOOK
+// APP LOCALS for FITLIT & OVERLOOK & TRAVEL TRACKER
 app.locals = {
   sleepData: datasets.find(dataset => dataset.studentName === 'sleep').dataVariables.sleepData,
   activityData: datasets.find(dataset => dataset.studentName === 'activity').dataVariables.activityData,
   hydrationData: datasets.find(dataset => dataset.studentName === 'hydration').dataVariables.hydrationData,
   bookings: datasets.find(dataset => dataset.studentName === 'bookings').dataVariables.bookings,
+  trips: datasets.find(dataset => dataset.studentName === 'trips').dataVariables.trips,
+  travelers: datasets.find(dataset => dataset.studentName === 'travelers').dataVariables.travelers,
+  destinations: datasets.find(dataset => dataset.studentName === 'destinations').dataVariables.destinations,
   gameTimeLeaderBoard: []
 }
 
@@ -29,9 +32,11 @@ datasets.forEach(dataset => {
   let { project, cohort, studentName, dataVariables } = dataset;
   let pathPrefix = `/api/v1/${project}/${cohort}/${studentName}`;
   let fitLitDatasets = ['sleepData', 'activityData', 'hydrationData'];
+  let travelTrackerDatasets = ['travelers', 'trips', 'destinations'];
   let overlookDatasets = ['bookings'];
-  let postEndpointDatasets = fitLitDatasets.concat(overlookDatasets);
-  let deleteEndpointDatasets = ['bookings'];
+  let postEndpointDatasets = [...fitLitDatasets, ...overlookDatasets, ...travelTrackerDatasets];
+  let deleteEndpointDatasets = ['bookings', 'trips'];
+  let putEndpointDatasets = ['trips'];
 
   Object.keys(dataVariables).forEach(data => {
     app.get(`${pathPrefix}/${data}`, (request, response) => {
@@ -47,7 +52,16 @@ datasets.forEach(dataset => {
   deleteEndpointDatasets.forEach(data => {
     app.delete(`${pathPrefix}/${data}`, (request, response) => {
       let newData = request.body;
-      app.locals.bookings = app.locals.bookings.filter(booking => booking.id !== newData.id);
+      app.locals[data] = app.locals[data].filter(el => el.id !== newData.id);
+      return response.sendStatus(200);
+    });
+  });
+
+  putEndpointDatasets.forEach(data => {
+    app.put(`${pathPrefix}/${data}`, (request, response) => {
+      let newData = request.body;
+      let index = app.locals[data].findIndex(el => el.id === newData.id);
+      app.locals[data][index] = newData;
       return response.sendStatus(200);
     });
   });
@@ -88,9 +102,10 @@ datasets.forEach(dataset => {
         activityData: ['userID', 'date', 'flightsOfStairs', 'minutesActive', 'numSteps'],
         hydrationData: ['userID', 'date', 'numOunces'],
         bookings: ['userID', 'date', 'roomNumber'],
-        roomServices: ['userID', 'date', 'food', 'totalCost']
-      };
-
+        roomServices: ['userID', 'date', 'food', 'totalCost'],
+        destinations: ['id', 'destination', 'estimatedLodgingCostPerDay', 'estimatedFlightCostPerPerson', 'image', 'alt'],
+        trips: ['userID', 'destinationID', 'travelers', 'date', 'duration', 'status', 'suggestedActivities']};
+ 
       let validDate = isValidDate(newData.date);
 
       if (newData.userID > 50 || newData.userID < 1) {
@@ -99,7 +114,7 @@ datasets.forEach(dataset => {
         });
       }
 
-      if (!validDate) {
+      if (!validDate && data !== 'destinations') {
         return response.status(422).json({
           message: `Invalid date format. Date must be in YYYY/MM/DD format`
         });
@@ -107,7 +122,7 @@ datasets.forEach(dataset => {
 
 
       for (let requiredParameter of necessaryParameters[data]) {
-        if (!newData[requiredParameter]) {
+        if (newData[requiredParameter] === undefined) {
           return response.status(422).json({
             message: `You are missing a required parameter of ${requiredParameter}`
           });
@@ -124,7 +139,7 @@ datasets.forEach(dataset => {
         }
       });
 
-      if (data === 'bookings') {
+      if (data === 'bookings' || data === 'trips') {
         newData.id = Date.now();
       }
     

@@ -1,7 +1,7 @@
 const { readdirSync, statSync } = require('fs');
 const { join, basename, dirname } = require('path');
 
-const projectNames = ['whateverly', 'memoize', 'gametime', 'overlook', 'fitlit'];
+const projectNames = ['whateverly', 'memoize', 'gametime', 'overlook', 'fitlit', 'travel-tracker'];
 const projectPaths = buildProjectPaths(projectNames);
 const datasets = importDataFiles(projectPaths);
 
