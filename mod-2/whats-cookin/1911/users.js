@@ -1,4 +1,4 @@
-let usersData = [
+let wcUsersData = [
   {
     "name": "Saige O'Kon",
     "id": 1,
@@ -11323,15 +11323,8 @@ let usersData = [
         "amount": 2
       }
     ]
-  },
-  {
-    "name": " Tester",
-    "id": 1000,
-    "pantry": [
-      {
-        "ingredient": 1,
-        "amount": 2
-      }
-    ]
   }
 ]
+module.exports = {
+  wcUsersData
+};
