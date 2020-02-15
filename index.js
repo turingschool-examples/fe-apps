@@ -29,7 +29,6 @@ app.locals = {
 
 // Create GET Endpoints
 datasets.forEach(dataset => {
-  console.log(dataset);
   let { project, cohort, studentName, dataVariables } = dataset;
   let pathPrefix = `/api/v1/${project}/${cohort}/${studentName}`;
   let fitLitDatasets = ['sleepData', 'activityData', 'hydrationData'];
