@@ -15,7 +15,8 @@ app.set('port', process.env.PORT || 3000);
 const datasets = require('./mod-2/project-datasets.js');
 
 
-// APP LOCALS for FITLIT & OVERLOOK & TRAVEL TRACKER
+// APP LOCALS for FITLIT & OVERLOOK & WHATS COOKIN & TRAVEL TRACKER
+
 app.locals = {
   sleepData: datasets.find(dataset => dataset.studentName === 'sleep').dataVariables.sleepData,
   activityData: datasets.find(dataset => dataset.studentName === 'activity').dataVariables.activityData,
@@ -24,7 +25,10 @@ app.locals = {
   trips: datasets.find(dataset => dataset.studentName === 'trips').dataVariables.trips,
   travelers: datasets.find(dataset => dataset.studentName === 'travelers').dataVariables.travelers,
   destinations: datasets.find(dataset => dataset.studentName === 'destinations').dataVariables.destinations,
-  gameTimeLeaderBoard: []
+  gameTimeLeaderBoard: [],
+  ingredientsData: datasets.find(dataset => dataset.studentName === 'ingredients').dataVariables.ingredients,
+  recipesData: datasets.find(dataset => dataset.studentName === 'recipes').dataVariables.recipes,
+  wcUsersData: datasets.find(dataset => dataset.project === 'whats-cookin' && dataset.studentName === 'users').dataVariables.wcUsersData
 }
 
 // Create GET Endpoints
@@ -37,10 +41,10 @@ datasets.forEach(dataset => {
   let postEndpointDatasets = [...fitLitDatasets, ...overlookDatasets, ...travelTrackerDatasets];
   let deleteEndpointDatasets = ['bookings', 'trips'];
   let putEndpointDatasets = ['trips'];
-
+  let whatsCookinDatasets = ['wcUsersData'];
   Object.keys(dataVariables).forEach(data => {
     app.get(`${pathPrefix}/${data}`, (request, response) => {
-      if (postEndpointDatasets.includes(data) || deleteEndpointDatasets.includes(data)) {
+      if (postEndpointDatasets.includes(data) || deleteEndpointDatasets.includes(data) || whatsCookinDatasets.includes(data)) {
         response.send({ [data]: app.locals[data]});
       } else {
         response.send({ [data]: dataVariables[data] });
@@ -90,8 +94,64 @@ datasets.forEach(dataset => {
     return response.status(201).json(scoreData);
   });
 
+  // Create POST endpoint for Whats Cookin:
+  /*
+  The format of the other postEndpointDatasets didn't work for this project,
+  So I made another modeled after it - KW
+  */
+whatsCookinDatasets.forEach(data => {
+  app.post(`${pathPrefix}/${data}`, (request, response) => {
+    const newData = request.body;
+    const allowedParameters = ['userID', 'ingredientID', 'ingredientModification'];
+    const necessaryParameters = ['userID', 'ingredientID', 'ingredientModification'];
+    const wcUsers = app.locals.wcUsersData;
+    if (newData.userID < 1 || newData.userID > 49) {
+      return response.status(422).json({
+        message: `No user found with ID ${newData.userID}`
+      })
+    }
 
-  // Create POST endpoints for FitLit & Overlook
+    for (let requiredParameter of necessaryParameters) {
+      if (!newData[requiredParameter]) {
+        return response.status(400).json({
+          message: `You are missing a required parameter of ${requiredParameter}`
+        })
+      }
+    }
+
+    let indexOfUserToModify = wcUsers.findIndex(user => user.id === newData.userID);
+    let indexOfPantryItemToModify = wcUsers[indexOfUserToModify].pantry.findIndex(pantryItem => {
+      return pantryItem.ingredient === newData.ingredientID
+    });
+    let itemToChange = wcUsers[indexOfUserToModify].pantry[indexOfPantryItemToModify];
+    let changedAmount;
+    if (itemToChange) {
+      changedAmount = itemToChange.amount + newData.ingredientModification;
+    }
+
+
+    if (indexOfPantryItemToModify < 0 && newData.ingredientModification > 0) {
+      wcUsers[indexOfUserToModify].pantry.push({
+        ingredient: newData.ingredientID,
+        amount: newData.ingredientModification
+      })
+      return response.status(201).json({
+        message: `${newData.ingredientModification} units of item # ${newData.ingredientID} were added to user ${newData.userID}'s pantry'`
+      })
+    } else if ( (indexOfPantryItemToModify < 0 && newData.ingredientModification < 0) || changedAmount < 0) {
+      return response.status(422).json({
+        message: `The user doesn't have enough of this item.`
+      })
+    } else {
+      itemToChange.amount += newData.ingredientModification;
+      return response.status(201).json({
+        message: `User # ${newData.userID} has ${itemToChange.amount} units of item # ${itemToChange.ingredient}`
+      })
+    }
+  });
+})
+
+  // Create POST endpoints for FitLit & Overlook & Travel Tracker
   postEndpointDatasets.forEach(data => {
     app.post(`${pathPrefix}/${data}`, (request, response) => {
       const newData = request.body;
@@ -106,6 +166,8 @@ datasets.forEach(dataset => {
         destinations: ['id', 'destination', 'estimatedLodgingCostPerDay', 'estimatedFlightCostPerPerson', 'image', 'alt'],
         trips: ['userID', 'destinationID', 'travelers', 'date', 'duration', 'status', 'suggestedActivities']};
  
+
+
       let validDate = isValidDate(newData.date);
 
       if (newData.userID > 50 || newData.userID < 1) {
@@ -142,7 +204,7 @@ datasets.forEach(dataset => {
       if (data === 'bookings' || data === 'trips') {
         newData.id = Date.now();
       }
-    
+
       app.locals[data].push(newData);
       return response.status(201).json(newData);
     });
