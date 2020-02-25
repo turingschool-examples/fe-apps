@@ -38,7 +38,7 @@ datasets.forEach(dataset => {
   let fitLitDatasets = ['sleepData', 'activityData', 'hydrationData'];
   let travelTrackerDatasets = ['travelers', 'trips', 'destinations'];
   let overlookDatasets = ['bookings'];
-  let postEndpointDatasets = [...fitLitDatasets, ...overlookDatasets, ...travelTrackerDatasets];
+  let postEndpointDatasets = [...fitLitDatasets, ...overlookDatasets];
   let deleteEndpointDatasets = ['bookings', 'trips'];
   let putEndpointDatasets = ['trips'];
   let whatsCookinDatasets = ['wcUsersData'];
@@ -151,7 +151,7 @@ whatsCookinDatasets.forEach(data => {
   });
 })
 
-  // Create POST endpoints for FitLit & Overlook & Travel Tracker
+  // Create POST endpoints for FitLit & Overlook
   postEndpointDatasets.forEach(data => {
     app.post(`${pathPrefix}/${data}`, (request, response) => {
       const newData = request.body;
@@ -165,7 +165,7 @@ whatsCookinDatasets.forEach(data => {
         roomServices: ['userID', 'date', 'food', 'totalCost'],
         destinations: ['id', 'destination', 'estimatedLodgingCostPerDay', 'estimatedFlightCostPerPerson', 'image', 'alt'],
         trips: ['userID', 'destinationID', 'travelers', 'date', 'duration', 'status', 'suggestedActivities']};
- 
+
 
 
       let validDate = isValidDate(newData.date);
@@ -208,6 +208,23 @@ whatsCookinDatasets.forEach(data => {
       app.locals[data].push(newData);
       return response.status(201).json(newData);
     });
+  });
+
+
+  // CREATE TRAVEL-TRACKER SPECIFIC ENDPOINTS
+
+  // GET Specific Traveler by Id
+  app.get(`${pathPrefix}/travelers/:travelerId`, (request, response) => {
+    let requestedTraveler = app.locals.travelers.find(traveler => {
+      return traveler.id === request.params.travelerId;
+    });
+    if (requestedTraveler) {
+      response.status(200).json(requestedTraveler);
+    } else {
+      response.status(404).json({
+        message: 'User ID provided not found. Try a different ID.'
+      });
+    };
   });
 
 });
