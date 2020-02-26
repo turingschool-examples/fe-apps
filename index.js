@@ -52,15 +52,6 @@ datasets.forEach(dataset => {
     });
   });
 
-
-  deleteEndpointDatasets.forEach(data => {
-    app.delete(`${pathPrefix}/${data}`, (request, response) => {
-      let newData = request.body;
-      app.locals[data] = app.locals[data].filter(el => el.id !== newData.id);
-      return response.sendStatus(200);
-    });
-  });
-
   putEndpointDatasets.forEach(data => {
     app.put(`${pathPrefix}/${data}`, (request, response) => {
       let newData = request.body;
@@ -226,6 +217,32 @@ whatsCookinDatasets.forEach(data => {
       });
     };
   });
+
+  // DELETE trips
+    app.delete(`${pathPrefix}/trips`, (request, response) => {
+      let { id } = request.body;
+      if (!id) {
+        return response.status(422).json({
+          message: 'No id included in request'
+        });
+      }
+      // see if trip with given id exists
+      const tripToDelete = app.locals.trips.find(trip => trip.id === id);
+      if (!tripToDelete) {
+        return response.status(404).json({
+          message: `Cannot find trip with id #${id}.`
+        })
+      } else {
+        app.locals.trips = app.locals.trips.filter(trip => trip.id !== id);
+        return response.status(200).json({
+          message: `Trip #${id} has been deleted`
+        })
+      }
+      // remove trip if so
+      // send 404 if not
+      app.locals.trips = app.locals[data].filter(el => el.id !== newData.id);
+      return response.sendStatus(200);
+    });
 
 });
 
