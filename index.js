@@ -198,7 +198,7 @@ whatsCookinDatasets.forEach(data => {
   // GET Specific Traveler by Id
   app.get(`${pathPrefix}/travelers/:travelerId`, (request, response) => {
     let requestedTraveler = app.locals.travelers.find(traveler => {
-      return traveler.id === request.params.travelerId;
+      return traveler.id == request.params.travelerId;
     });
     if (requestedTraveler) {
       response.status(200).json(requestedTraveler);
