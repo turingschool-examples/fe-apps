@@ -8,7 +8,7 @@ const trips = [
     "travelers": 1,
     "date": "2019/09/16",
     "duration": 8,
-    "status": "accepted",
+    "status": "approved",
     "suggestedActivities": []
   },
   {

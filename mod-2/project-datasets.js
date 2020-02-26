@@ -1,7 +1,7 @@
 const { readdirSync, statSync } = require('fs');
 const { join, basename, dirname } = require('path');
 
-const projectNames = ['whateverly', 'memoize', 'gametime', 'overlook', 'fitlit', 'travel-tracker'];
+const projectNames = ['whateverly', 'memoize', 'gametime', 'overlook', 'fitlit', 'travel-tracker', 'whats-cookin'];
 const projectPaths = buildProjectPaths(projectNames);
 const datasets = importDataFiles(projectPaths);
 
@@ -53,7 +53,7 @@ function importDataFiles(directories) {
     let dataFiles = readdirSync(dir); // get an array of all files in the directory
 
     dataFiles = dataFiles.filter(file => !(/(^|\/)\.[^\/\.]/g).test(file));
-    dataFiles.forEach(dataFile => { 
+    dataFiles.forEach(dataFile => {
       let studentName = `${basename(dataFile, '.js')}`; // get the student name from the file name ('lizAsbell')
       let filePath = join(dir, dataFile); // build the file path so we can require in its exports
       acc.push({
