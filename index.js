@@ -41,7 +41,6 @@ datasets.forEach(dataset => {
   let overlookDatasets = ['bookings'];
   let postEndpointDatasets = [...fitLitDatasets, ...overlookDatasets];
   let deleteEndpointDatasets = ['bookings', 'trips'];
-  let putEndpointDatasets = ['trips'];
   let whatsCookinDatasets = ['wcUsersData'];
   Object.keys(dataVariables).forEach(data => {
     app.get(`${pathPrefix}/${data}`, (request, response) => {
@@ -53,14 +52,6 @@ datasets.forEach(dataset => {
     });
   });
 
-  putEndpointDatasets.forEach(data => {
-    app.put(`${pathPrefix}/${data}`, (request, response) => {
-      let newData = request.body;
-      let index = app.locals[data].findIndex(el => el.id === newData.id);
-      app.locals[data][index] = newData;
-      return response.sendStatus(200);
-    });
-  });
 
   app.get('/api/v1/gametime/leaderboard', (request, response) => {
     response.send({ highScores: app.locals.gameTimeLeaderBoard });
@@ -294,15 +285,38 @@ whatsCookinDatasets.forEach(data => {
             message: `Resource with id ${id} already exists.`
           })
         }
-        // Add new resoource
+        // Add new resource
         app.locals[data].push(request.body);
         return response.status(201).json({
           message: `Resource with id ${id} successfully posted`,
           newResource: request.body
         });
       });
-    })
+    });
 
+    // POST Update status of a trip
+    app.post(`${pathPrefix}/updateTrip`, (request, response) => {
+      const { id, status, suggestedActivities } = request.body;
+      let indexOfTrip = app.locals.trips.findIndex(el => el.id === id);
+      if (indexOfTrip < 0) {
+        return response.status(404).json({
+          message: `No trip with id ${id} found.`
+        })
+      }
+      if((status === 'pending') || (status === 'approved') || (suggestedActivities.hasOwnProperty('length') && typeof suggestedActivities !== 'string' )) {
+        status ? app.locals.trips[indexOfTrip].status = status : null;
+        suggestedActivities ? app.locals.trips[indexOfTrip].suggestedActivities = app.locals.trips[indexOfTrip].suggestedActivities.concat(suggestedActivities) : null;
+        return response.status(200).json({
+          message: `Trip #${id} has been modified`,
+          updatedResource: app.locals.trips[indexOfTrip]
+        });
+
+      } else {
+        return response.status(422).json({
+          message: `Invalid request`
+        });
+      }
+    });
 });
 
 
