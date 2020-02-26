@@ -37,6 +37,7 @@ datasets.forEach(dataset => {
   let pathPrefix = `/api/v1/${project}/${cohort}/${studentName}`;
   let fitLitDatasets = ['sleepData', 'activityData', 'hydrationData'];
   let travelTrackerDatasets = ['travelers', 'trips', 'destinations'];
+  let travelTrackerPostEndpointDatasets = ['trips', 'destinations'];
   let overlookDatasets = ['bookings'];
   let postEndpointDatasets = [...fitLitDatasets, ...overlookDatasets];
   let deleteEndpointDatasets = ['bookings', 'trips'];
@@ -153,9 +154,8 @@ whatsCookinDatasets.forEach(data => {
         activityData: ['userID', 'date', 'flightsOfStairs', 'minutesActive', 'numSteps'],
         hydrationData: ['userID', 'date', 'numOunces'],
         bookings: ['userID', 'date', 'roomNumber'],
-        roomServices: ['userID', 'date', 'food', 'totalCost'],
-        destinations: ['id', 'destination', 'estimatedLodgingCostPerDay', 'estimatedFlightCostPerPerson', 'image', 'alt'],
-        trips: ['userID', 'destinationID', 'travelers', 'date', 'duration', 'status', 'suggestedActivities']};
+        roomServices: ['userID', 'date', 'food', 'totalCost']
+      };
 
 
 
@@ -226,7 +226,6 @@ whatsCookinDatasets.forEach(data => {
           message: 'No id included in request'
         });
       }
-      // see if trip with given id exists
       const tripToDelete = app.locals.trips.find(trip => trip.id === id);
       if (!tripToDelete) {
         return response.status(404).json({
@@ -238,11 +237,71 @@ whatsCookinDatasets.forEach(data => {
           message: `Trip #${id} has been deleted`
         })
       }
-      // remove trip if so
-      // send 404 if not
       app.locals.trips = app.locals[data].filter(el => el.id !== newData.id);
       return response.sendStatus(200);
     });
+
+    // POST new trip or new destination
+    travelTrackerPostEndpointDatasets.forEach(data => {
+      app.post(`${pathPrefix}/${data}`, (request, response) => {
+        let requiredProperties = {
+          'trips': [
+            'id',
+            'userId',
+            'destinationId',
+            'travelers',
+            'date',
+            'duration',
+            'status',
+            'suggestedActivities'
+          ],
+          'destinations': [
+            'id',
+            'destination',
+            'estimatedLodgingCostPerDay',
+            'estimatedFlightCostPerPerson',
+            'image',
+            'alt'
+          ]
+        };
+        const bodyProperties = Object.keys(request.body);
+        const { id } = request.body;
+        const missingProperties = requiredProperties[data].filter(property => {
+          return !bodyProperties.includes(property)
+        });
+        const extraProperties = bodyProperties.filter(property => {
+          return !requiredProperties[data].includes(property);
+        });
+
+        // Check for missing properties in request:
+        if (missingProperties.length) {
+          return response.status(422).json({
+            message: `Request is missing required properties of ${missingProperties.join(', ')}.`
+          })
+        }
+        // Check for extra properties in the request:
+        else if (extraProperties.length) {
+          return response.status(422).json({
+            message: `Request has extra properties of ${extraProperties.join(', ')}.`
+          })
+        }
+        // Check if id already exists
+        const existingResource = app.locals[data].find(resource => {
+          return resource.id === id;
+        })
+        if (existingResource) {
+          return response.status(422).json({
+            message: `Resource with id ${id} already exists.`
+          })
+        }
+        // Add new resoource
+        app.locals[data].push(request.body);
+        return response.status(201).json({
+          message: `Resource with id ${id} successfully posted`,
+          newResource: request.body
+        });
+      });
+    })
 
 });
 
