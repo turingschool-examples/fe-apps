@@ -15,12 +15,16 @@ app.set('port', process.env.PORT || 3000);
 const datasets = require('./mod-2/project-datasets.js');
 
 
-// APP LOCALS for FITLIT & OVERLOOK & WHATS COOKIN
+// APP LOCALS for FITLIT & OVERLOOK & WHATS COOKIN & TRAVEL TRACKER
+
 app.locals = {
   sleepData: datasets.find(dataset => dataset.studentName === 'sleep').dataVariables.sleepData,
   activityData: datasets.find(dataset => dataset.studentName === 'activity').dataVariables.activityData,
   hydrationData: datasets.find(dataset => dataset.studentName === 'hydration').dataVariables.hydrationData,
   bookings: datasets.find(dataset => dataset.studentName === 'bookings').dataVariables.bookings,
+  trips: datasets.find(dataset => dataset.studentName === 'trips').dataVariables.trips,
+  travelers: datasets.find(dataset => dataset.studentName === 'travelers').dataVariables.travelers,
+  destinations: datasets.find(dataset => dataset.studentName === 'destinations').dataVariables.destinations,
   gameTimeLeaderBoard: [],
   ingredientsData: datasets.find(dataset => dataset.studentName === 'ingredients').dataVariables.ingredients,
   recipesData: datasets.find(dataset => dataset.studentName === 'recipes').dataVariables.recipes,
@@ -32,10 +36,12 @@ datasets.forEach(dataset => {
   let { project, cohort, studentName, dataVariables } = dataset;
   let pathPrefix = `/api/v1/${project}/${cohort}/${studentName}`;
   let fitLitDatasets = ['sleepData', 'activityData', 'hydrationData'];
+  let travelTrackerDatasets = ['travelers', 'trips', 'destinations'];
+  let travelTrackerPostEndpointDatasets = ['trips', 'destinations'];
   let overlookDatasets = ['bookings'];
-  let whatsCookinDatasets = ['wcUsersData'];
   let postEndpointDatasets = [...fitLitDatasets, ...overlookDatasets];
-  let deleteEndpointDatasets = ['bookings'];
+  let deleteEndpointDatasets = ['bookings', 'trips'];
+  let whatsCookinDatasets = ['wcUsersData'];
   Object.keys(dataVariables).forEach(data => {
     app.get(`${pathPrefix}/${data}`, (request, response) => {
       if (postEndpointDatasets.includes(data) || deleteEndpointDatasets.includes(data) || whatsCookinDatasets.includes(data)) {
@@ -46,14 +52,6 @@ datasets.forEach(dataset => {
     });
   });
 
-
-  deleteEndpointDatasets.forEach(data => {
-    app.delete(`${pathPrefix}/${data}`, (request, response) => {
-      let newData = request.body;
-      app.locals.bookings = app.locals.bookings.filter(booking => booking.id !== newData.id);
-      return response.sendStatus(200);
-    });
-  });
 
   app.get('/api/v1/gametime/leaderboard', (request, response) => {
     response.send({ highScores: app.locals.gameTimeLeaderBoard });
@@ -148,8 +146,9 @@ whatsCookinDatasets.forEach(data => {
         hydrationData: ['userID', 'date', 'numOunces'],
         bookings: ['userID', 'date', 'roomNumber'],
         roomServices: ['userID', 'date', 'food', 'totalCost']
-
       };
+
+
 
       let validDate = isValidDate(newData.date);
 
@@ -159,7 +158,7 @@ whatsCookinDatasets.forEach(data => {
         });
       }
 
-      if (!validDate) {
+      if (!validDate && data !== 'destinations') {
         return response.status(422).json({
           message: `Invalid date format. Date must be in YYYY/MM/DD format`
         });
@@ -167,7 +166,7 @@ whatsCookinDatasets.forEach(data => {
 
 
       for (let requiredParameter of necessaryParameters[data]) {
-        if (!newData[requiredParameter]) {
+        if (newData[requiredParameter] === undefined) {
           return response.status(422).json({
             message: `You are missing a required parameter of ${requiredParameter}`
           });
@@ -184,7 +183,7 @@ whatsCookinDatasets.forEach(data => {
         }
       });
 
-      if (data === 'bookings') {
+      if (data === 'bookings' || data === 'trips') {
         newData.id = Date.now();
       }
 
@@ -193,6 +192,131 @@ whatsCookinDatasets.forEach(data => {
     });
   });
 
+
+  // CREATE TRAVEL-TRACKER SPECIFIC ENDPOINTS
+
+  // GET Specific Traveler by Id
+  app.get(`${pathPrefix}/travelers/:travelerId`, (request, response) => {
+    let requestedTraveler = app.locals.travelers.find(traveler => {
+      return traveler.id == request.params.travelerId;
+    });
+    if (requestedTraveler) {
+      response.status(200).json(requestedTraveler);
+    } else {
+      response.status(404).json({
+        message: 'User ID provided not found. Try a different ID.'
+      });
+    };
+  });
+
+  // DELETE trips
+    app.delete(`${pathPrefix}/trips`, (request, response) => {
+      let { id } = request.body;
+      if (!id) {
+        return response.status(422).json({
+          message: 'No id included in request'
+        });
+      }
+      const tripToDelete = app.locals.trips.find(trip => trip.id === id);
+      if (!tripToDelete) {
+        return response.status(404).json({
+          message: `Cannot find trip with id #${id}.`
+        })
+      } else {
+        app.locals.trips = app.locals.trips.filter(trip => trip.id !== id);
+        return response.status(200).json({
+          message: `Trip #${id} has been deleted`
+        })
+      }
+      app.locals.trips = app.locals[data].filter(el => el.id !== newData.id);
+      return response.sendStatus(200);
+    });
+
+    // POST new trip or new destination
+    travelTrackerPostEndpointDatasets.forEach(data => {
+      app.post(`${pathPrefix}/${data}`, (request, response) => {
+        let requiredProperties = {
+          'trips': [
+            'id',
+            'userId',
+            'destinationId',
+            'travelers',
+            'date',
+            'duration',
+            'status',
+            'suggestedActivities'
+          ],
+          'destinations': [
+            'id',
+            'destination',
+            'estimatedLodgingCostPerDay',
+            'estimatedFlightCostPerPerson',
+            'image',
+            'alt'
+          ]
+        };
+        const bodyProperties = Object.keys(request.body);
+        const { id } = request.body;
+        const missingProperties = requiredProperties[data].filter(property => {
+          return !bodyProperties.includes(property)
+        });
+        const extraProperties = bodyProperties.filter(property => {
+          return !requiredProperties[data].includes(property);
+        });
+
+        // Check for missing properties in request:
+        if (missingProperties.length) {
+          return response.status(422).json({
+            message: `Request is missing required properties of ${missingProperties.join(', ')}.`
+          })
+        }
+        // Check for extra properties in the request:
+        else if (extraProperties.length) {
+          return response.status(422).json({
+            message: `Request has extra properties of ${extraProperties.join(', ')}.`
+          })
+        }
+        // Check if id already exists
+        const existingResource = app.locals[data].find(resource => {
+          return resource.id === id;
+        })
+        if (existingResource) {
+          return response.status(422).json({
+            message: `Resource with id ${id} already exists.`
+          })
+        }
+        // Add new resource
+        app.locals[data].push(request.body);
+        return response.status(201).json({
+          message: `Resource with id ${id} successfully posted`,
+          newResource: request.body
+        });
+      });
+    });
+
+    // POST Update status of a trip
+    app.post(`${pathPrefix}/updateTrip`, (request, response) => {
+      const { id, status, suggestedActivities } = request.body;
+      let indexOfTrip = app.locals.trips.findIndex(el => el.id === id);
+      if (indexOfTrip < 0) {
+        return response.status(404).json({
+          message: `No trip with id ${id} found.`
+        })
+      }
+      if((status === 'pending') || (status === 'approved') || (suggestedActivities.hasOwnProperty('length') && typeof suggestedActivities !== 'string' )) {
+        status ? app.locals.trips[indexOfTrip].status = status : null;
+        suggestedActivities ? app.locals.trips[indexOfTrip].suggestedActivities = app.locals.trips[indexOfTrip].suggestedActivities.concat(suggestedActivities) : null;
+        return response.status(200).json({
+          message: `Trip #${id} has been modified`,
+          updatedResource: app.locals.trips[indexOfTrip]
+        });
+
+      } else {
+        return response.status(422).json({
+          message: `Invalid request`
+        });
+      }
+    });
 });
 
 
