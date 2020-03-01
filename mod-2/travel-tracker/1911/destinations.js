@@ -22,6 +22,14 @@ const destinations = [{
   "alt": "opera house and city buildings on the water with boats"
 },
 {
+  "id": 4,
+  "destination": "Cartagena, Colombia",
+  "estimatedLodgingCostPerDay": 65,
+  "estimatedFlightCostPerPerson": 350,
+  "image": "https://images.unsplash.com/photo-1558029697-a7ed1a4b94c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
+  "alt": "boats at a dock during the day time"
+},
+{
   "id": 5,
   "destination": "Madrid, Spain",
   "estimatedLodgingCostPerDay": 150,
