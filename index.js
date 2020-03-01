@@ -238,8 +238,8 @@ whatsCookinDatasets.forEach(data => {
         let requiredProperties = {
           'trips': [
             'id',
-            'userId',
-            'destinationId',
+            'userID',
+            'destinationID',
             'travelers',
             'date',
             'duration',
