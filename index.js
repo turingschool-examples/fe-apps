@@ -276,6 +276,9 @@ whatsCookinDatasets.forEach(data => {
             message: `Request has extra properties of ${extraProperties.join(', ')}.`
           })
         }
+
+        // Check for typeof IDs
+        // let {userID, destinationID} = request.body;
         // Check if id already exists
         const existingResource = app.locals[data].find(resource => {
           return resource.id === id;
