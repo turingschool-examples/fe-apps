@@ -257,7 +257,7 @@ whatsCookinDatasets.forEach(data => {
         };
         const bodyProperties = Object.keys(request.body);
         // date will only exist for `trips` request
-        const { id, date } = request.body;
+        const { id, date, destinationID } = request.body;
         const missingProperties = Object.keys(requiredProperties[data])
           .filter(property => {
             return !bodyProperties.includes(property)
@@ -302,12 +302,25 @@ whatsCookinDatasets.forEach(data => {
           return resource.id === id;
         })
         if (existingResource) {
-          console.log(existingResource);
           return response.status(422).json({
             message: `Resource with id ${id} already exists.`,
             resource: existingResource
           })
         }
+
+        // Check if destination exists
+        if (destinationID) {
+          const existantDestination = app.locals.destinations.find(resource => {
+            return resource.id === destinationID
+          })
+          if (!existantDestination) {
+            return response.status(422).json({
+              message: `Destination with id ${destinationID} doesn't exists.`
+            })
+          }
+        }
+
+
         // Add new resource
         app.locals[data].push(request.body);
         return response.status(201).json({
