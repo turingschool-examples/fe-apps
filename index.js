@@ -281,7 +281,6 @@ whatsCookinDatasets.forEach(data => {
 
         // Check for correct types of properties
         for (let bodyProperty of bodyProperties) {
-          console.log(bodyProperty);
           let currentProperty = request.body[bodyProperty];
           let requiredPropertyType = requiredProperties[data][bodyProperty];
           if (!isTypeOf(currentProperty, requiredPropertyType)) {
@@ -291,10 +290,12 @@ whatsCookinDatasets.forEach(data => {
           }
         }
 
-        // // Check for valid dates
-        // if (date && !isValidDate(date)) {
-        //
-        // }
+        // Check for valid dates
+        if (date && !isValidDate(date)) {
+          return response.status(422).json({
+            message: `Invalid date format submitted`
+          })
+        }
 
         // Check if id already exists
         const existingResource = app.locals[data].find(resource => {
