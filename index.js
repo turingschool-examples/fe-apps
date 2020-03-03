@@ -236,30 +236,31 @@ whatsCookinDatasets.forEach(data => {
     travelTrackerPostEndpointDatasets.forEach(data => {
       app.post(`${pathPrefix}/${data}`, (request, response) => {
         let requiredProperties = {
-          'trips': [
-            'id',
-            'userID',
-            'destinationID',
-            'travelers',
-            'date',
-            'duration',
-            'status',
-            'suggestedActivities'
-          ],
-          'destinations': [
-            'id',
-            'destination',
-            'estimatedLodgingCostPerDay',
-            'estimatedFlightCostPerPerson',
-            'image',
-            'alt'
-          ]
+          'trips': {
+            'id': 'number',
+            'userID': 'number',
+            'destinationID': 'number',
+            'travelers': 'object',
+            'date': 'string',
+            'duration': 'number',
+            'status': 'string',
+            'suggestedActivities': 'object'
+          },
+          'destinations': {
+            'id': 'number',
+            'destination': 'string',
+            'estimatedLodgingCostPerDay:': 'number',
+            'estimatedFlightCostPerPerson': 'number',
+            'image': 'string',
+            'alt': 'string'
+          }
         };
         const bodyProperties = Object.keys(request.body);
         const { id } = request.body;
-        const missingProperties = requiredProperties[data].filter(property => {
-          return !bodyProperties.includes(property)
-        });
+        const missingProperties = Object.keys(requiredProperties[data])
+          .filter(property => {
+            return !bodyProperties.includes(property)
+          })
         const extraProperties = bodyProperties.filter(property => {
           return !requiredProperties[data].includes(property);
         });
@@ -277,8 +278,8 @@ whatsCookinDatasets.forEach(data => {
           })
         }
 
-        // Check for typeof IDs
-        // let {userID, destinationID} = request.body;
+        
+
         // Check if id already exists
         const existingResource = app.locals[data].find(resource => {
           return resource.id === id;
@@ -326,6 +327,10 @@ whatsCookinDatasets.forEach(data => {
 function isValidDate(dateString) {
   var regEx = /^\d{4}[\/](0?[1-9]|1[012])[\/](0?[1-9]|[12][0-9]|3[01])$/;
   return regEx.test(dateString);
+}
+
+function checkTypeOf(property, type) {
+   return property === type;
 }
 
 if (!module.parent) {
