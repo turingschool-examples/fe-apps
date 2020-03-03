@@ -240,7 +240,7 @@ whatsCookinDatasets.forEach(data => {
             'id': 'number',
             'userID': 'number',
             'destinationID': 'number',
-            'travelers': 'object',
+            'travelers': 'number',
             'date': 'string',
             'duration': 'number',
             'status': 'string',
@@ -249,20 +249,21 @@ whatsCookinDatasets.forEach(data => {
           'destinations': {
             'id': 'number',
             'destination': 'string',
-            'estimatedLodgingCostPerDay:': 'number',
+            'estimatedLodgingCostPerDay': 'number',
             'estimatedFlightCostPerPerson': 'number',
             'image': 'string',
             'alt': 'string'
           }
         };
         const bodyProperties = Object.keys(request.body);
-        const { id } = request.body;
+        // date will only exist for `trips` request
+        const { id, date } = request.body;
         const missingProperties = Object.keys(requiredProperties[data])
           .filter(property => {
             return !bodyProperties.includes(property)
           })
         const extraProperties = bodyProperties.filter(property => {
-          return !requiredProperties[data].includes(property);
+          return !Object.keys(requiredProperties[data]).includes(property);
         });
 
         // Check for missing properties in request:
@@ -278,15 +279,32 @@ whatsCookinDatasets.forEach(data => {
           })
         }
 
-        
+        // Check for correct types of properties
+        for (let bodyProperty of bodyProperties) {
+          console.log(bodyProperty);
+          let currentProperty = request.body[bodyProperty];
+          let requiredPropertyType = requiredProperties[data][bodyProperty];
+          if (!isTypeOf(currentProperty, requiredPropertyType)) {
+            return response.status(422).json({
+              message: `Request property of ${bodyProperty} must be type ${requiredPropertyType}`
+            })
+          }
+        }
+
+        // // Check for valid dates
+        // if (date && !isValidDate(date)) {
+        //
+        // }
 
         // Check if id already exists
         const existingResource = app.locals[data].find(resource => {
           return resource.id === id;
         })
         if (existingResource) {
+          console.log(existingResource);
           return response.status(422).json({
-            message: `Resource with id ${id} already exists.`
+            message: `Resource with id ${id} already exists.`,
+            resource: existingResource
           })
         }
         // Add new resource
@@ -329,8 +347,8 @@ function isValidDate(dateString) {
   return regEx.test(dateString);
 }
 
-function checkTypeOf(property, type) {
-   return property === type;
+function isTypeOf(property, type) {
+   return typeof property === type;
 }
 
 if (!module.parent) {
