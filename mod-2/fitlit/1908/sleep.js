@@ -59996,10 +59996,11 @@ const sleepData = [
   },
   {
     "userID": 50,
-    "date": "2020/01/22",
+    "date": "2020/01/19",
     "hoursSlept": 6.5,
     "sleepQuality": 1.8
-  }
+  },
+
 ]
 
   module.exports = {

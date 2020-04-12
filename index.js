@@ -137,6 +137,7 @@ whatsCookinDatasets.forEach(data => {
   // Create POST endpoints for FitLit & Overlook
   postEndpointDatasets.forEach(data => {
     app.post(`${pathPrefix}/${data}`, (request, response) => {
+
       const newData = request.body;
       const allowedParameters = ['userID', 'date', 'hoursSlept', 'sleepQuality', 'numOunces', 'flightsOfStairs', 'minutesActive', 'numSteps'];
 
