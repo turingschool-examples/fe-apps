@@ -137,7 +137,6 @@ whatsCookinDatasets.forEach(data => {
   // Create POST endpoints for FitLit & Overlook
   postEndpointDatasets.forEach(data => {
     app.post(`${pathPrefix}/${data}`, (request, response) => {
-
       const newData = request.body;
       const allowedParameters = ['userID', 'date', 'hoursSlept', 'sleepQuality', 'numOunces', 'flightsOfStairs', 'minutesActive', 'numSteps'];
 
@@ -152,6 +151,12 @@ whatsCookinDatasets.forEach(data => {
 
 
       let validDate = isValidDate(newData.date);
+
+      if (!isTypeOf(newData.userID, 'number')) {
+        return response.status(422).json({
+          message: `Invalid userID data type. UserID must be a number.`
+        })
+      }
 
       if (newData.userID > 50 || newData.userID < 1) {
         return response.status(422).json({
