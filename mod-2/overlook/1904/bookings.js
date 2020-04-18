@@ -6841,28 +6841,28 @@ const bookings = [
   {
     "id": "5fwrgu4i7k55hl8bg",
     "userID": 26,
-    "date": "2020/01/31",
+    "date": "2020/04/18",
     "roomNumber": 18,
     "roomServiceCharges": []
   },
   {
     "id": "5fwrgu4i7k55hl8bi",
     "userID": 1,
-    "date": "2020/02/06",
+    "date": "2020/04/18",
     "roomNumber": 3,
     "roomServiceCharges": []
   },
   {
     "id": "5fwrgu4i7k55hl8bj",
     "userID": 1,
-    "date": "2020/02/25",
+    "date": "2020/04/19",
     "roomNumber": 5,
     "roomServiceCharges": []
   },
   {
     "id": "5fwrgu4i7k55hl8bk",
     "userID": 49,
-    "date": "2020/01/20",
+    "date": "2020/04/19",
     "roomNumber": 17,
     "roomServiceCharges": []
   },
