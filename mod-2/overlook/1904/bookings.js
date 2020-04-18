@@ -6846,6 +6846,20 @@ const bookings = [
     "roomServiceCharges": []
   },
   {
+    "id": "5fwrgu4i7k55hl8bh",
+    "userID": 26,
+    "date": "2020/05/18",
+    "roomNumber": 18,
+    "roomServiceCharges": []
+  },
+  {
+    "id": "5fwrgu4i7k55hl8bkl",
+    "userID": 26,
+    "date": "2020/06/18",
+    "roomNumber": 18,
+    "roomServiceCharges": []
+  },
+  {
     "id": "5fwrgu4i7k55hl8bi",
     "userID": 1,
     "date": "2020/04/18",
