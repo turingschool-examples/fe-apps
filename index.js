@@ -238,6 +238,29 @@ whatsCookinDatasets.forEach(data => {
       return response.sendStatus(200);
     });
 
+    // DELETE trips
+    app.delete(`${pathPrefix}/bookings`, (request, response) => {
+      let { id } = request.body;
+      if (!id) {
+        return response.status(422).json({
+          message: 'No id included in request'
+        });
+      }
+      const tripToDelete = app.locals.bookings.find(booking => booking.id === id);
+      if (!tripToDelete) {
+        return response.status(404).json({
+          message: `Cannot find trip with id #${id}.`
+        })
+      } else {
+        app.locals.bookings = app.locals.bookings.filter(trip => trip.id !== id);
+        return response.status(200).json({
+          message: `Trip #${id} has been deleted`
+        })
+      }
+      app.locals.bookings = app.locals[data].filter(el => el.id !== newData.id);
+      return response.sendStatus(200);
+    });
+
     // POST new trip or new destination
     travelTrackerPostEndpointDatasets.forEach(data => {
       app.post(`${pathPrefix}/${data}`, (request, response) => {
