@@ -7015,15 +7015,15 @@ const bookings = [
   },
   {
     "id": "5fwrgu4i7k55hl8dq",
-    "userID": 7,
-    "date": "2020/02/15",
+    "userID": 36,
+    "date": "2020/04/22",
     "roomNumber": 23,
     "roomServiceCharges": []
   },
   {
     "id": "5fwrgu4i7k55hl8dz",
     "userID": 36,
-    "date": "2020/01/16",
+    "date": "2020/04/21",
     "roomNumber": 6,
     "roomServiceCharges": []
   }
