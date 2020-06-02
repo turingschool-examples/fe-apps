@@ -4,7 +4,8 @@
   "description": "Hosted projects for FE apps and endpoints",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "start:debug": "node --inspect index.js"
   },
   "repository": {
     "type": "git",
