@@ -35,6 +35,7 @@ app.locals = {
 datasets.forEach(dataset => {
   let { project, cohort, studentName, dataVariables } = dataset;
   let pathPrefix = `/api/v1/${project}/${cohort}/${studentName}`;
+  console.log(pathPrefix)
   let fitLitDatasets = ['sleepData', 'activityData', 'hydrationData'];
   let travelTrackerDatasets = ['travelers', 'trips', 'destinations'];
   let travelTrackerPostEndpointDatasets = ['trips', 'destinations'];
@@ -44,9 +45,7 @@ datasets.forEach(dataset => {
   let whatsCookinDatasets = ['wcUsersData'];
 
   Object.keys(dataVariables).forEach(data => {
-    let path = data === studentName ? pathPrefix : `${pathPrefix}/${data}`
-
-    app.get(path, (request, response) => {
+    app.get(`${pathPrefix}/${data}`, (request, response) => {
       if (postEndpointDatasets.includes(data) || deleteEndpointDatasets.includes(data) || whatsCookinDatasets.includes(data)) {
         response.send({ [data]: app.locals[data]});
       } else {
@@ -85,57 +84,57 @@ datasets.forEach(dataset => {
   The format of the other postEndpointDatasets didn't work for this project,
   So I made another modeled after it - KW
   */
-whatsCookinDatasets.forEach(data => {
-  app.post(`${pathPrefix}/${data}`, (request, response) => {
-    const newData = request.body;
-    const allowedParameters = ['userID', 'ingredientID', 'ingredientModification'];
-    const necessaryParameters = ['userID', 'ingredientID', 'ingredientModification'];
-    const wcUsers = app.locals.wcUsersData;
-    if (newData.userID < 1 || newData.userID > 49) {
-      return response.status(422).json({
-        message: `No user found with ID ${newData.userID}`
-      })
-    }
-
-    for (let requiredParameter of necessaryParameters) {
-      if (!newData[requiredParameter]) {
-        return response.status(400).json({
-          message: `You are missing a required parameter of ${requiredParameter}`
+  whatsCookinDatasets.forEach(data => {
+    app.post(`${pathPrefix}/${data}`, (request, response) => {
+      const newData = request.body;
+      const allowedParameters = ['userID', 'ingredientID', 'ingredientModification'];
+      const necessaryParameters = ['userID', 'ingredientID', 'ingredientModification'];
+      const wcUsers = app.locals.wcUsersData;
+      if (newData.userID < 1 || newData.userID > 49) {
+        return response.status(422).json({
+          message: `No user found with ID ${newData.userID}`
         })
       }
-    }
-
-    let indexOfUserToModify = wcUsers.findIndex(user => user.id === newData.userID);
-    let indexOfPantryItemToModify = wcUsers[indexOfUserToModify].pantry.findIndex(pantryItem => {
-      return pantryItem.ingredient === newData.ingredientID
+  
+      for (let requiredParameter of necessaryParameters) {
+        if (!newData[requiredParameter]) {
+          return response.status(400).json({
+            message: `You are missing a required parameter of ${requiredParameter}`
+          })
+        }
+      }
+  
+      let indexOfUserToModify = wcUsers.findIndex(user => user.id === newData.userID);
+      let indexOfPantryItemToModify = wcUsers[indexOfUserToModify].pantry.findIndex(pantryItem => {
+        return pantryItem.ingredient === newData.ingredientID
+      });
+      let itemToChange = wcUsers[indexOfUserToModify].pantry[indexOfPantryItemToModify];
+      let changedAmount;
+      if (itemToChange) {
+        changedAmount = itemToChange.amount + newData.ingredientModification;
+      }
+  
+  
+      if (indexOfPantryItemToModify < 0 && newData.ingredientModification > 0) {
+        wcUsers[indexOfUserToModify].pantry.push({
+          ingredient: newData.ingredientID,
+          amount: newData.ingredientModification
+        })
+        return response.status(201).json({
+          message: `${newData.ingredientModification} units of item # ${newData.ingredientID} were added to user ${newData.userID}'s pantry'`
+        })
+      } else if ( (indexOfPantryItemToModify < 0 && newData.ingredientModification < 0) || changedAmount < 0) {
+        return response.status(422).json({
+          message: `The user doesn't have enough of this item.`
+        })
+      } else {
+        itemToChange.amount += newData.ingredientModification;
+        return response.status(201).json({
+          message: `User # ${newData.userID} has ${itemToChange.amount} units of item # ${itemToChange.ingredient}`
+        })
+      }
     });
-    let itemToChange = wcUsers[indexOfUserToModify].pantry[indexOfPantryItemToModify];
-    let changedAmount;
-    if (itemToChange) {
-      changedAmount = itemToChange.amount + newData.ingredientModification;
-    }
-
-
-    if (indexOfPantryItemToModify < 0 && newData.ingredientModification > 0) {
-      wcUsers[indexOfUserToModify].pantry.push({
-        ingredient: newData.ingredientID,
-        amount: newData.ingredientModification
-      })
-      return response.status(201).json({
-        message: `${newData.ingredientModification} units of item # ${newData.ingredientID} were added to user ${newData.userID}'s pantry'`
-      })
-    } else if ( (indexOfPantryItemToModify < 0 && newData.ingredientModification < 0) || changedAmount < 0) {
-      return response.status(422).json({
-        message: `The user doesn't have enough of this item.`
-      })
-    } else {
-      itemToChange.amount += newData.ingredientModification;
-      return response.status(201).json({
-        message: `User # ${newData.userID} has ${itemToChange.amount} units of item # ${itemToChange.ingredient}`
-      })
-    }
-  });
-})
+  })
 
   // Create POST endpoints for FitLit & Overlook
   postEndpointDatasets.forEach(data => {
@@ -219,50 +218,50 @@ whatsCookinDatasets.forEach(data => {
   });
 
   // DELETE trips
-    app.delete(`${pathPrefix}/trips`, (request, response) => {
-      let { id } = request.body;
-      if (!id) {
-        return response.status(422).json({
-          message: 'No id included in request'
-        });
-      }
-      const tripToDelete = app.locals.trips.find(trip => trip.id === id);
-      if (!tripToDelete) {
-        return response.status(404).json({
-          message: `Cannot find trip with id #${id}.`
-        })
-      } else {
-        app.locals.trips = app.locals.trips.filter(trip => trip.id !== id);
-        return response.status(200).json({
-          message: `Trip #${id} has been deleted`
-        })
-      }
-      app.locals.trips = app.locals[data].filter(el => el.id !== newData.id);
-      return response.sendStatus(200);
-    });
+  app.delete(`${pathPrefix}/trips`, (request, response) => {
+    let { id } = request.body;
+    if (!id) {
+      return response.status(422).json({
+        message: 'No id included in request'
+      });
+    }
+    const tripToDelete = app.locals.trips.find(trip => trip.id === id);
+    if (!tripToDelete) {
+      return response.status(404).json({
+        message: `Cannot find trip with id #${id}.`
+      })
+    } else {
+      app.locals.trips = app.locals.trips.filter(trip => trip.id !== id);
+      return response.status(200).json({
+        message: `Trip #${id} has been deleted`
+      })
+    }
+    app.locals.trips = app.locals[data].filter(el => el.id !== newData.id);
+    return response.sendStatus(200);
+  });
 
-    // DELETE trips
-    app.delete(`${pathPrefix}/bookings`, (request, response) => {
-      let { id } = request.body;
-      if (!id) {
-        return response.status(422).json({
-          message: 'No id included in request'
-        });
-      }
-      const tripToDelete = app.locals.bookings.find(booking => booking.id === id);
-      if (!tripToDelete) {
-        return response.status(404).json({
-          message: `Cannot find trip with id #${id}.`
-        })
-      } else {
-        app.locals.bookings = app.locals.bookings.filter(trip => trip.id !== id);
-        return response.status(200).json({
-          message: `Trip #${id} has been deleted`
-        })
-      }
-      app.locals.bookings = app.locals[data].filter(el => el.id !== newData.id);
-      return response.sendStatus(200);
-    });
+  // DELETE bookings
+  app.delete(`${pathPrefix}/bookings`, (request, response) => {
+    let { id } = request.body;
+    if (!id) {
+      return response.status(422).json({
+        message: 'No id included in request'
+      });
+    }
+    const tripToDelete = app.locals.bookings.find(booking => booking.id === id);
+    if (!tripToDelete) {
+      return response.status(404).json({
+        message: `Cannot find trip with id #${id}.`
+      })
+    } else {
+      app.locals.bookings = app.locals.bookings.filter(trip => trip.id !== id);
+      return response.status(200).json({
+        message: `Trip #${id} has been deleted`
+      })
+    }
+    app.locals.bookings = app.locals[data].filter(el => el.id !== newData.id);
+    return response.sendStatus(200);
+  });
 
     // POST new trip or new destination
     travelTrackerPostEndpointDatasets.forEach(data => {
