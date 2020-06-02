@@ -42,8 +42,11 @@ datasets.forEach(dataset => {
   let postEndpointDatasets = [...fitLitDatasets, ...overlookDatasets];
   let deleteEndpointDatasets = ['bookings', 'trips'];
   let whatsCookinDatasets = ['wcUsersData'];
+
   Object.keys(dataVariables).forEach(data => {
-    app.get(`${pathPrefix}/${data}`, (request, response) => {
+    let path = data === studentName ? pathPrefix : `${pathPrefix}/${data}`
+
+    app.get(path, (request, response) => {
       if (postEndpointDatasets.includes(data) || deleteEndpointDatasets.includes(data) || whatsCookinDatasets.includes(data)) {
         response.send({ [data]: app.locals[data]});
       } else {
